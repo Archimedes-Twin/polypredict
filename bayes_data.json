@@ -1,10 +1,11 @@
 {
   "SPY": {
-    "prior": 27.9,
-    "post": 49.8,
+    "prior": 37.7,
+    "post": 44.8,
     "items": [
       {
         "id": "spy-1",
+        "group": "oq3B28tS6c4:SPY:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 US Stocks Crash? Midterm Election Rally Dead? (Nov 2)",
         "claim": "Post-midterm history: avg +8.1% over next 3 months, 95% positive (19 midterms, only 2018 negative); pre-election dips bottom Oct/early Nov seasonally",
@@ -13,10 +14,14 @@
         "lr": 1.22,
         "half_life": 90,
         "lr_eff": 1.22,
-        "age": 0
+        "age": 0,
+        "applied": false,
+        "group_n": 5,
+        "absorbed_by": "spy-3"
       },
       {
         "id": "spy-2",
+        "group": "oq3B28tS6c4:SPY:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 same video",
         "claim": "Hedge funds de-grossed -7.8% last week, biggest in 10 years; 6 prior >5% de-grossings all coincided with S&P lows and all were up 1/3/6 months later",
@@ -25,10 +30,14 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.22,
-        "age": 0
+        "age": 0,
+        "applied": false,
+        "group_n": 5,
+        "absorbed_by": "spy-3"
       },
       {
         "id": "spy-3",
+        "group": "oq3B28tS6c4:SPY:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 same video",
         "claim": "Q3 earnings +30.2% aggregate vs +29% expected; breadth broadening (non-Mag7 earnings growth 32% vs Mag7 22%); S&P net margin 17% (AI cost savings real)",
@@ -37,10 +46,13 @@
         "lr": 1.34,
         "half_life": 120,
         "lr_eff": 1.34,
-        "age": 0
+        "age": 0,
+        "applied": true,
+        "group_n": 5
       },
       {
         "id": "spy-4",
+        "group": "oq3B28tS6c4:SPY:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 same video",
         "claim": "S&P forward PE 18.7 vs 5yr avg 19.8 and 10yr avg 19.1; cheaper than Jan's 22x (earnings grew faster than price)",
@@ -49,10 +61,14 @@
         "lr": 1.17,
         "half_life": 120,
         "lr_eff": 1.17,
-        "age": 0
+        "age": 0,
+        "applied": false,
+        "group_n": 5,
+        "absorbed_by": "spy-3"
       },
       {
         "id": "spy-5",
+        "group": "oq3B28tS6c4:SPY:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 same video",
         "claim": "His floor call: at worst a break to 716 (-8% from highs, below a correction), then rally to year-end and next year",
@@ -61,15 +77,18 @@
         "lr": 1.1,
         "half_life": 60,
         "lr_eff": 1.1,
-        "age": 0
+        "age": 0,
+        "applied": false,
+        "group_n": 5,
+        "absorbed_by": "spy-3"
       }
     ],
     "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers \u2014 Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue).",
     "source": "market prior + video evidence"
   },
   "QQQ": {
-    "prior": 52.2,
-    "post": 56.2,
+    "prior": 40.9,
+    "post": 44.9,
     "items": [
       {
         "id": "qqq-1",
@@ -112,11 +131,12 @@
     "source": "market prior + video evidence"
   },
   "SCHD": {
-    "prior": 47.8,
-    "post": 58.9,
+    "prior": 59.1,
+    "post": 65.9,
     "items": [
       {
         "id": "schd-1",
+        "group": "oq3B28tS6c4:SCHD:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
         "claim": "Oct sector tape: consumer staples +11%, healthcare +9%, energy +10%, utilities +8% \u2014 the exact SCHD sleeve \u2014 as money rotates from AI into dividend/value sectors in stages",
@@ -125,10 +145,13 @@
         "lr": 1.34,
         "half_life": 60,
         "lr_eff": 1.34,
-        "age": 0
+        "age": 0,
+        "applied": true,
+        "group_n": 2
       },
       {
         "id": "schd-2",
+        "group": "oq3B28tS6c4:SCHD:up",
         "date": "2026-11-02",
         "source": "Adam Khoo \u2014 same video",
         "claim": "Rotation proceeds in stages (out of AI, back into AI, out again) over 1-2 years, not a one-shot",
@@ -137,7 +160,10 @@
         "lr": 1.17,
         "half_life": 90,
         "lr_eff": 1.17,
-        "age": 0
+        "age": 0,
+        "applied": false,
+        "group_n": 2,
+        "absorbed_by": "schd-1"
       }
     ],
     "resolution": "No conflict: Khoo's rotation thesis agrees with the market-odds picture (hawkish/CPI regime favors value) and with SCHD's realized 6-month path. Only tension is the oil leg (48% WTI<$90 odds), which Khoo does not address \u2014 kept out of these items.",
@@ -204,8 +230,8 @@
     "source": "market prior + video evidence"
   },
   "XLC": {
-    "prior": 28.0,
-    "post": 29.3,
+    "prior": 31.2,
+    "post": 32.6,
     "items": [
       {
         "id": "xlc-1",
@@ -236,8 +262,8 @@
     "source": "market prior + video evidence"
   },
   "XLE": {
-    "prior": 69.7,
-    "post": 72.2,
+    "prior": 58.8,
+    "post": 61.7,
     "items": [
       {
         "id": "xle-1",
@@ -572,5 +598,10 @@
     "dd": -4.0,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
+  },
+  "_meta": {
+    "generated_at": 1793620259.7465727,
+    "started_at": 1793620258.4309485,
+    "run_date": "2026-11-02"
   }
 }
