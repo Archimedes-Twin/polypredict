@@ -225,6 +225,9 @@ def latest_active(rows):
 
 # ---------- html ----------
 def esc(x): return str(x).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+SNAME = {"fed_hike":"Fed hike","cut_jul27":"Fed cut by Jul 2027","wti_dip90":"WTI dips below $90",
+         "wti_spike120":"WTI spikes above $120","iran_break":"Iran ceasefire breaks","rec27":"US recession by 2027",
+         "cpi_hot":"Hot core CPI (>=0.3%)"}
 RCLS = {"very bearish":"vbear","bearish":"bear","neutral":"neu","bullish":"bull","very bullish":"vbull"}
 CSS = ("body{background:#0d1117;color:#c9d1d9;font-family:ui-monospace,Menlo,monospace;margin:14px;font-size:14px;max-width:720px}"
  "h1{font-size:17px;color:#58a6ff;margin-bottom:4px}h2{font-size:14px;color:#8b949e;margin:22px 0 6px}"
@@ -240,6 +243,13 @@ CSS = ("body{background:#0d1117;color:#c9d1d9;font-family:ui-monospace,Menlo,mon
  ".bar b{position:absolute;top:0;height:6px;border-radius:3px}"
  "table{width:100%;border-collapse:collapse}td,th{padding:4px 6px;border-bottom:1px solid #21262d;text-align:left;font-size:12px;word-break:break-word}"
  ".up{color:#3fb950}.down{color:#f85149}.dim{color:#8b949e}"
+ "card{border:1px solid #21262d;border-radius:10px;padding:10px 12px;margin:8px 0}"
+ ".card .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}"
+ ".card .name{font-weight:bold;font-size:13px}"
+ ".card .prob{font-size:12px;padding:2px 8px;border-radius:8px;background:#1c2a3a;color:#9ecbff}"
+ ".card .basis{font-size:12.5px;color:#c9d1d9;line-height:1.55}"
+ ".card .inv{font-size:11px;color:#8b949e;margin-top:6px}"
+ ".comp{font-size:12px;color:#8b949e;margin:10px 0;line-height:1.5}"
  "@media(max-width:480px){.row{gap:6px;padding:9px 4px}.conf{min-width:0}.det{margin-left:0}}")
 
 def prob_bar(m):
@@ -278,15 +288,16 @@ def detail_html(a, V, rows):
     d = V[a]
     b = [f"<h1>{a} &mdash; <span class='tag {RCLS[d['rating']]}'>{d['rating']}</span></h1>"
          f"<div class='sub'>{d['conf']} confidence &middot; implied 3-month up-probability {d['prob_up']:.0f}% &middot; {today.isoformat()}</div>{prob_bar(d['prob_up'])}"]
-    b.append("<h2>DRIVING SIGNALS</h2><table>")
+    b.append("<h2>DRIVING SIGNALS</h2>")
     if d["signals"]:
-        b.append(f"<tr><th>signal</th><th>market odds & basis</th><th>{a} 3mo up-prob</th><th>invalidation</th></tr>")
         for s in d["signals"]:
-            b.append(f"<tr><td>{esc(s['sig'])}</td><td class='dim'>{esc(s['basis'])}</td><td>{s['prob_up']:.0f}%</td><td class='dim'>{esc(s['invalid'])}</td></tr>")
-        b.append(f"<tr><td colspan='4' class='dim'>composite: mean of {a} up-probs &rarr; {d['prob_up']:.0f}% &rarr; {d['rating']} ({d['conf']} conf)</td></tr>")
+            b.append(f"<div class='card'><div class='top'><span class='name'>{esc(SNAME.get(s['sig'], s['sig']))}</span>"
+                     f"<span class='prob'>{a} 3mo up-prob {s['prob_up']:.0f}%</span></div>"
+                     f"<div class='basis'>{esc(s['basis'])}</div>"
+                     f"<div class='inv'>&#9888; invalidation: {esc(s['invalid'])}</div></div>")
+        b.append(f"<div class='comp'>Composite: mean of {a} up-probs &rarr; {d['prob_up']:.0f}% &rarr; <b>{d['rating']}</b> ({d['conf']} confidence)</div>")
     else:
-        b.append("<tr><td class='dim'>no odds crossed rule thresholds today &mdash; held neutral</td></tr>")
-    b.append("</table>")
+        b.append("<div class='comp'>No odds crossed rule thresholds today &mdash; held neutral.</div>")
     acal = calibration(rows, asset=a)
     b.append("<h2>TRACK RECORD ON THIS ASSET</h2>")
     b.append(f"<div class='sub'>{acal[a]['n']} resolved views &middot; hit {acal[a]['hit']}% &middot; mean Brier {acal[a]['brier']}</div>"
