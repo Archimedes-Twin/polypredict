@@ -62,14 +62,14 @@ def fetch():
         e = min(fed, key=fed_when)
         hike = sum(y for m in poly_open(e) if "increase" in m.get("question","") and (y:=poly_yes(m)) is not None)
         k = fed_when(e)
-        odds["fed_hike"] = (hike, f"hike odds at {MON3[(k-1)%12]} '{str((k-1)//12)[2:]} meeting")
+        odds["fed_hike"] = (hike, f"hike odds {hike:.0f}% at {MON3[(k-1)%12]} '{str((k-1)//12)[2:]} meeting")
     for e in poly_search("Fed rate cut by"):
         if e.get("closed"): continue
         for m in poly_open(e):
             mm = re.search(r"by (\w+) (\d{4})", m.get("question",""))
             if mm and mm.group(1).lower() in MON and (y:=poly_yes(m)) is not None:
                 if (mm.group(2), mm.group(1).lower()) == ("2027","july"):
-                    odds["cut_jul27"] = (y, m.get("question",""))
+                    odds["cut_jul27"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
         break
     lads = [e for e in poly_search("WTI Crude Oil hit")
             if re.search(r"hit in \w+ \d{4}", e.get("title","")) and not e.get("closed")]
@@ -77,20 +77,20 @@ def fetch():
         e = min(lads, key=lambda x: when_key(x.get("title","")) or 99999)
         for m in poly_open(e):
             if re.search(r"\(LOW\) \$90\b", m.get("question","")) and (y:=poly_yes(m)) is not None:
-                odds["wti_dip90"] = (y, m.get("question",""))
+                odds["wti_dip90"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
             if re.search(r"\(HIGH\) \$120\b", m.get("question","")) and (y:=poly_yes(m)) is not None:
-                odds["wti_spike120"] = (y, m.get("question",""))
+                odds["wti_spike120"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
     for e in poly_search("US-Iran ceasefire"):
         if e.get("closed"): continue
         for m in poly_open(e):
             if "December 31" in m.get("question","") and (y:=poly_yes(m)) is not None:
-                odds["iran_peace_dec"] = (y, m.get("question",""))
+                odds["iran_peace_dec"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
         break
     for e in poly_search("US recession by end"):
         if e.get("closed"): continue
         for m in poly_open(e):
             if e.get("title","").strip() == "US recession by end of 2027?" and (y:=poly_yes(m)) is not None:
-                odds["rec27"] = (y, e.get("title",""))
+                odds["rec27"] = (y, f"{e.get('title','')} — market prob {y:.0f}%")
         break
     cpi = [e for e in poly_search("Core CPI MoM")
            if re.match(r"Core CPI MoM - \w+ \d{4}", e.get("title","")) and not e.get("closed")]
@@ -99,7 +99,7 @@ def fetch():
         tot = sum(y for m in poly_open(e) if (n:=re.search(r"(\d+\.\d+)%", m.get("question","")))
                   and float(n.group(1)) >= 0.3 and "or less" not in m.get("question","")
                   and (y:=poly_yes(m)) is not None)
-        odds["cpi_hot"] = (tot, e.get("title",""))
+        odds["cpi_hot"] = (tot, f"{e.get('title','')} — hot buckets sum {tot:.0f}%")
 
 # ---------- signals: theme -> (asset, probability asset rises over next 3 months) ----------
 def signals(o):
@@ -280,10 +280,10 @@ def detail_html(a, V, rows):
          f"<div class='sub'>{d['conf']} confidence &middot; implied 3-month up-probability {d['prob_up']:.0f}% &middot; {today.isoformat()}</div>{prob_bar(d['prob_up'])}"]
     b.append("<h2>DRIVING SIGNALS</h2><table>")
     if d["signals"]:
-        b.append("<tr><th>signal</th><th>market basis</th><th>up-prob</th><th>invalidation</th></tr>")
+        b.append(f"<tr><th>signal</th><th>market odds & basis</th><th>{a} 3mo up-prob</th><th>invalidation</th></tr>")
         for s in d["signals"]:
             b.append(f"<tr><td>{esc(s['sig'])}</td><td class='dim'>{esc(s['basis'])}</td><td>{s['prob_up']:.0f}%</td><td class='dim'>{esc(s['invalid'])}</td></tr>")
-        b.append(f"<tr><td colspan='4' class='dim'>composite = mean of up-probs &rarr; {d['prob_up']:.0f}% &rarr; {d['rating']} ({d['conf']} conf)</td></tr>")
+        b.append(f"<tr><td colspan='4' class='dim'>composite: mean of {a} up-probs &rarr; {d['prob_up']:.0f}% &rarr; {d['rating']} ({d['conf']} conf)</td></tr>")
     else:
         b.append("<tr><td class='dim'>no odds crossed rule thresholds today &mdash; held neutral</td></tr>")
     b.append("</table>")
