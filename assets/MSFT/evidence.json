@@ -1,0 +1,23 @@
+{
+  "asset": "MSFT",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.MSFT",
+  "prior": 50,
+  "found_in": "Adam Khoo video Oct 30",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "msft-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — Hyperscalers Crash",
+      "claim": "Named alongside hyperscalers whose negative FCF is growth capex into AI datacenters with growing operating cash flow",
+      "relation": "growth capex -> future cash flow",
+      "dir": "up",
+      "lr": 1.22,
+      "half_life": 90
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "asset": "ZROZ",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.ZROZ",
+  "evidence": [],
+  "resolution": ""
+}

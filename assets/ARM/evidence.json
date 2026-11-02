@@ -1,0 +1,23 @@
+{
+  "asset": "ARM",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.ARM",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 2",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "arm-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "Arm -50% from high; cited among hyped/hedge-fund-crowded names he refuses to touch",
+      "relation": "crowded-high-multiple unwind",
+      "dir": "down",
+      "lr": 1.22,
+      "half_life": 30
+    }
+  ]
+}

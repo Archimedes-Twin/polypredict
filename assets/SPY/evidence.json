@@ -1,0 +1,65 @@
+{
+  "asset": "SPY",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.SPY",
+  "evidence": [
+    {
+      "id": "spy-1",
+      "group": "oq3B28tS6c4:SPY:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — US Stocks Crash? Midterm Election Rally Dead? (Nov 2)",
+      "claim": "Post-midterm history: avg +8.1% over next 3 months, 95% positive (19 midterms, only 2018 negative); pre-election dips bottom Oct/early Nov seasonally",
+      "relation": "election uncertainty resolves -> risk-on flows; seasonal pattern",
+      "dir": "up",
+      "lr": 1.22,
+      "half_life": 90
+    },
+    {
+      "id": "spy-2",
+      "group": "oq3B28tS6c4:SPY:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — same video",
+      "claim": "Hedge funds de-grossed -7.8% last week, biggest in 10 years; 6 prior >5% de-grossings all coincided with S&P lows and all were up 1/3/6 months later",
+      "relation": "forced deleveraging exhausts sellers -> sell pressure dries up near bottom",
+      "dir": "up",
+      "lr": 1.22,
+      "half_life": 60
+    },
+    {
+      "id": "spy-3",
+      "group": "oq3B28tS6c4:SPY:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — same video",
+      "claim": "Q3 earnings +30.2% aggregate vs +29% expected; breadth broadening (non-Mag7 earnings growth 32% vs Mag7 22%); S&P net margin 17% (AI cost savings real)",
+      "relation": "earnings breadth + margin expansion -> index-level earnings-driven returns",
+      "dir": "up",
+      "lr": 1.34,
+      "half_life": 120
+    },
+    {
+      "id": "spy-4",
+      "group": "oq3B28tS6c4:SPY:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — same video",
+      "claim": "S&P forward PE 18.7 vs 5yr avg 19.8 and 10yr avg 19.1; cheaper than Jan's 22x (earnings grew faster than price)",
+      "relation": "below-average multiple -> less downside risk, earnings-driven upside",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 120
+    },
+    {
+      "id": "spy-5",
+      "group": "oq3B28tS6c4:SPY:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — same video",
+      "claim": "His floor call: at worst a break to 716 (-8% from highs, below a correction), then rally to year-end and next year",
+      "relation": "opinion/predictive claim",
+      "dir": "up",
+      "lr": 1.1,
+      "half_life": 60
+    }
+  ],
+  "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers — Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue)."
+}

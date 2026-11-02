@@ -1,0 +1,20 @@
+{
+  "asset": "XLV",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.XLV",
+  "evidence": [
+    {
+      "id": "xlv-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — US Stocks Crash? (Nov 2)",
+      "claim": "Healthcare +9% in Oct as rotation destination; +15% YTD; Khoo reports heavy healthcare overweight helping his portfolio",
+      "relation": "rotation inflow into defensive healthcare",
+      "dir": "up",
+      "lr": 1.22,
+      "half_life": 60
+    }
+  ],
+  "resolution": "Consistent with the existing bullish view (tight HY OAS + pricing power); no conflict."
+}

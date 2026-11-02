@@ -1,0 +1,20 @@
+{
+  "asset": "XLE",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.XLE",
+  "evidence": [
+    {
+      "id": "xle-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — US Stocks Crash? (Nov 2)",
+      "claim": "Energy +10% in Oct as a top rotation destination",
+      "relation": "rotation inflow on top of the oil supply bid",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 30
+    }
+  ],
+  "resolution": "Reinforces existing very-bullish odds-driven view; no conflict."
+}

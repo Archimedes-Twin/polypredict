@@ -1,0 +1,20 @@
+{
+  "asset": "XLP",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.XLP",
+  "evidence": [
+    {
+      "id": "xlp-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — US Stocks Crash? (Nov 2)",
+      "claim": "Consumer defensives +11% in Oct, strongest sector, as AI money rotates into staples",
+      "relation": "rotation inflow into staples",
+      "dir": "up",
+      "lr": 1.22,
+      "half_life": 60
+    }
+  ],
+  "resolution": "Consistent with defensive-rotation prior; no conflict."
+}

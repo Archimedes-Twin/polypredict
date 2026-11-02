@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 claude_run.*
 claude_fix.*
+claude_reorg.*

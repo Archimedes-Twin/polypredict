@@ -1,0 +1,32 @@
+{
+  "asset": "SCHD",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.SCHD",
+  "evidence": [
+    {
+      "id": "schd-1",
+      "group": "oq3B28tS6c4:SCHD:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — US Stocks Crash? (Nov 2)",
+      "claim": "Oct sector tape: consumer staples +11%, healthcare +9%, energy +10%, utilities +8% — the exact SCHD sleeve — as money rotates from AI into dividend/value sectors in stages",
+      "relation": "rotation inflow -> continued catch-up rally for value/dividend basket",
+      "dir": "up",
+      "lr": 1.34,
+      "half_life": 60
+    },
+    {
+      "id": "schd-2",
+      "group": "oq3B28tS6c4:SCHD:up",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — same video",
+      "claim": "Rotation proceeds in stages (out of AI, back into AI, out again) over 1-2 years, not a one-shot",
+      "relation": "staged rotation -> value catch-up repeats rather than ends",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 90
+    }
+  ],
+  "resolution": "No conflict: Khoo's rotation thesis agrees with the market-odds picture (hawkish/CPI regime favors value) and with SCHD's realized 6-month path. Only tension is the oil leg (48% WTI<$90 odds), which Khoo does not address — kept out of these items."
+}

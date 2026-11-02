@@ -1,0 +1,33 @@
+{
+  "asset": "NVDA",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.NVDA",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 2 (oq3B28tS6c4)",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "nvda-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "NVDA fwd PE 17 vs Cisco's 131x before dotcom burst; Cisco ran to +4200% before collapsing — structural valuation headroom",
+      "relation": "cheap multiple relative to prior-cycle peak -> upside risk skewed",
+      "dir": "up",
+      "lr": 1.28,
+      "half_life": 120
+    },
+    {
+      "id": "nvda-2",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "GOOGL/AMZN selling their own AI chips (TPUs) — competing with Nvidia",
+      "relation": "competition -> long-term moat erosion risk",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 180
+    }
+  ]
+}

@@ -9,9 +9,10 @@ from datetime import date, datetime, timedelta, timezone
 HOME = os.path.expanduser("~")
 SITE = os.path.join(HOME, "signals/polypredict/site")
 ARCHIVE = os.path.join(SITE, "predictions.jsonl")
-os.makedirs(os.path.join(SITE, "details"), exist_ok=True)
-os.makedirs(os.path.join(SITE, "narratives"), exist_ok=True)
-NARR = os.path.join(SITE, "narratives")
+os.makedirs(os.path.join(SITE, "details"), exist_ok=True)      # generated HTML (publish path, unchanged)
+ASSETS = os.path.join(SITE, "assets")                          # per-asset folders: assets/<A>/analysis.md ...
+NARR = os.path.join(SITE, "narratives")                        # LEGACY narrative path (temporary fallback)
+os.makedirs(ASSETS, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0"}
 GAMMA = "https://gamma-api.polymarket.com"
 BASKET = ["SPY","QQQ","SCHD","XLE","XLF","XLC","XLY","XLP","XLV","ZROZ","HYG"]
@@ -596,11 +597,44 @@ def md_lite(txt):
             out.append(f"<p>{para}</p>")
     return "<section class='narr'>" + "\n".join(out) + "</section>"
 
+NARR_SECTIONS = ("## Performance (6 months)", "## Drivers", "## Continue or revert")
+PLACEHOLDER_MARK = "<!-- analysis-placeholder"
+
+def _real_narrative(fp):
+    if not os.path.exists(fp): return False
+    with open(fp) as f: return not f.read().lstrip().startswith(PLACEHOLDER_MARK)
+
+def narrative_path(a):
+    """Narrative source for asset/watchlist ticker `a`: assets/<a>/analysis.md (placeholders don't
+    count). Temporary fallback: legacy narratives/<a>.md when the asset is not migrated yet, or when
+    the legacy file is NEWER (a writer still using the old path) - a warning is printed whenever the
+    legacy path is used."""
+    new, old = os.path.join(ASSETS, a, "analysis.md"), os.path.join(NARR, f"{a}.md")
+    rn, ro = _real_narrative(new), _real_narrative(old)
+    if ro and (not rn or os.path.getmtime(old) > os.path.getmtime(new)):
+        print(f"WARNING: narrative for {a} read from legacy path narratives/{a}.md - write "
+              f"assets/{a}/analysis.md instead", file=sys.stderr)
+        return old
+    return new if rn else None
+
 def load_narrative(a):
-    fp = os.path.join(NARR, f"{a}.md")
-    if os.path.exists(fp) and (today - date.fromtimestamp(os.path.getmtime(fp))).days <= 3:
-        with open(fp) as f: return f.read()
+    fp = narrative_path(a)
+    if fp and (today - date.fromtimestamp(os.path.getmtime(fp))).days <= 3:
+        with open(fp) as f: txt = f.read()
+        heads = tuple(l.strip() for l in txt.splitlines() if l.startswith("## "))
+        if heads != NARR_SECTIONS:
+            print(f"WARNING: {os.path.relpath(fp, SITE)} sections {list(heads)} != expected {list(NARR_SECTIONS)}",
+                  file=sys.stderr)
+        return txt
     return None
+
+def sync_folders():
+    """Refresh assets/<A>/evidence.json + views.jsonl from the master files (bayes.sync_asset_folders)."""
+    if SITE not in sys.path: sys.path.insert(0, SITE)
+    import bayes
+    with open(bayes.BELIEFS) as f: beliefs = json.load(f)
+    return bayes.sync_asset_folders(beliefs, BASKET, archive_path=ARCHIVE,
+                                    assets_dir=ASSETS, narr_dir=NARR)
 
 _RT = r"(very bearish|very bullish|bearish|bullish|neutral)"
 _PCT = r"(\d+(?:\.\d+)?)%"
@@ -838,8 +872,10 @@ def render():
             f.write(detail_html(a, d, rows))
     with open(os.path.join(SITE, "index.html"), "w") as f:
         f.write(index_html(V, rows, calibration(rows), odds, missing))
+    fs = sync_folders()                              # assets/<A>/views.jsonl now includes this run's rows
     rc1, rc2, err = push()
-    print(f"render-only: re-rendered {len(DD)} pages; view changes archived: {len(new)}; push rc={rc1}/{rc2}; {err if (rc1 or rc2) else 'pushed ok'}")
+    print(f"render-only: re-rendered {len(DD)} pages; view changes archived: {len(new)}; asset-folder files refreshed: {len(fs['written'])}; "
+          f"push rc={rc1}/{rc2}; {err if (rc1 or rc2) else 'pushed ok'}")
 
 def main():
     t0 = time.time()
@@ -865,7 +901,9 @@ def main():
         fn = f"W_{a}.html" if V[a].get("watch") else f"{a}.html"
         with open(os.path.join(SITE, "details", fn), "w") as f:
             f.write(detail_html(a, DD[a], rows+new))
+    fs = sync_folders()                              # assets/<A>/views.jsonl now includes this run's rows
     rc1, rc2, err = push()
+    print(f"asset folders: {len(fs['written'])} derived files refreshed")
     print("views: " + ", ".join(f"{a}={V[a]['rating']}({V[a]['conf']})" + ("*" if V[a].get("watch") else "") for a in V))
     print(f"odds: {len(odds)} markets; missing: {', '.join(missing) or 'none'}; evidence-adjusted: {len([a for a in V if V[a].get('bayes')])}; "
           f"view changes: {len([r for r in new if not is_raw(r)])} (+{len([r for r in new if is_raw(r)])} raw audit rows); "

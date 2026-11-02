@@ -298,6 +298,195 @@ class FailLoud(unittest.TestCase):
         self.assertEqual(P.narrative_claims(xlc), ["very bearish"])
 
 
+import shutil, tempfile, time
+
+GOOD_MD = "## Performance (6 months)\n\nup.\n\n## Drivers\n\nodds.\n\n## Continue or revert\n\nneutral.\n"
+
+
+class NarrativePathMigration(unittest.TestCase):
+    """assets/<A>/analysis.md is primary; narratives/<A>.md is a temporary fallback."""
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.saved = (P.ASSETS, P.NARR)
+        P.ASSETS, P.NARR = os.path.join(self.tmp, "assets"), os.path.join(self.tmp, "narratives")
+        os.makedirs(P.NARR)
+
+    def tearDown(self):
+        P.ASSETS, P.NARR = self.saved
+        shutil.rmtree(self.tmp)
+
+    def put(self, rel, text, age_s=0):
+        p = os.path.join(self.tmp, rel)
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, "w") as f: f.write(text)
+        t = time.time() - age_s
+        os.utime(p, (t, t))
+        return p
+
+    def load(self, a):
+        err = io.StringIO()
+        with contextlib.redirect_stderr(err):
+            txt = P.load_narrative(a)
+        return txt, err.getvalue()
+
+    def test_new_path_read(self):
+        self.put("assets/SPY/analysis.md", GOOD_MD)
+        txt, err = self.load("SPY")
+        self.assertEqual(txt, GOOD_MD)
+        self.assertEqual(err, "")
+
+    def test_legacy_fallback_when_not_migrated(self):
+        self.put("narratives/XLF.md", "legacy\n\n" + GOOD_MD)
+        txt, err = self.load("XLF")
+        self.assertTrue(txt.startswith("legacy"))
+        self.assertIn("legacy path narratives/XLF.md", err)
+
+    def test_placeholder_ignored_and_falls_back(self):
+        import bayes
+        self.put("assets/HYG/analysis.md", bayes.PLACEHOLDER)
+        self.assertEqual(self.load("HYG")[0], None)                       # placeholder only -> fallback page
+        self.put("narratives/HYG.md", "legacy\n\n" + GOOD_MD)
+        self.assertTrue(self.load("HYG")[0].startswith("legacy"))         # placeholder + legacy -> legacy
+
+    def test_new_wins_over_older_legacy(self):
+        self.put("narratives/QQQ.md", "legacy\n\n" + GOOD_MD, age_s=3600)
+        self.put("assets/QQQ/analysis.md", "new\n\n" + GOOD_MD)
+        txt, err = self.load("QQQ")
+        self.assertTrue(txt.startswith("new"))
+        self.assertEqual(err, "")
+
+    def test_newer_legacy_used_with_warning(self):    # a writer still targeting the old path
+        self.put("assets/XLE/analysis.md", "new\n\n" + GOOD_MD, age_s=3600)
+        self.put("narratives/XLE.md", "legacy\n\n" + GOOD_MD)
+        txt, err = self.load("XLE")
+        self.assertTrue(txt.startswith("legacy"))
+        self.assertIn("write assets/XLE/analysis.md", err)
+        self.assertNotIn("sections", err)
+
+    def test_watchlist_ticker_path(self):
+        self.put("assets/NVDA/analysis.md", GOOD_MD)
+        self.assertEqual(P.narrative_path("NVDA"), os.path.join(P.ASSETS, "NVDA", "analysis.md"))
+        self.assertEqual(self.load("NVDA")[0], GOOD_MD)
+
+    def test_stale_and_bad_sections(self):
+        self.put("assets/XLC/analysis.md", GOOD_MD, age_s=5 * 86400)
+        self.assertIsNone(self.load("XLC")[0])                            # >3 days old -> fallback
+        self.put("assets/XLC/analysis.md", "## Drivers\n\nonly one\n")
+        txt, err = self.load("XLC")
+        self.assertIsNotNone(txt)
+        self.assertIn("sections", err)
+
+
+class AssetFolderSync(unittest.TestCase):
+    """evidence.json / views.jsonl regenerate from master files; repeated runs are no-ops."""
+    BEL = {"assets": {"SPY": {"evidence": [dict(id="spy-1", dir="up", lr=1.2, date="2026-11-02")],
+                              "resolution": "r"}},
+           "watchlist": {"NVDA": {"prior": 50, "source": "video X", "added": "2026-11-02",
+                                  "evidence": [dict(id="nvda-1", dir="up", lr=1.28, date="2026-11-02")]}}}
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.ad, self.nd = os.path.join(self.tmp, "assets"), os.path.join(self.tmp, "narratives")
+        self.arch = os.path.join(self.tmp, "predictions.jsonl")
+        os.makedirs(self.nd)
+        self.lines = [json.dumps(dict(date="2026-11-02", asset=a, rating="neutral", prob_up=p)) + "\n"
+                      for a, p in (("SPY", 37.7), ("NVDA", 52.7), ("SPY", 44.8), ("XLY", 50.0))]
+        with open(self.arch, "w") as f: f.writelines(self.lines)
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp)
+
+    def sync(self, basket=("SPY", "XLY")):
+        return B.sync_asset_folders(self.BEL, list(basket), archive_path=self.arch,
+                                    assets_dir=self.ad, narr_dir=self.nd)
+
+    def read(self, a, name):
+        with open(os.path.join(self.ad, a, name)) as f: return f.read()
+
+    def snapshot(self):
+        out = {}
+        for root, _, files in os.walk(self.ad):
+            for fn in files:
+                p = os.path.join(root, fn)
+                with open(p, "rb") as f: out[p] = (f.read(), os.path.getmtime(p))
+        return out
+
+    def test_generation_and_content(self):
+        r = self.sync()
+        self.assertEqual(sorted(os.listdir(self.ad)), ["NVDA", "SPY", "XLY"])
+        self.assertEqual(self.read("SPY", "views.jsonl"), self.lines[0] + self.lines[2])   # verbatim, in order
+        self.assertEqual(self.read("NVDA", "views.jsonl"), self.lines[1])
+        spy = json.loads(self.read("SPY", "evidence.json"))
+        self.assertEqual((spy["kind"], spy["resolution"], spy["evidence"]),
+                         ("basket", "r", self.BEL["assets"]["SPY"]["evidence"]))
+        nv = json.loads(self.read("NVDA", "evidence.json"))
+        self.assertEqual((nv["kind"], nv["prior"], nv["found_in"]), ("watchlist", 50, "video X"))
+        self.assertEqual(json.loads(self.read("XLY", "evidence.json"))["evidence"], [])
+        self.assertEqual(sorted(r["placeholders"]), ["NVDA", "SPY", "XLY"])
+
+    def test_idempotent_no_duplicates(self):
+        self.sync()
+        snap = self.snapshot()
+        time.sleep(0.02)
+        r = self.sync()
+        self.assertEqual(r, {"written": [], "placeholders": []})
+        self.assertEqual(self.snapshot(), snap)                           # same bytes, nothing rewritten
+        for _ in range(3): self.sync()
+        self.assertEqual(self.read("SPY", "views.jsonl").count("\n"), 2)
+
+    def test_master_append_propagates_once(self):
+        self.sync()
+        extra = json.dumps(dict(date="2026-11-03", asset="SPY", rating="bearish", prob_up=40.0)) + "\n"
+        with open(self.arch, "a") as f: f.write(extra)
+        r = self.sync()
+        self.assertEqual(r["written"], [os.path.join(self.ad, "SPY", "views.jsonl")])
+        self.sync()
+        self.assertEqual(self.read("SPY", "views.jsonl"), self.lines[0] + self.lines[2] + extra)
+
+    def test_analysis_never_overwritten(self):
+        os.makedirs(os.path.join(self.ad, "SPY"))
+        with open(os.path.join(self.ad, "SPY", "analysis.md"), "w") as f: f.write(GOOD_MD)
+        with open(os.path.join(self.nd, "XLY.md"), "w") as f: f.write(GOOD_MD)   # not yet migrated
+        r = self.sync()
+        self.assertEqual(self.read("SPY", "analysis.md"), GOOD_MD)
+        self.assertNotIn("XLY", r["placeholders"])                        # leaves room for git mv
+        self.assertFalse(os.path.exists(os.path.join(self.ad, "XLY", "analysis.md")))
+
+
+class RepoLayout(unittest.TestCase):
+    """The real repo: one folder per tracked asset, derived files in sync with the masters."""
+    def test_every_tracked_asset_has_folder(self):
+        with open(B.BELIEFS) as f: bel = json.load(f)
+        for a in P.BASKET + list(bel["watchlist"]):
+            for name in ("analysis.md", "evidence.json", "views.jsonl"):
+                self.assertTrue(os.path.exists(os.path.join(P.ASSETS, a, name)), f"{a}/{name}")
+
+    def test_migrated_narratives_have_three_sections(self):
+        for a in sorted(os.listdir(P.ASSETS)):
+            fp = os.path.join(P.ASSETS, a, "analysis.md")
+            if not os.path.isfile(fp): continue
+            with open(fp) as f: txt = f.read()
+            heads = tuple(l.strip() for l in txt.splitlines() if l.startswith("## "))
+            self.assertEqual(heads, P.NARR_SECTIONS, a)
+        self.assertFalse([f for f in os.listdir(P.NARR) if f.endswith(".md")] if os.path.isdir(P.NARR) else [])
+
+    def test_views_match_master_archive(self):
+        with open(P.ARCHIVE) as f:
+            master = [l if l.endswith("\n") else l + "\n" for l in f if l.strip()]
+        for a in os.listdir(P.ASSETS):
+            vp = os.path.join(P.ASSETS, a, "views.jsonl")
+            if not os.path.isfile(vp): continue
+            with open(vp) as f: got = f.read()
+            self.assertEqual(got, "".join(l for l in master if json.loads(l)["asset"] == a), a)
+
+    def test_publish_links_unchanged(self):
+        V = {a: dict(prob_up=50.0, rating="neutral", conf="low", signals=[]) for a in ("SPY", "XLF")}
+        V["NVDA"] = dict(prob_up=50.0, rating="neutral", conf="low", signals=[], watch=True)
+        import re as _re
+        hrefs = _re.findall(r"href='([^']+)'", P.index_html(V, [], {}, {}))
+        self.assertEqual(hrefs, ["details/SPY.html", "details/XLF.html", "details/W_NVDA.html"])
+
+
 if __name__ == "__main__":
     res = unittest.main(verbosity=2, exit=False).result
     sys.exit(0 if res.wasSuccessful() else 1)

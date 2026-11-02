@@ -1,0 +1,23 @@
+{
+  "asset": "AMD",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.AMD",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 2",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "amd-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "AMD -10.88% in one day in the AI-name sell-off; retail/hedge-fund crowd unwinding",
+      "relation": "crowded-long unwind",
+      "dir": "down",
+      "lr": 1.22,
+      "half_life": 30
+    }
+  ]
+}

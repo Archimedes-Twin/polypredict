@@ -1,0 +1,23 @@
+{
+  "asset": "MU",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.MU",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 2",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "mu-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "Micron -5.3% in one day, -30% from high; hedge-fund crowded AI long, 'I don't own it, too dangerous'",
+      "relation": "crowded-long unwind -> continued downside pressure",
+      "dir": "down",
+      "lr": 1.22,
+      "half_life": 30
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "asset": "XLF",
+  "kind": "basket",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> assets.XLF",
+  "evidence": [
+    {
+      "id": "xlf-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo — US Stocks Crash? (Nov 2)",
+      "claim": "'Boring financial stocks' were green on the crash day and the crash week — named rotation destination",
+      "relation": "rotation inflow into financials",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 30
+    }
+  ],
+  "resolution": "Agrees with rotation prior (rate curve steepening + value rotation)."
+}

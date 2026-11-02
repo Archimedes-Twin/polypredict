@@ -1,0 +1,23 @@
+{
+  "asset": "SNDK",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.SNDK",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 2",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "sndk-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "SanDisk -13.47% in one day, -50% from high",
+      "relation": "crowded AI-memory unwind",
+      "dir": "down",
+      "lr": 1.22,
+      "half_life": 30
+    }
+  ]
+}

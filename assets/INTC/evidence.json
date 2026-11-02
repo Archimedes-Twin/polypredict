@@ -1,0 +1,23 @@
+{
+  "asset": "INTC",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.INTC",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 2",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "intc-1",
+      "date": "2026-11-02",
+      "source": "Adam Khoo",
+      "claim": "Intel -28% in one day after earnings, -50% from high",
+      "relation": "earnings disappointment + unwinding",
+      "dir": "down",
+      "lr": 1.26,
+      "half_life": 30
+    }
+  ]
+}

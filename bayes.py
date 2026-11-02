@@ -11,13 +11,83 @@ Correlated-evidence rule (evidence groups):
   in the output for auditing (`applied: false`, `absorbed_by: <id>`) but contribute LR 1.
   Items without a `group` stay independent (each applies its own LR, as before).
   A group whose active items point in different directions is a data error -> ValueError,
-  so bayes.py exits nonzero and predict.py refuses to publish."""
+  so bayes.py exits nonzero and predict.py refuses to publish.
+
+Per-asset folders (assets/<A>/, see assets/README.md) are synced by sync_asset_folders():
+  evidence.json  belief slice for <A> from ../inbox/beliefs.json   (derived, rewritten each run)
+  views.jsonl    <A>'s lines from predictions.jsonl, verbatim       (derived, rewritten each run)
+  analysis.md    human narrative; only a placeholder is created when missing, never overwritten
+Regeneration is from the master files every time, so repeated runs never duplicate lines."""
 import json, math, os, sys, time, urllib.request, urllib.parse, datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 BELIEFS = os.path.join(HERE, "..", "inbox", "beliefs.json")
 DETAIL = os.path.join(HERE, "detail_data.json")
 OUT = os.path.join(HERE, "bayes_data.json")
+ARCHIVE = os.path.join(HERE, "predictions.jsonl")
+ASSETS = os.path.join(HERE, "assets")
+NARR_LEGACY = os.path.join(HERE, "narratives")
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+
+# ---------- per-asset folders ----------
+ANALYSIS_SECTIONS = ("## Performance (6 months)", "## Drivers", "## Continue or revert")
+PLACEHOLDER_MARK = "<!-- analysis-placeholder"
+PLACEHOLDER = (PLACEHOLDER_MARK + ": not written yet. Replace this WHOLE file (marker line included) with "
+               "the three sections below; until then the site shows an auto-generated fallback. -->\n\n"
+               + "\n\n".join(ANALYSIS_SECTIONS) + "\n")
+
+def evidence_slice(asset, beliefs):
+    """Per-asset belief slice (derived view of beliefs.json; edit beliefs.json, not this)."""
+    w = beliefs.get("watchlist", {}).get(asset)
+    if w is not None:
+        return {"asset": asset, "kind": "watchlist", "derived": True, "generated_by": "bayes.py",
+                "source_of_truth": f"../inbox/beliefs.json -> watchlist.{asset}",
+                "prior": w.get("prior", 50), "found_in": w.get("source", ""), "added": w.get("added", ""),
+                "note": w.get("note", ""), "evidence": w.get("evidence", [])}
+    b = beliefs.get("assets", {}).get(asset, {})
+    return {"asset": asset, "kind": "basket", "derived": True, "generated_by": "bayes.py",
+            "source_of_truth": f"../inbox/beliefs.json -> assets.{asset}",
+            "evidence": b.get("evidence", []), "resolution": b.get("resolution", "")}
+
+def _write_if_changed(path, text):
+    try:
+        with open(path) as f:
+            if f.read() == text: return False
+    except FileNotFoundError:
+        pass
+    tmp = path + ".tmp"
+    with open(tmp, "w") as f: f.write(text)
+    os.replace(tmp, path)
+    return True
+
+def sync_asset_folders(beliefs, basket, archive_path=ARCHIVE, assets_dir=ASSETS, narr_dir=NARR_LEGACY):
+    """Create/refresh assets/<A>/ for every basket asset and watchlist ticker. evidence.json and
+    views.jsonl are regenerated wholesale from the master files (idempotent: identical input ->
+    identical bytes, no file rewritten). analysis.md is never overwritten; a placeholder is created
+    only if neither assets/<A>/analysis.md nor a not-yet-migrated narratives/<A>.md exists.
+    Returns {"written": [...paths], "placeholders": [...assets]}."""
+    tracked = list(dict.fromkeys(list(basket) + list(beliefs.get("watchlist", {}))))
+    lines = {}
+    if os.path.exists(archive_path):
+        with open(archive_path) as f:
+            for line in f:
+                s = line.rstrip("\n")
+                if not s.strip(): continue
+                try: a = json.loads(s).get("asset")
+                except json.JSONDecodeError: continue
+                lines.setdefault(a, []).append(s + "\n")
+    written, placeholders = [], []
+    for a in tracked:
+        d = os.path.join(assets_dir, a)
+        os.makedirs(d, exist_ok=True)
+        ev = json.dumps(evidence_slice(a, beliefs), indent=2, ensure_ascii=False) + "\n"
+        for name, text in (("evidence.json", ev), ("views.jsonl", "".join(lines.get(a, [])))):
+            if _write_if_changed(os.path.join(d, name), text):
+                written.append(os.path.join(d, name))
+        an = os.path.join(d, "analysis.md")
+        if not os.path.exists(an) and not os.path.exists(os.path.join(narr_dir, f"{a}.md")):
+            with open(an, "w") as f: f.write(PLACEHOLDER)
+            placeholders.append(a)
+    return {"written": written, "placeholders": placeholders}
 
 def yahoo6(sym):
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range=6mo&interval=1d"
@@ -101,6 +171,9 @@ def main():
     tmp = OUT + ".tmp"
     with open(tmp, "w") as f: json.dump(out, f, indent=2)
     os.replace(tmp, OUT)
+    # per-asset folders (derived views); predict.py re-syncs after it appends to the archive
+    basket = [a for a, d in detail.items() if not d.get("watch")]
+    sync_asset_folders(beliefs, basket)
 
 if __name__ == "__main__":
     main()
