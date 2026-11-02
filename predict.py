@@ -15,7 +15,7 @@ NARR = os.path.join(SITE, "narratives")                        # LEGACY narrativ
 os.makedirs(ASSETS, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0"}
 GAMMA = "https://gamma-api.polymarket.com"
-BASKET = ["SPY","QQQ","SCHD","XLE","XLF","XLC","XLY","XLP","XLV","ZROZ","HYG"]
+BASKET = ["SPY","QQQ","SCHD","XLE","XLF","XLC","XLY","XLP","XLV","ZROZ","HYG","GLD","IBIT"]
 HORIZON = 90
 
 # ---------- odds helpers ----------
@@ -133,10 +133,10 @@ CLAMP_LO, CLAMP_HI = 1.0, 99.0
 RULES = [
     ("fed_hike", "fed_hike", None,
      [(("SCHD",), [(0, 0), (35, 50), (55, 50), (100, 100)]),
-      (("QQQ", "XLC"), [(0, 100), (35, 50), (55, 50), (100, 0)])],
+      (("QQQ", "XLC", "GLD", "IBIT"), [(0, 100), (35, 50), (55, 50), (100, 0)])],
      45, "revises if hike odds climb over 55%", "revises if hike odds fall under 45%"),
     ("cut_jul27", "cut_jul27", None,
-     [(("ZROZ", "QQQ"), [(50, 50), (100, 100)]),
+     [(("ZROZ", "QQQ", "GLD", "IBIT"), [(50, 50), (100, 100)]),
       (("SCHD",), [(50, 50), (100, 0)])],
      50, None, "revises if cut-by-July-2027 odds fall under 40%"),
     ("wti_dip90", "wti_dip90", None,
@@ -148,14 +148,17 @@ RULES = [
      15, None, "revises if spike-over-$120 odds fall under 10%"),
     ("iran_break", "iran_peace_dec", lambda p: 100 - p,   # x = ceasefire-BREAK odds
      [(("XLE",), [(55, 50), (100, 90)]),
-      (("SPY",), [(55, 50), (100, 20)])],
+      (("SPY",), [(55, 50), (100, 20)]),
+      (("GLD",), [(55, 50), (100, 85)])],
      55, None, "revises if ceasefire-hold odds recover over 55%"),
     ("rec27", "rec27", None,
-     [(("ZROZ", "XLV"), [(45, 50), (100, 90)]),
-      (("XLF", "HYG"), [(0, 70), (25, 50), (45, 50), (100, 10)])],
+     [(("ZROZ", "XLV", "GLD"), [(45, 50), (100, 85)]),
+      (("XLF", "HYG", "IBIT"), [(0, 70), (25, 50), (45, 50), (100, 10)])],
      35, "revises if rec-by-2027 odds climb over 35%", "revises if rec-by-2027 odds fall under 35%"),
     ("cpi_hot", "cpi_hot", None,
-     [(("QQQ", "XLC"), [(55, 50), (100, 15)])],
+     [(("QQQ", "XLC"), [(55, 50), (100, 15)]),
+      (("GLD",), [(55, 50), (100, 85)]),
+      (("IBIT",), [(55, 50), (100, 70)])],
      55, None, "revises if hot-CPI odds fall under 45%"),
 ]
 EXPECTED_MARKETS = [r[1] for r in RULES]
