@@ -1,11 +1,11 @@
 ## Performance (6 months)
 
-XLC is the basket's worst performer: **-14.4%** over six months, with **no relief in the last 30 days (-10.0%)**. Peak 117.38 on May 7, low 99.90 on Oct 30 — the sector closed at its window bottom. The drawdown (-14.9%) has been grindy rather than eventful: steady de-rating, not a crash.
+XLC remains the basket's worst performer: **-13.2%** over six months with **-9.7% in the last 30 days**. Peak 117.38 on May 7, trough 99.90 on Oct 30 — the sector closed at 100.79, barely off its window bottom. The de-rating has been grindy, not eventful.
 
 ## Drivers
 
-Telecom and media are long-duration businesses with weak pricing power — the worst possible combination in a hawkish regime. The driver is policy-path odds: **72% odds of a December hike**. Higher-for-longer compresses the multiple on businesses whose cash flows are back-loaded and whose subscribers won't absorb pass-through inflation (XLY-style consumer stress compounds it).
+The odds leg is policy-path: **74% December hike odds** map to a 28.9% up-prob — long-duration content businesses with weak pricing power are the worst combination in a hawkish regime. Video evidence mostly reinforces it: communication services was October's worst sector (-12.25%, rotation outflow, LR 1.20 fresh) and a new structural leg from Oct-14 — consumer AI agents disintermediating ad-funded search/marketplaces (Meta's News/Muse app #1 on both US stores; display ads lose value when agents, not humans, browse) adds a down-direction claim at LR 1.20 with a 180-day half-life (decayed to 1.18). The offsetting up-leg is real: hyperscaler fundamentals intact — GOOGL rev +25%/op income +30%, META +11% ex-fine (LR 1.28, 90d).
 
 ## Continue or revert
 
-Odds **agree with the trend — bearish continuation** (composite up-prob 28%, high confidence). There is no offsetting leg on XLC today: the July-2027 cut odds (52%) relief leg applies to QQQ/SCHD/ZROZ mappings, not here, and it sits beyond this 3-month window anyway. Invalidation: December-hike odds falling under 45% would flip this view — the honest read is that the only thing that rescues XLC is the Fed contradicting the crowd.
+**Very bearish (high confidence): posterior 26.7 vs prior 28.9** — the evidence made it worse, not better. The conflict resolves on horizon: fundamentals pay out over quarters, the 90-day window is dominated by the hike leg plus the observed outflow, and the agentic-disintermediation risk (180d decay) will not expire inside the window. Invalidation: December-hike odds falling under 45%. Revisit in Q1-2027 when the TPU-inventory cash returns and hike risk rolls off.

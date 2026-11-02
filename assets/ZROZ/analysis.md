@@ -1,11 +1,11 @@
 ## Performance (6 months)
 
-ZROZ fell **-6.5%** over six months — a brutal path: peak 65.57 on Jun 24, trough 52.77 on Oct 7, a **-19.5% drawdown** inside the window as yields climbed all summer. It then snapped **+8.3% in the last 30 days** as long-end yields turned lower.
+ZROZ fell **-4.4%** over six months on a brutal path: peak 65.57 on Jun 24, trough 52.77 on Oct 7 — a **-19.5% drawdown** as yields climbed all summer — then snapped **+11.7% in the last 30 days** as long-end yields turned lower. Last: 59.10.
 
 ## Drivers
 
-Long-duration Treasuries are pure duration + policy-path convexity. The dominant odds driver: **52% for a Fed rate cut by the July 2027 meeting**. That cuts both ways for ZROZ — a cut reprices the long end violently upward, but ZROZ has also been the victim of the opposite trade (sticky term premium, re-tightening Fed) all summer.
+The single odds leg is the easing tail: **51% odds of a Fed cut by the July 2027 meeting** map to a 51.0% up-prob — coin-flip relief. The recession-convexity leg is unavailable (rec-2027 market missing from today's basket; visible index warning). Video evidence now pushes the other way: the Sep-14 long-rate mechanism — long yield ≈ inflation + real GDP (3.4% + 1.5% = 4.9%, heading toward 5–5.5%), and the Fed controls only the short rate, so a hot-inflation regime mechanically drags the long end up regardless of Fed policy (LR 1.30, decayed to 1.22 at 49 days).
 
 ## Continue or revert
 
-Odds **contradict the 6-month trend — a reversal is the call, and it has started**: the +8.3% month is exactly the shape a cut-prone path produces. Evidence: cut-by-July 52% maps to a 76% ZROZ up-prob (composite very bullish, high confidence). Invalidation: cut-by-July-2027 odds falling under 40% kills the reversal thesis and the summer downtrend resumes. The asymmetry favors holding it: recession odds (31.5%) add a second, unpriced convexity payoff.
+**Neutral (low confidence): posterior 46.1 vs prior 51.0 — bearish-leaning.** Yesterday's very-bullish reversal thesis was priced off 76% cut-probability mapping; today the cut odds sit at a bare 51% and the Khoo mechanism argues the long end keeps grinding up even if the Fed never moves. His own counterpoint — 5% yields are historically normal — protects equities, not 20-year bond prices. Invalidation: cut-by-July odds rising over ~60% would restore the bullish convexity leg; under 40% the summer downtrend resumes.

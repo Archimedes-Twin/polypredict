@@ -1,11 +1,11 @@
 ## Performance (6 months)
 
-SCHD returned **+12.3%** over six months (31.52 on May 4 to 35.78 on Oct 30) and **+10.0% in the last 30 days**, closing at its window high — dividend-value outperforming a flat SPY by ~8pp while QQQ chopped around zero.
+SCHD is **+14.0%** over six months (31.52 on May 4 → 35.92 last, the closing print equal to the window high on Nov 2) and **+9.8% in the last 30 days** — dividend-value outperforming SPY by ~8pp while QQQ chopped around zero.
 
 ## Drivers
 
-Two legs offset in the odds model, but the realized gain has concrete sources: an energy complex (CVX/COP/EOG) riding the oil supply shock, healthcare pricing power (MRK/AMGN), and the rate-driven rotation out of growth into cash-generative value — the 72% December-hike odds are SCHD's friend, the 52% July-2027 cut odds its enemy, which is why the composite sits neutral.
+The odds legs split by regime: hawkish is friendly — **74% Dec-hike odds map to a 71.1% SCHD up-prob** (cash-generative value wins while the Fed stays tight); the **51% July-2027 cut odds** (49.0) and **63% odds WTI dips below $90 in November** (44.7 on the energy sleeve) pull it back toward neutral, averaging a 54.9 prior. Video evidence then tips it bullish: the October rotation into exactly SCHD's sleeve — staples +11%, healthcare +9%, energy +10%, utilities +8% — is a verified tape fact at LR 1.34 (strongest in the SCHD group; applied at age 0).
 
 ## Continue or revert
 
-**Neutral by construction (up-probs 72% vs 24% averaging 48%)** — but the risk is asymmetric, not symmetric: the energy leg of SCHD lives or dies with crude, and WTI dipping under $90 in November trades at a coin-flip 48%. If dip odds climb past 55%, this view flips bearish on the oil contribution even if the Fed leg stays intact; if hike odds fall under 45%, the rotation leg fades. A grind-higher path continues only while both hawkish Fed AND bid crude hold — one driver dying doesn't make this neutral, it makes it negative.
+**Bullish (low confidence): posterior 62.0 vs prior 54.9**, agreeing with the realized uptrend. No conflict to resolve — rotation evidence and the hawkish-odds picture point the same way. The asymmetric risk is crude: if dip-under-$90 odds climb past 55% the energy leg flips this bearish regardless of the Fed leg; if hike odds fall under 45% the value-rotation bid fades. Bullish holds only while hawkish Fed AND bid crude persist.
