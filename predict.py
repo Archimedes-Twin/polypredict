@@ -317,52 +317,146 @@ SNAME = {"fed_hike":"Fed hike","cut_jul27":"Fed cut by Jul 2027","wti_dip90":"WT
          "wti_spike120":"WTI spikes above $120","iran_break":"Iran ceasefire breaks","rec27":"US recession by 2027",
          "cpi_hot":"Hot core CPI (>=0.3%)"}
 RCLS = {"very bearish":"vbear","bearish":"bear","neutral":"neu","bullish":"bull","very bullish":"vbull"}
-CSS = ("body{background:#0d1117;color:#c9d1d9;font-family:ui-monospace,Menlo,monospace;margin:14px;font-size:14px;max-width:720px}"
- "h1{font-size:17px;color:#58a6ff;margin-bottom:4px}h2{font-size:14px;color:#8b949e;margin:22px 0 6px}"
- ".sub{color:#8b949e;font-size:12px;margin-bottom:10px}"
- ".row{display:flex;align-items:center;gap:8px;padding:10px 8px;border-bottom:1px solid #21262d;flex-wrap:wrap}"
- ".asset{font-weight:bold;min-width:58px}.tag{padding:3px 8px;border-radius:10px;font-size:12px}"
- ".vbear{background:#5c1c1c;color:#ff9191}.bear{background:#3a2020;color:#f0a0a0}"
- ".neu{background:#222;color:#bbb}.bull{background:#1e3a24;color:#8fd69a}.vbull{background:#14502a;color:#7dff9e}"
- ".conf{font-size:11px;color:#8b949e;min-width:52px}.det{margin-left:auto}"
- ".det a{color:#58a6ff;border:1px solid #30363d;border-radius:8px;padding:4px 10px;text-decoration:none;font-size:12px}"
- ".bar{height:6px;background:#21262d;border-radius:3px;position:relative;flex:1 1 130px;min-width:110px;max-width:220px}"
- ".bar i{position:absolute;left:50%;top:-2px;width:2px;height:10px;background:#484f58}"
- ".bar b{position:absolute;top:0;height:6px;border-radius:3px}"
- "table{width:100%;border-collapse:collapse}td,th{padding:4px 6px;border-bottom:1px solid #21262d;text-align:left;font-size:12px;word-break:break-word}"
- ".up{color:#3fb950}.down{color:#f85149}.dim{color:#8b949e}"
- "card{border:1px solid #21262d;border-radius:10px;padding:10px 12px;margin:8px 0}"
- ".card .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}"
- ".card .name{font-weight:bold;font-size:13px}"
- ".card .prob{font-size:12px;padding:2px 8px;border-radius:8px;background:#1c2a3a;color:#9ecbff}"
- ".card .basis{font-size:12.5px;color:#c9d1d9;line-height:1.55}"
- ".card .inv{font-size:11px;color:#8b949e;margin-top:6px}"
- ".comp{font-size:12px;color:#8b949e;margin:10px 0;line-height:1.5}"
- "@media(max-width:480px){.row{gap:6px;padding:9px 4px}.conf{min-width:0}.det{margin-left:0}}")
+# Template layer: dark, mobile-first, system fonts only, inline CSS, no JS / external assets.
+CSS = """
+:root{--bg:#0a0d13;--sf:#11161f;--sf2:#171d29;--bd:#222a37;--bd2:#1a212c;--tx:#e7eaf0;--tx2:#c9cfda;--mu:#8a93a6;
+--ac:#7aa2f7;--vbull:#34d17a;--bull:#86cf9c;--neu:#97a0b0;--bear:#eea0a0;--vbear:#ff6464;--rk:var(--neu)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:24px 18px 40px}
+a{color:var(--ac)}
+h1{font-size:23px;font-weight:700;letter-spacing:-.015em;margin:0 0 4px;line-height:1.25}
+h2{font-size:12px;font-weight:650;letter-spacing:.09em;color:var(--mu);margin:32px 0 10px;text-transform:uppercase}
+.sub{color:var(--mu);font-size:13px;line-height:1.5}
+.num,.pct,.tbl td{font-variant-numeric:tabular-nums}
+.up{color:var(--vbull)}.down{color:var(--vbear)}.dim{color:var(--mu)}
+.rk-vbull{--rk:var(--vbull)}.rk-bull{--rk:var(--bull)}.rk-neu{--rk:var(--neu)}.rk-bear{--rk:var(--bear)}.rk-vbear{--rk:var(--vbear)}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:750;letter-spacing:.07em;white-space:nowrap;border:1px solid;line-height:1.4}
+.pill.vbull{color:#03200e;background:var(--vbull);border-color:var(--vbull)}
+.pill.bull{color:var(--bull);background:rgba(134,207,156,.11);border-color:rgba(134,207,156,.38)}
+.pill.neu{color:var(--neu);background:rgba(151,160,176,.09);border-color:rgba(151,160,176,.3)}
+.pill.bear{color:var(--bear);background:rgba(238,160,160,.11);border-color:rgba(238,160,160,.38)}
+.pill.vbear{color:#2b0505;background:var(--vbear);border-color:var(--vbear)}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.back{display:inline-block;font-size:13px;text-decoration:none;margin-bottom:16px;color:var(--mu)}
+.back:hover{color:var(--ac)}
+.list{display:flex;flex-direction:column;gap:8px}
+.row{background:var(--sf);border:1px solid var(--bd);border-left:3px solid var(--rk);border-radius:12px;padding:12px 14px}
+.rh{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tk{font-weight:750;font-size:16px;letter-spacing:.01em;min-width:58px}
+.conf{font-size:12.5px;color:var(--mu)}
+.det{margin-left:auto;font-size:13px;font-weight:600;text-decoration:none;padding:6px 12px;border:1px solid var(--bd);border-radius:8px;background:var(--sf2);white-space:nowrap;color:var(--ac)}
+.det:hover{border-color:var(--ac)}
+.rb{display:flex;align-items:center;gap:12px;margin-top:10px}
+.bar{position:relative;flex:1 1 auto;height:6px;background:#1b2230;border-radius:3px;min-width:0}
+.bar i{position:absolute;left:50%;top:-3px;width:1px;height:12px;background:#3b4558}
+.bar b{position:absolute;top:0;height:6px;border-radius:3px;background:var(--rk)}
+.pct{font-size:13px;font-weight:650;white-space:nowrap;min-width:64px;text-align:right}
+.prior{margin-top:7px;font-size:12.5px;color:var(--mu)}
+.prior b{color:var(--tx);font-weight:650}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin:10px 0}
+.hero{border-left:3px solid var(--rk);padding:16px 18px}
+.hero h1{font-size:26px;margin:0}
+.big{font-size:30px;font-weight:750;letter-spacing:-.02em;line-height:1.1}
+.kv{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:10px 0 10px}
+.kv .lbl{font-size:12.5px;color:var(--mu)}
+.hero .bar{margin:4px 0 12px}
+.narr p{margin:6px 0 14px;line-height:1.68;color:var(--tx2)}
+.narr b{color:var(--tx)}
+.narr h2:first-child{margin-top:26px}
+.pp{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:2px 0 10px}
+.pp .side{display:flex;flex-direction:column}
+.pp .side span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--mu)}
+.pp .arr{font-size:22px;color:var(--mu)}
+.note{font-size:13px;color:var(--mu);line-height:1.6;margin:8px 0}
+.note b{color:var(--tx2)}
+.ev{border-left:3px solid var(--bd)}
+.ev.up{border-left-color:var(--vbull)}.ev.down{border-left-color:var(--vbear)}
+.ct{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.badge{font-size:11.5px;font-weight:650;padding:2px 9px;border-radius:6px;background:var(--sf2);color:var(--tx2);border:1px solid var(--bd);white-space:nowrap}
+.badge.up{color:var(--vbull)}.badge.down{color:var(--vbear)}
+.ctitle{font-weight:650;font-size:14.5px}
+.claim{font-size:14px;line-height:1.58;color:var(--tx)}
+.rel{font-size:12.5px;color:var(--mu);margin-top:8px;line-height:1.5}
+.inv{font-size:12.5px;color:var(--mu);margin-top:10px;padding-top:9px;border-top:1px solid var(--bd2);line-height:1.5}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 14px;margin-top:12px;padding-top:11px;border-top:1px solid var(--bd2)}
+.meta div{min-width:0}
+.meta span{display:block;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--mu);margin-bottom:1px}
+.meta b{font-weight:550;font-size:13px;color:var(--tx2)}
+.meta .w2{grid-column:span 2}.meta .w3{grid-column:1/-1}
+.tblc{padding:4px 6px}
+.tbl{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13.5px}
+.tbl th{text-align:left;color:var(--mu);font-weight:650;font-size:11px;text-transform:uppercase;letter-spacing:.07em;padding:9px 10px;border-bottom:1px solid var(--bd)}
+.tbl td{padding:9px 10px;border-bottom:1px solid var(--bd2)}
+.tbl tr:last-child td{border-bottom:0}
+.odds{list-style:none;margin:0;padding:4px 0}
+.odds li{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--bd2)}
+.odds li:last-child{border-bottom:0}
+.odds .q{flex:1 1 auto;min-width:0;font-size:13.5px;color:var(--tx2);line-height:1.45}
+.odds .v{font-weight:650;font-size:13.5px;white-space:nowrap}
+.cv{border-left:3px solid var(--rk)}
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--bd);font-size:12px;color:var(--mu);line-height:1.6}
+@media (max-width:720px){
+.wrap{padding:16px 12px 32px}
+h1{font-size:20px}.hero h1{font-size:22px}
+h2{margin:26px 0 8px}
+.row{padding:12px}
+.rh{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"tk pl dt" "cf cf cf";gap:6px 10px}
+.rh .tk{grid-area:tk;min-width:0}.rh .pill{grid-area:pl;justify-self:start}.rh .det{grid-area:dt;margin-left:0}.rh .conf{grid-area:cf}
+.pct{min-width:0}
+.card{padding:12px 13px}.hero{padding:14px}
+.big{font-size:26px}
+.meta{grid-template-columns:repeat(2,minmax(0,1fr))}.meta .w2,.meta .w3{grid-column:1/-1}
+.tbl{font-size:12.5px}.tbl th,.tbl td{padding:8px 6px}
+.odds li{padding:10px 12px}
+}
+@media (max-width:370px){
+.rh{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"tk dt" "pl cf"}
+.rh .conf{justify-self:end;text-align:right}
+.tk{font-size:15px}
+}
+"""
+LEAN_W = {"very bearish":"VERY BEARISH","bearish":"BEARISH","bullish":"BULLISH","very bullish":"VERY BULLISH"}
+def dword(rating, p):
+    """Display-only direction word; the neutral band reads NEUTRAL at ~50% else NEARLY NEUTRAL."""
+    if rating in LEAN_W: return LEAN_W[rating]
+    return "NEUTRAL" if p is None or round(p) == 50 else "NEARLY NEUTRAL"
+
+def pill(rating, p):
+    return f"<span class='pill {RCLS.get(rating, 'neu')}'>{dword(rating, p)}</span>"
+
+def pct(x): return f"{x:.0f}%"
+
+def prior_line(d):
+    """'market prior raw% -> posterior%' for bayes-adjusted basket rows; watchlist uses a neutral prior."""
+    if not d.get("bayes") or d.get("prior") is None: return ""
+    lab = "neutral prior" if d.get("watch") else "market prior"
+    return f"<div class='prior num'>{lab} {pct(d['prior'])} &rarr; <b>{pct(d['prob_up'])}</b></div>"
 
 def prob_bar(m):
-    w = abs(m-50)
-    side = "left:50%" if m >= 50 else f"left:{50-w}%"
-    col = "#f85149" if m < 42 else ("#8fd69a" if m > 58 else "#8b8b8b")
-    return f"<div class='bar'><i></i><b style='{side};width:{w}%;background:{col}'></b></div>"
+    w = round(abs(m-50), 1)
+    side = "left:50%" if m >= 50 else f"left:{round(50-w, 1)}%"
+    return f"<div class='bar' title='up-probability {m:.0f}%'><i></i><b style='{side};width:{w}%'></b></div>"
 
 def page(title, body, back=False):
-    h = [f"<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
-         f"<title>{esc(title)}</title><style>{CSS}</style></head><body>"]
-    if back: h.append("<a href='../' style='color:#58a6ff'>&larr; all assets</a>")
+    h = [f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
+         f"<meta name='color-scheme' content='dark'><meta name='theme-color' content='#0a0d13'>"
+         f"<title>{esc(title)}</title><style>{CSS}</style></head><body><main class='wrap'>"]
+    if back: h.append("<a class='back' href='../'>&larr; All assets</a>")
     h.append(body)
-    h.append(f"<p class='sub'>generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} &mdash; Polymarket Gamma API odds; rules engine + calibration history in predictions.jsonl</p></body></html>")
+    h.append(f"<footer class='foot'>last updated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} &middot; Polymarket Gamma API odds &rarr; rules engine &rarr; Bayesian video-evidence update &middot; calibration history in predictions.jsonl</footer></main></body></html>")
     return "\n".join(h)
 
 def md_lite(txt):
     out = []
     for block in [x.strip() for x in txt.split("\n\n") if x.strip()]:
         if block.startswith("## "):
-            out.append(f"<h2>{esc(block[3:].strip())}</h2>")
+            out.append(f"<h2>{esc(block[3:].strip().upper())}</h2>")
         else:
             para = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", esc(block)).replace("\n", " ")
-            out.append(f"<p style='line-height:1.6;margin:8px 0'>{para}</p>")
-    return "\n".join(out)
+            out.append(f"<p>{para}</p>")
+    return "<section class='narr'>" + "\n".join(out) + "</section>"
 
 def load_narrative(a):
     fp = os.path.join(NARR, f"{a}.md")
@@ -391,78 +485,130 @@ def fallback_narrative(a, dd):
     ana = f"## Continue or revert\n\n{dd['verdict']} {ev}"
     return perf + "\n\n" + drivers + "\n\n" + ana
 
+def asset_row(t, d, href):
+    """One asset per row: ticker, direction word, confidence, Details link; bar + up-prob; prior->posterior."""
+    rc = RCLS.get(d["rating"], "neu")
+    return (f"<div class='row rk-{rc}'><div class='rh'><span class='tk'>{esc(t)}</span>{pill(d['rating'], d['prob_up'])}"
+            f"<span class='conf'>{esc(d['conf'])} confidence</span><a class='det' href='{href}'>Details &rarr;</a></div>"
+            f"<div class='rb'>{prob_bar(d['prob_up'])}<span class='pct'>up {pct(d['prob_up'])}</span></div>"
+            f"{prior_line(d)}</div>")
+
 def index_html(V, rows, cal, o):
-    b = [f"<h1>Polymarket &#8594; ETF views</h1><div class='sub'>{today.isoformat()} &middot; 3-month horizon &middot; crowd odds mapped through auditable rules, then updated by macro-video evidence (Bayesian)</div>"]
+    b = [f"<header><h1>Polymarket &rarr; ETF views</h1><div class='sub'>{today.isoformat()} &middot; 3-month horizon &middot; "
+         f"crowd odds mapped through auditable rules, then updated by macro-video evidence (Bayesian)</div></header>"]
+    b.append("<h2>ETF BASKET</h2><div class='list'>")
     for a in [x for x in BASKET if x in V]:
-        d = V[a]
-        prior = f"<span class='conf'>prior {d['prior']:.0f}%</span>" if d.get("bayes") else ""
-        b.append(f"<div class='row'><span class='asset'>{a}</span><span class='tag {RCLS[d['rating']]}'>{d['rating']}</span>"
-                 f"{prior}<span class='conf'>{d['conf']} conf</span>{prob_bar(d['prob_up'])}"
-                 f"<span class='det'><a href='details/{a}.html'>details</a></span></div>")
+        b.append(asset_row(a, V[a], f"details/{a}.html"))
+    b.append("</div>")
     W = [t for t in V if V[t].get("watch")]
     if W:
-        b.append("<h2>VIDEO-EVIDENCE WATCHLIST</h2><div class='sub'>stocks named in tracked macro videos &mdash; neutral prior updated by video evidence only</div>")
+        b.append("<h2>VIDEO-EVIDENCE WATCHLIST</h2><div class='sub' style='margin:-4px 0 10px'>stocks named in tracked macro videos "
+                 "&mdash; neutral prior updated by video evidence only</div><div class='list'>")
         for t in sorted(W):
-            d = V[t]
-            b.append(f"<div class='row'><span class='asset'>{t}</span><span class='tag {RCLS[d['rating']]}'>{d['rating']}</span>"
-                     f"<span class='conf'>evidence</span>{prob_bar(d['prob_up'])}"
-                     f"<span class='det'><a href='details/W_{t}.html'>details</a></span></div>")
-    b.append("<h2>CALIBRATION (resolved views, non-neutral)</h2><table><tr><th>asset</th><th>n</th><th>hit%</th><th>mean Brier</th></tr>")
+            b.append(asset_row(t, V[t], f"details/W_{t}.html"))
+        b.append("</div>")
+    b.append("<h2>CALIBRATION &middot; RESOLVED NON-NEUTRAL VIEWS</h2><div class='card tblc'><table class='tbl'>"
+             "<tr><th>asset</th><th>n</th><th>hit</th><th>Brier</th></tr>")
     for k, c in sorted(cal.items(), key=lambda kv: -kv[1]["n"]):
-        b.append(f"<tr><td>{k}</td><td>{c['n']}</td><td>{c['hit']}%</td><td>{c['brier']}</td></tr>")
+        b.append(f"<tr><td><b>{esc(k)}</b></td><td>{c['n']}</td><td>{c['hit']}%</td><td>{c['brier']}</td></tr>")
     if not cal: b.append("<tr><td colspan='4' class='dim'>nothing resolved yet &mdash; views resolve 90 days after issuance</td></tr>")
-    b.append("</table>")
-    b.append("<h2>TODAY'S ODDS BASKET</h2><table><tr><th>market</th><th>prob</th></tr>")
+    b.append("</table></div>")
+    b.append("<h2>TODAY'S ODDS BASKET</h2><div class='card' style='padding:0'><ul class='odds'>")
     for k, (val, lbl) in sorted(o.items()):
-        b.append(f"<tr><td>{esc(lbl)}</td><td>{val:.1f}%</td></tr>")
-    b.append("</table>")
+        b.append(f"<li><span class='q'>{esc(lbl)}</span><span class='v num'>{val:.1f}%</span></li>")
+    if not o: b.append("<li><span class='q dim'>no odds cached</span></li>")
+    b.append("</ul></div>")
     return page("Polymarket -> ETF views", "\n".join(b))
 
+def ev_card(it, be):
+    """Evidence card: direction, claim, source / title / date / LR / age / decay."""
+    up = it.get("dir") == "up"
+    src, _, title = str(it.get("source", "")).partition("—")
+    src, title = src.strip() or "unknown", title.strip()
+    title = esc(title or str(be.get("found_in") or "").strip()) or "&mdash;"
+    hl = it.get("half_life", 60); age = it.get("age", 0)
+    w = 0.5 ** (age / hl) if hl else 0
+    return (f"<div class='card ev {'up' if up else 'down'}'><div class='ct'>"
+            f"<span class='badge {'up' if up else 'down'}'>{'&#9650; supports rise' if up else '&#9660; supports fall'}</span>"
+            f"<span class='badge num'>LR {it.get('lr_eff', it.get('lr'))}</span></div>"
+            f"<div class='claim'>{esc(it.get('claim',''))}</div>"
+            + (f"<div class='rel'>causal link: {esc(it['relation'])}</div>" if it.get("relation") else "") +
+            f"<div class='meta'><div><span>source</span><b>{esc(src)}</b></div><div class='w2'><span>title</span><b>{title}</b></div>"
+            f"<div><span>date</span><b class='num'>{esc(it.get('date','?'))}</b></div>"
+            f"<div><span>LR raw &rarr; effective</span><b class='num'>{it.get('lr')} &rarr; {it.get('lr_eff', it.get('lr'))}</b></div>"
+            f"<div><span>age</span><b class='num'>{age}d</b></div>"
+            f"<div class='w3'><span>decay</span><b class='num'>half-life {hl}d &middot; weight {w*100:.0f}%</b></div></div></div>")
+
 def detail_html(a, dd, rows):
-    pri = f" &middot; market prior {dd['prior']:.0f}%" if dd.get("prior") is not None else ""
-    b = [f"<h1>{a} &mdash; <span class='tag {RCLS[dd['rating']]}'>{dd['rating']}</span></h1>"
-         f"<div class='sub'>{dd['conf']} confidence &middot; 3-month up-probability {dd['prob_up']:.0f}%{pri} &middot; trend: {dd['trend']} &middot; {today.isoformat()}</div>{prob_bar(dd['prob_up'])}"]
+    rc = RCLS.get(dd["rating"], "neu")
+    pf = dd.get("perf") or {}
+    perf_bits = (f" &middot; 6m {pf['ret6']:+.1f}%" if pf.get("ret6") is not None else "") + \
+                (f" &middot; 30d {pf['ret1']:+.1f}%" if pf.get("ret1") is not None else "")
+    b = [f"<header class='card hero rk-{rc}'><div class='top'><h1>{esc(a)}</h1>{pill(dd['rating'], dd['prob_up'])}"
+         f"<span class='conf'>{esc(dd['conf'])} confidence</span></div>"
+         f"<div class='kv'><span class='big num'>{pct(dd['prob_up'])}</span><span class='lbl'>probability of rising over 3 months</span></div>"
+         f"{prob_bar(dd['prob_up'])}{prior_line(dd)}"
+         f"<div class='sub' style='margin-top:6px'>trend: {esc(dd['trend'])}{perf_bits} &middot; {today.isoformat()}"
+         f"{' &middot; video-evidence watchlist' if dd.get('watch') else ''}</div></header>"]
+    # 1) narrative first
     b.append(md_lite(load_narrative(a) or fallback_narrative(a, dd)))
+    # 2) Bayesian update
     be = BAY.get(a)
+    lab = "NEUTRAL PRIOR" if dd.get("watch") else "MARKET PRIOR"
+    b.append(f"<h2>BAYESIAN UPDATE &middot; {lab} &rarr; POSTERIOR</h2>")
     if be:
-        b.append("<h2>BAYESIAN UPDATE &mdash; MARKET PRIOR &#8594; POSTERIOR</h2>")
-        b.append(f"<div class='comp'>Prior {be['prior']:.0f}% &rarr; posterior {be['post']:.0f}%. "
-                 f"Posterior odds = prior odds &times; likelihood ratios of video facts, each decayed by half-life. "
-                 f"Sources: {esc(', '.join(sorted({it['source'].split('—')[0].strip() for it in be['items']}))) or 'no active evidence'}.</div>")
+        srcs = sorted({str(it.get('source','')).split('—')[0].strip() for it in be['items']} - {""})
+        b.append(f"<div class='card'><div class='pp'><div class='side'><span>{lab.lower()}</span><b class='big num dim'>{pct(be['prior'])}</b></div>"
+                 f"<div class='arr'>&rarr;</div><div class='side'><span>posterior</span><b class='big num'>{pct(be['post'])}</b></div>"
+                 f"{pill(rating_of(be['post']), be['post'])}</div>"
+                 f"<div class='note'>Posterior odds = prior odds &times; likelihood ratios of video facts, each decayed by its half-life. "
+                 f"{len(be['items'])} active evidence item{'s' if len(be['items']) != 1 else ''}"
+                 f" &middot; sources: {esc(', '.join(srcs)) or 'no active evidence'}.</div>"
+                 + (f"<div class='note' style='border-top:1px solid var(--bd2);padding-top:10px'><b>Conflict resolution:</b> {esc(be['resolution'])}</div>"
+                    if be.get("resolution") else "") + "</div>")
         for it in be["items"]:
-            cls = "up" if it["dir"] == "up" else "down"
-            b.append(f"<div class='card'><div class='top'><span class='name {cls}'>{'supports rise' if it['dir']=='up' else 'supports fall'} &middot; lr {it['lr_eff']}</span>"
-                     f"<span class='prob'>{it['age']}d old</span></div>"
-                     f"<div class='basis'>{esc(it['claim'])}</div>"
-                     f"<div class='inv'>{esc(it['source'])} &middot; causal link: {esc(it.get('relation',''))}</div></div>")
-        if be.get("resolution"):
-            b.append(f"<div class='comp'><b>Conflict resolution:</b> {esc(be['resolution'])}</div>")
-    b.append("<h2>POLYMARKET SIGNALS</h2>")
+            b.append(ev_card(it, be))
+    else:
+        b.append("<div class='card note' style='margin:10px 0'>No video evidence on file for this asset &mdash; the view rests on market odds only.</div>")
+    # 3) odds evidence as stacked cards
+    b.append("<h2>ODDS EVIDENCE</h2>")
     if dd["signals"]:
         for s in dd["signals"]:
-            b.append(f"<div class='card'><div class='top'><span class='name'>{esc(SNAME.get(s['sig'], s['sig']))}</span>"
-                     f"<span class='prob'>{a} 3mo up-prob {s['prob_up']:.0f}%</span></div>"
-                     f"<div class='basis'>{esc(s['basis'])}</div>"
+            b.append(f"<div class='card'><div class='ct'><span class='ctitle'>{esc(SNAME.get(s['sig'], s['sig']))}</span>"
+                     f"<span class='badge num'>{esc(a)} up-prob {s['prob_up']:.0f}%</span></div>"
+                     f"<div class='claim'>{esc(s['basis'])}</div>"
                      f"<div class='inv'>&#9888; invalidation: {esc(s['invalid'])}</div></div>")
-        b.append(f"<div class='comp'>Composite: mean of {a} up-probs &rarr; {dd['prob_up']:.0f}% &rarr; <b>{dd['rating']}</b> ({dd['conf']} confidence)</div>")
+        if dd.get("bayes") and dd.get("prior") is not None:
+            b.append(f"<div class='note'>Composite: mean of {esc(a)} up-probs &rarr; market prior {pct(dd['prior'])} &rarr; "
+                     f"Bayesian posterior {pct(dd['prob_up'])} &rarr; <b>{dword(dd['rating'], dd['prob_up'])}</b> ({esc(dd['conf'])} confidence)</div>")
+        else:
+            b.append(f"<div class='note'>Composite: mean of {esc(a)} up-probs &rarr; {pct(dd['prob_up'])} &rarr; "
+                     f"<b>{dword(dd['rating'], dd['prob_up'])}</b> ({esc(dd['conf'])} confidence)</div>")
     else:
-        b.append("<div class='comp'>No Polymarket leg for this name &mdash; the score comes entirely from video evidence (see Bayesian update above)."
-                 if dd.get("watch") else "No odds crossed rule thresholds today &mdash; held neutral.")
+        b.append("<div class='card note' style='margin:10px 0'>" +
+                 ("No Polymarket leg for this name &mdash; the score comes entirely from video evidence (see Bayesian update above)."
+                  if dd.get("watch") else "No odds crossed rule thresholds today &mdash; market leg held neutral.") + "</div>")
+    # 4) track record
     acal = calibration(rows, asset=a)
     b.append("<h2>TRACK RECORD ON THIS ASSET</h2>")
     b.append(f"<div class='sub'>{acal[a]['n']} resolved views &middot; hit {acal[a]['hit']}% &middot; mean Brier {acal[a]['brier']}</div>"
              if a in acal else "<div class='sub'>no resolved views yet</div>")
     past = [r for r in rows if r["asset"] == a and r.get("resolved")][-10:]
     if past:
-        b.append("<table><tr><th>date</th><th>rating</th><th>ret%</th><th>hit</th></tr>")
+        b.append("<div class='card tblc'><table class='tbl'><colgroup><col style='width:32%'><col style='width:34%'>"
+                 "<col style='width:17%'><col style='width:17%'></colgroup><tr><th>date</th><th>view</th><th>ret</th><th>hit</th></tr>")
         for r in reversed(past):
-            b.append(f"<tr><td>{r['date']}</td><td>{esc(r['rating'])}</td><td>{r['ret']:+.1f}</td>"
-                     f"<td class='{'up' if r['hit'] else 'down'}'>{'HIT' if r['hit'] else 'MISS'}</td></tr>")
-        b.append("</table>")
+            b.append(f"<tr><td>{r['date']}</td><td>{dword(r['rating'], r.get('prob_up'))}</td><td>{r['ret']:+.1f}%</td>"
+                     f"<td class='{'up' if r['hit'] else 'down'}'><b>{'HIT' if r['hit'] else 'MISS'}</b></td></tr>")
+        b.append("</table></div>")
+    # 5) current view footer card
     cur = [r for r in rows if r["asset"] == a and not r.get("resolved")]
-    if cur:
-        c = cur[-1]
-        b.append(f"<h2>CURRENT VIEW</h2><div class='sub'>issued {c['date']} &middot; expires {c['expires']} &middot; resolved by comparing close on expiry vs issue date</div>")
+    c = cur[-1] if cur else None
+    b.append(f"<h2>CURRENT VIEW</h2><div class='card cv rk-{rc}'><div class='top'><b>{esc(a)}</b>{pill(dd['rating'], dd['prob_up'])}"
+             f"<span class='conf'>{esc(dd['conf'])} confidence &middot; up {pct(dd['prob_up'])}</span></div>"
+             + (f"<div class='sub'>issued {c['date']} &middot; expires {c['expires']} &middot; resolved by comparing close on expiry vs issue date</div>"
+                if c else "<div class='sub'>not yet archived as a dated view &middot; views resolve 90 days after issuance by comparing closes</div>")
+             + "</div>")
     return page(f"{a} details", "\n".join(b), back=True)
 
 # ---------- main ----------
