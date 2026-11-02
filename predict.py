@@ -262,8 +262,11 @@ def trend_verdict(trend, m):
     view = "bullish" if m > 58 else ("bearish" if m < 42 else "neutral")
     if view == "neutral":
         return "Odds imply no strong 3-month direction (neutral zone); the realized trend may drift either way.", view
-    if view == trend:
+    agree = (view == "bullish" and trend == "up") or (view == "bearish" and trend == "down")
+    if agree:
         return f"Odds AGREE with the 6-month trend - the crowd expects continuation ({view}).", view
+    if trend == "sideways":
+        return f"Price has been sideways but odds point {view} - a new 3-month trend may be forming.", view
     return f"Odds CONTRADICT the 6-month trend - the crowd expects a REVERSAL ({view} view vs {trend} trend).", view
 
 def build_detail_data(V, rows):
