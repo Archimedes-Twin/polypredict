@@ -167,6 +167,33 @@ def confidence_of(ms):
     if same_side or len(ms) >= 2: return "medium"
     return "low"
 
+# ---------- bayesian belief layer ----------
+BAY = {}
+def run_bayes():
+    try:
+        subprocess.run([sys.executable, "bayes.py"], cwd=SITE, capture_output=True, timeout=180)
+    except Exception as e:
+        print("bayes.py failed:", e)
+    try:
+        with open(os.path.join(SITE, "bayes_data.json")) as f: return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+def apply_bayes(V, B):
+    """Market prior -> evidence posterior. Basket assets keep signal confidence;
+    watchlist stocks (video-named) enter V with neutral prior + evidence only."""
+    for a, e in B.items():
+        if e.get("watch"):
+            pf = {"ret6": e.get("ret6"), "ret1": e.get("ret1"), "dd": e.get("dd"), "last": e.get("last")} \
+                 if e.get("ret6") is not None else None
+            V[t := a] = dict(prob_up=e["post"], rating=rating_of(e["post"]), conf="low", signals=[],
+                             watch=True, prior=e["prior"], bayes=True, perf=pf)
+        elif a in V:
+            d = V[a]
+            d["prior"] = e["prior"]; d["prob_up"] = e["post"]
+            d["rating"] = rating_of(e["post"]); d["bayes"] = True
+    return V
+
 def views(sigs):
     by = {}
     for s in sigs: by.setdefault(s["asset"], []).append(s)
@@ -271,14 +298,17 @@ def trend_verdict(trend, m):
 
 def build_detail_data(V, rows):
     out = {}
-    for a in BASKET:
-        d = V[a]; pf = perf_stats(a); tr = trend_of(pf)
+    for a in V:
+        d = V[a]; pf = perf_stats(a) or (d.get("perf") if d.get("watch") else None)
+        tr = trend_of(pf)
         vtxt, vview = trend_verdict(tr, d["prob_up"])
         act = [r for r in rows if r["asset"]==a and not r.get("resolved")]
+        note = ASSET_NOTE.get(a) or "Watched stock named in a tracked macro YouTube video; scored against a neutral prior by video evidence only (no Polymarket leg)."
         out[a] = dict(asset=a, rating=d["rating"], conf=d["conf"], prob_up=d["prob_up"],
+                      prior=d.get("prior"), bayes=bool(d.get("bayes")), watch=bool(d.get("watch")),
                       perf=pf, trend=tr, verdict=vtxt, view=vview,
                       signals=[{k:s[k] for k in ("sig","basis","prob_up","invalid")} for s in d["signals"]],
-                      expires=act[-1]["expires"] if act else None, note=ASSET_NOTE.get(a,""))
+                      expires=act[-1]["expires"] if act else None, note=note)
     return out
 
 # ---------- html ----------
@@ -342,11 +372,15 @@ def load_narrative(a):
 
 def fallback_narrative(a, dd):
     pf = dd["perf"]
-    if pf:
+    if pf and "hi" in pf:
         perf = (f"## Performance (6 months)\n\n"
                 f"{a} returned **{pf['ret6']:+.1f}%** over the past 6 months (last close {pf['last']:,.2f}). "
                 f"Peak {pf['hi'][1]:,.2f} on {pf['hi'][0]}, trough {pf['lo'][1]:,.2f} on {pf['lo'][0]}; "
                 f"worst pullback inside the window was {pf['dd']:.1f}%. Last 30 days: {pf['ret1']:+.1f}%. Trend: {dd['trend']}.")
+    elif pf:
+        perf = (f"## Performance (6 months)\n\n"
+                f"{a} returned **{pf['ret6']:+.1f}%** over the past 6 months (last close {pf['last']:,.2f}); "
+                f"worst pullback inside the window {pf['dd']:.1f}%. Last 30 days: {pf['ret1']:+.1f}%. Trend: {dd['trend']}.")
     else:
         perf = f"## Performance (6 months)\n\nNo price history available for {a}."
     sig_txt = "; ".join(f"{SNAME.get(s['sig'], s['sig'])}: {s['basis']}" for s in dd["signals"]) or "no odds crossed rule thresholds"
@@ -358,12 +392,21 @@ def fallback_narrative(a, dd):
     return perf + "\n\n" + drivers + "\n\n" + ana
 
 def index_html(V, rows, cal, o):
-    b = [f"<h1>Polymarket &#8594; ETF views</h1><div class='sub'>{today.isoformat()} &middot; 3-month horizon &middot; crowd odds mapped through auditable rules</div>"]
-    for a in BASKET:
+    b = [f"<h1>Polymarket &#8594; ETF views</h1><div class='sub'>{today.isoformat()} &middot; 3-month horizon &middot; crowd odds mapped through auditable rules, then updated by macro-video evidence (Bayesian)</div>"]
+    for a in [x for x in BASKET if x in V]:
         d = V[a]
+        prior = f"<span class='conf'>prior {d['prior']:.0f}%</span>" if d.get("bayes") else ""
         b.append(f"<div class='row'><span class='asset'>{a}</span><span class='tag {RCLS[d['rating']]}'>{d['rating']}</span>"
-                 f"<span class='conf'>{d['conf']} conf</span>{prob_bar(d['prob_up'])}"
+                 f"{prior}<span class='conf'>{d['conf']} conf</span>{prob_bar(d['prob_up'])}"
                  f"<span class='det'><a href='details/{a}.html'>details</a></span></div>")
+    W = [t for t in V if V[t].get("watch")]
+    if W:
+        b.append("<h2>VIDEO-EVIDENCE WATCHLIST</h2><div class='sub'>stocks named in tracked macro videos &mdash; neutral prior updated by video evidence only</div>")
+        for t in sorted(W):
+            d = V[t]
+            b.append(f"<div class='row'><span class='asset'>{t}</span><span class='tag {RCLS[d['rating']]}'>{d['rating']}</span>"
+                     f"<span class='conf'>evidence</span>{prob_bar(d['prob_up'])}"
+                     f"<span class='det'><a href='details/W_{t}.html'>details</a></span></div>")
     b.append("<h2>CALIBRATION (resolved views, non-neutral)</h2><table><tr><th>asset</th><th>n</th><th>hit%</th><th>mean Brier</th></tr>")
     for k, c in sorted(cal.items(), key=lambda kv: -kv[1]["n"]):
         b.append(f"<tr><td>{k}</td><td>{c['n']}</td><td>{c['hit']}%</td><td>{c['brier']}</td></tr>")
@@ -376,10 +419,25 @@ def index_html(V, rows, cal, o):
     return page("Polymarket -> ETF views", "\n".join(b))
 
 def detail_html(a, dd, rows):
+    pri = f" &middot; market prior {dd['prior']:.0f}%" if dd.get("prior") is not None else ""
     b = [f"<h1>{a} &mdash; <span class='tag {RCLS[dd['rating']]}'>{dd['rating']}</span></h1>"
-         f"<div class='sub'>{dd['conf']} confidence &middot; implied 3-month up-probability {dd['prob_up']:.0f}% &middot; trend: {dd['trend']} &middot; {today.isoformat()}</div>{prob_bar(dd['prob_up'])}"]
+         f"<div class='sub'>{dd['conf']} confidence &middot; 3-month up-probability {dd['prob_up']:.0f}%{pri} &middot; trend: {dd['trend']} &middot; {today.isoformat()}</div>{prob_bar(dd['prob_up'])}"]
     b.append(md_lite(load_narrative(a) or fallback_narrative(a, dd)))
-    b.append("<h2>ODDS EVIDENCE</h2>")
+    be = BAY.get(a)
+    if be:
+        b.append("<h2>BAYESIAN UPDATE &mdash; MARKET PRIOR &#8594; POSTERIOR</h2>")
+        b.append(f"<div class='comp'>Prior {be['prior']:.0f}% &rarr; posterior {be['post']:.0f}%. "
+                 f"Posterior odds = prior odds &times; likelihood ratios of video facts, each decayed by half-life. "
+                 f"Sources: {esc(', '.join(sorted({it['source'].split('—')[0].strip() for it in be['items']}))) or 'no active evidence'}.</div>")
+        for it in be["items"]:
+            cls = "up" if it["dir"] == "up" else "down"
+            b.append(f"<div class='card'><div class='top'><span class='name {cls}'>{'supports rise' if it['dir']=='up' else 'supports fall'} &middot; lr {it['lr_eff']}</span>"
+                     f"<span class='prob'>{it['age']}d old</span></div>"
+                     f"<div class='basis'>{esc(it['claim'])}</div>"
+                     f"<div class='inv'>{esc(it['source'])} &middot; causal link: {esc(it.get('relation',''))}</div></div>")
+        if be.get("resolution"):
+            b.append(f"<div class='comp'><b>Conflict resolution:</b> {esc(be['resolution'])}</div>")
+    b.append("<h2>POLYMARKET SIGNALS</h2>")
     if dd["signals"]:
         for s in dd["signals"]:
             b.append(f"<div class='card'><div class='top'><span class='name'>{esc(SNAME.get(s['sig'], s['sig']))}</span>"
@@ -388,7 +446,8 @@ def detail_html(a, dd, rows):
                      f"<div class='inv'>&#9888; invalidation: {esc(s['invalid'])}</div></div>")
         b.append(f"<div class='comp'>Composite: mean of {a} up-probs &rarr; {dd['prob_up']:.0f}% &rarr; <b>{dd['rating']}</b> ({dd['conf']} confidence)</div>")
     else:
-        b.append("<div class='comp'>No odds crossed rule thresholds today &mdash; held neutral.</div>")
+        b.append("<div class='comp'>No Polymarket leg for this name &mdash; the score comes entirely from video evidence (see Bayesian update above)."
+                 if dd.get("watch") else "No odds crossed rule thresholds today &mdash; held neutral.")
     acal = calibration(rows, asset=a)
     b.append("<h2>TRACK RECORD ON THIS ASSET</h2>")
     b.append(f"<div class='sub'>{acal[a]['n']} resolved views &middot; hit {acal[a]['hit']}% &middot; mean Brier {acal[a]['brier']}</div>"
@@ -415,43 +474,75 @@ def push():
     return (r.returncode, r2.returncode, (r.stderr or r2.stderr or "")[-200:])
 
 if "--render" in sys.argv:
-    # narrative files were updated externally; rebuild detail pages from cached data, no fetching
+    # narrative/beliefs updated externally; rebuild pages from cached data (watch prices only)
     with open(os.path.join(SITE, "detail_data.json")) as f: DD = json.load(f)
+    try:
+        with open(os.path.join(SITE, "odds.json")) as f: odds = json.load(f)
+    except FileNotFoundError:
+        pass
     rows = load()
-    for a in DD:
-        with open(os.path.join(SITE, "details", f"{a}.html"), "w") as f:
-            f.write(detail_html(a, DD[a], rows))
+    BAY.update(run_bayes())
+    for a, d in DD.items():
+        e = BAY.get(a)
+        if e and not e.get("watch"):
+            d["prior"] = e["prior"]; d["prob_up"] = e["post"]
+            d["rating"] = rating_of(e["post"]); d["bayes"] = True
+            d["verdict"], d["view"] = trend_verdict(d["trend"], d["prob_up"])
+    WNOTE = "Watched stock named in a tracked macro YouTube video; scored against a neutral prior by video evidence only (no Polymarket leg)."
+    for t, e in BAY.items():
+        if e.get("watch"):
+            pf = {"ret6": e.get("ret6"), "ret1": e.get("ret1"), "dd": e.get("dd"), "last": e.get("last")} \
+                 if e.get("ret6") is not None else None
+            tr = trend_of(pf); vtxt, vview = trend_verdict(tr, e["post"])
+            DD[t] = dict(asset=t, rating=rating_of(e["post"]), conf="low", prob_up=e["post"],
+                         prior=e["prior"], bayes=True, watch=True, perf=pf, trend=tr,
+                         verdict=vtxt, view=vview, signals=[], expires=None, note=WNOTE)
+    for a, d in DD.items():
+        fn = f"W_{a}.html" if d.get("watch") else f"{a}.html"
+        with open(os.path.join(SITE, "details", fn), "w") as f:
+            f.write(detail_html(a, d, rows))
+    V = {a: dict(prob_up=d["prob_up"], rating=d["rating"], conf=d["conf"], signals=d["signals"],
+                 prior=d.get("prior"), bayes=d.get("bayes"), watch=d.get("watch")) for a, d in DD.items()}
+    with open(os.path.join(SITE, "index.html"), "w") as f:
+        f.write(index_html(V, rows, calibration(rows), odds))
     rc1, rc2, err = push()
-    print(f"render-only: re-rendered {len(DD)} detail pages; push rc={rc1}/{rc2}; {err if (rc1 or rc2) else 'pushed ok'}")
+    print(f"render-only: re-rendered {len(DD)} pages; push rc={rc1}/{rc2}; {err if (rc1 or rc2) else 'pushed ok'}")
     sys.exit(0)
 
 fetch()
 rows = load()
 resolve(rows)
 V = views(signals(odds))
+DD_raw = build_detail_data(V, rows)          # market priors (un-adjusted) for bayes.py
+with open(os.path.join(SITE, "detail_data.json"), "w") as f:
+    json.dump(DD_raw, f)
+json.dump(odds, open(os.path.join(SITE, "odds.json"), "w"))
+BAY.update(run_bayes())                    # posterior = prior odds x decayed evidence LRs
+V = apply_bayes(V, BAY)
+DD = build_detail_data(V, rows)
 new = []
 act = latest_active(rows)
-for a in BASKET:
+for a in V:
     d = V[a]
     prevr = act.get(a)
     if prevr and prevr["rating"] == d["rating"] and prevr["conf"] == d["conf"]:
         continue
     new.append(dict(date=today.isoformat(), asset=a, rating=d["rating"], conf=d["conf"],
-                    prob_up=d["prob_up"], expires=(today+timedelta(days=HORIZON)).isoformat(),
+                    prob_up=d["prob_up"], prior=d.get("prior"),
+                    expires=(today+timedelta(days=HORIZON)).isoformat(),
                     signals=[{k:s[k] for k in ("sig","basis","prob_up","invalid")} for s in d["signals"]],
                     resolved=False))
 with open(ARCHIVE, "w") as f:
     for r in rows + new: f.write(json.dumps(r)+"\n")
 DD = build_detail_data(V, rows + new)
-with open(os.path.join(SITE, "detail_data.json"), "w") as f:
-    json.dump(DD, f)
 with open(os.path.join(SITE, "index.html"), "w") as f:
     f.write(index_html(V, rows+new, calibration(rows+new), odds))
-for a in BASKET:
-    with open(os.path.join(SITE, "details", f"{a}.html"), "w") as f:
+for a in V:
+    fn = f"W_{a}.html" if V[a].get("watch") else f"{a}.html"
+    with open(os.path.join(SITE, "details", fn), "w") as f:
         f.write(detail_html(a, DD[a], rows+new))
 
 rc1, rc2, err = push()
-print("views: " + ", ".join(f"{a}={V[a]['rating']}({V[a]['conf']})" for a in BASKET))
-print(f"odds: {len(odds)} markets; view changes: {len(new)}; archive rows: {len(rows)+len(new)}; push rc={rc1}/{rc2}")
+print("views: " + ", ".join(f"{a}={V[a]['rating']}({V[a]['conf']})" + ("*" if V[a].get("watch") else "") for a in V))
+print(f"odds: {len(odds)} markets; evidence-adjusted: {len([a for a in V if V[a].get('bayes')])}; view changes: {len(new)}; archive rows: {len(rows)+len(new)}; push rc={rc1}/{rc2}")
 print(err if (rc1 or rc2) else "pushed ok")

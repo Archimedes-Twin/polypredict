@@ -1,0 +1,576 @@
+{
+  "SPY": {
+    "prior": 27.9,
+    "post": 49.8,
+    "items": [
+      {
+        "id": "spy-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? Midterm Election Rally Dead? (Nov 2)",
+        "claim": "Post-midterm history: avg +8.1% over next 3 months, 95% positive (19 midterms, only 2018 negative); pre-election dips bottom Oct/early Nov seasonally",
+        "relation": "election uncertainty resolves -> risk-on flows; seasonal pattern",
+        "dir": "up",
+        "lr": 1.22,
+        "half_life": 90,
+        "lr_eff": 1.22,
+        "age": 0
+      },
+      {
+        "id": "spy-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 same video",
+        "claim": "Hedge funds de-grossed -7.8% last week, biggest in 10 years; 6 prior >5% de-grossings all coincided with S&P lows and all were up 1/3/6 months later",
+        "relation": "forced deleveraging exhausts sellers -> sell pressure dries up near bottom",
+        "dir": "up",
+        "lr": 1.22,
+        "half_life": 60,
+        "lr_eff": 1.22,
+        "age": 0
+      },
+      {
+        "id": "spy-3",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 same video",
+        "claim": "Q3 earnings +30.2% aggregate vs +29% expected; breadth broadening (non-Mag7 earnings growth 32% vs Mag7 22%); S&P net margin 17% (AI cost savings real)",
+        "relation": "earnings breadth + margin expansion -> index-level earnings-driven returns",
+        "dir": "up",
+        "lr": 1.34,
+        "half_life": 120,
+        "lr_eff": 1.34,
+        "age": 0
+      },
+      {
+        "id": "spy-4",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 same video",
+        "claim": "S&P forward PE 18.7 vs 5yr avg 19.8 and 10yr avg 19.1; cheaper than Jan's 22x (earnings grew faster than price)",
+        "relation": "below-average multiple -> less downside risk, earnings-driven upside",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 120,
+        "lr_eff": 1.17,
+        "age": 0
+      },
+      {
+        "id": "spy-5",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 same video",
+        "claim": "His floor call: at worst a break to 716 (-8% from highs, below a correction), then rally to year-end and next year",
+        "relation": "opinion/predictive claim",
+        "dir": "up",
+        "lr": 1.1,
+        "half_life": 60,
+        "lr_eff": 1.1,
+        "age": 0
+      }
+    ],
+    "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers \u2014 Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue).",
+    "source": "market prior + video evidence"
+  },
+  "QQQ": {
+    "prior": 52.2,
+    "post": 56.2,
+    "items": [
+      {
+        "id": "qqq-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "AI names down 30-50% from highs; money rotating out of AI into financials/healthcare/staples in stages ('anti-bubble mania'); crowded hedge-fund longs degrossing",
+        "relation": "crowding unwind -> continued short-term underperformance of AI index",
+        "dir": "down",
+        "lr": 1.27,
+        "half_life": 30,
+        "lr_eff": 1.27,
+        "age": 0
+      },
+      {
+        "id": "qqq-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 same video",
+        "claim": "AI boom yr 3.9 vs dotcom 5.3; NDX +137% vs dotcom +1000%; NVDA fwd PE 17 vs Cisco 131 at peak \u2014 boom structurally early",
+        "relation": "duration/valuation analogy -> long-run upside, weak signal for 90-day horizon",
+        "dir": "up",
+        "lr": 1.15,
+        "half_life": 150,
+        "lr_eff": 1.15,
+        "age": 0
+      },
+      {
+        "id": "qqq-3",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 Hyperscalers Crash After Earnings (Oct 30)",
+        "claim": "Hyperscaler negative FCF = growth capex + one-offs (EU fine, TPU inventory), NOT declining operating cash flow; rev growth GOOGL+25% META+26% AMZN+13%",
+        "relation": "growth capex -> future operating cash flow up; fundamentals intact despite price drop",
+        "dir": "up",
+        "lr": 1.3,
+        "half_life": 90,
+        "lr_eff": 1.3,
+        "age": 0
+      }
+    ],
+    "resolution": "Short-term rotation-out evidence (qqq-1) vs fundamental-intact evidence (qqq-3) genuinely conflict; both kept. Resolution: rotation is a flow phenomenon (weeks), fundamentals a valuation phenomenon (quarters). For the 90-day view the flow leg dominates while Fed-hike odds (already in prior) suppress multiples \u2014 posterior stays near neutral, slightly above the pre-evidence market wash because earnings breadth data is the strongest verified fact in the set.",
+    "source": "market prior + video evidence"
+  },
+  "SCHD": {
+    "prior": 47.8,
+    "post": 58.9,
+    "items": [
+      {
+        "id": "schd-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "Oct sector tape: consumer staples +11%, healthcare +9%, energy +10%, utilities +8% \u2014 the exact SCHD sleeve \u2014 as money rotates from AI into dividend/value sectors in stages",
+        "relation": "rotation inflow -> continued catch-up rally for value/dividend basket",
+        "dir": "up",
+        "lr": 1.34,
+        "half_life": 60,
+        "lr_eff": 1.34,
+        "age": 0
+      },
+      {
+        "id": "schd-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 same video",
+        "claim": "Rotation proceeds in stages (out of AI, back into AI, out again) over 1-2 years, not a one-shot",
+        "relation": "staged rotation -> value catch-up repeats rather than ends",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 90,
+        "lr_eff": 1.17,
+        "age": 0
+      }
+    ],
+    "resolution": "No conflict: Khoo's rotation thesis agrees with the market-odds picture (hawkish/CPI regime favors value) and with SCHD's realized 6-month path. Only tension is the oil leg (48% WTI<$90 odds), which Khoo does not address \u2014 kept out of these items.",
+    "source": "market prior + video evidence"
+  },
+  "XLV": {
+    "prior": 50.0,
+    "post": 55.0,
+    "items": [
+      {
+        "id": "xlv-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "Healthcare +9% in Oct as rotation destination; +15% YTD; Khoo reports heavy healthcare overweight helping his portfolio",
+        "relation": "rotation inflow into defensive healthcare",
+        "dir": "up",
+        "lr": 1.22,
+        "half_life": 60,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "Consistent with the existing bullish view (tight HY OAS + pricing power); no conflict.",
+    "source": "market prior + video evidence"
+  },
+  "XLP": {
+    "prior": 50.0,
+    "post": 55.0,
+    "items": [
+      {
+        "id": "xlp-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "Consumer defensives +11% in Oct, strongest sector, as AI money rotates into staples",
+        "relation": "rotation inflow into staples",
+        "dir": "up",
+        "lr": 1.22,
+        "half_life": 60,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "Consistent with defensive-rotation prior; no conflict.",
+    "source": "market prior + video evidence"
+  },
+  "XLF": {
+    "prior": 50.0,
+    "post": 53.9,
+    "items": [
+      {
+        "id": "xlf-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "'Boring financial stocks' were green on the crash day and the crash week \u2014 named rotation destination",
+        "relation": "rotation inflow into financials",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 30,
+        "lr_eff": 1.17,
+        "age": 0
+      }
+    ],
+    "resolution": "Agrees with rotation prior (rate curve steepening + value rotation).",
+    "source": "market prior + video evidence"
+  },
+  "XLC": {
+    "prior": 28.0,
+    "post": 29.3,
+    "items": [
+      {
+        "id": "xlc-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "Communication services -12.25% in Oct, worst sector; Meta/Alphabet -30% from highs on capex-sentiment panic",
+        "relation": "rotation outflow + capex sentiment -> short-term drag",
+        "dir": "down",
+        "lr": 1.2,
+        "half_life": 30,
+        "lr_eff": 1.2,
+        "age": 0
+      },
+      {
+        "id": "xlc-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 Hyperscalers Crash After Earnings (Oct 30)",
+        "claim": "Capex fear is growth capex: GOOGL rev +25%/op income +30%; META op income +11% ex one-off fine; negative FCF driven by one-offs (EU fine, TPU inventory cash returning 2027)",
+        "relation": "growth capex -> future earnings up; drop is sentiment not fundamentals",
+        "dir": "up",
+        "lr": 1.28,
+        "half_life": 90,
+        "lr_eff": 1.28,
+        "age": 0
+      }
+    ],
+    "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow \u2014 bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off.",
+    "source": "market prior + video evidence"
+  },
+  "XLE": {
+    "prior": 69.7,
+    "post": 72.2,
+    "items": [
+      {
+        "id": "xle-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 US Stocks Crash? (Nov 2)",
+        "claim": "Energy +10% in Oct as a top rotation destination",
+        "relation": "rotation inflow on top of the oil supply bid",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 30,
+        "lr_eff": 1.13,
+        "age": 0
+      }
+    ],
+    "resolution": "Reinforces existing very-bullish odds-driven view; no conflict.",
+    "source": "market prior + video evidence"
+  },
+  "NVDA": {
+    "prior": 50,
+    "post": 52.7,
+    "items": [
+      {
+        "id": "nvda-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "NVDA fwd PE 17 vs Cisco's 131x before dotcom burst; Cisco ran to +4200% before collapsing \u2014 structural valuation headroom",
+        "relation": "cheap multiple relative to prior-cycle peak -> upside risk skewed",
+        "dir": "up",
+        "lr": 1.28,
+        "half_life": 120,
+        "lr_eff": 1.28,
+        "age": 0
+      },
+      {
+        "id": "nvda-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "GOOGL/AMZN selling their own AI chips (TPUs) \u2014 competing with Nvidia",
+        "relation": "competition -> long-term moat erosion risk",
+        "dir": "down",
+        "lr": 1.15,
+        "half_life": 180,
+        "lr_eff": 1.15,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 204.64,
+    "ret6": 2.5,
+    "ret1": -11.4,
+    "dd": -14.5,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Nov 2 (oq3B28tS6c4)"
+  },
+  "MU": {
+    "prior": 50,
+    "post": 45.0,
+    "items": [
+      {
+        "id": "mu-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "Micron -5.3% in one day, -30% from high; hedge-fund crowded AI long, 'I don't own it, too dangerous'",
+        "relation": "crowded-long unwind -> continued downside pressure",
+        "dir": "down",
+        "lr": 1.22,
+        "half_life": 30,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 884.74,
+    "ret6": 71.1,
+    "ret1": -19.4,
+    "dd": -27.1,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Nov 2"
+  },
+  "AMD": {
+    "prior": 50,
+    "post": 45.0,
+    "items": [
+      {
+        "id": "amd-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "AMD -10.88% in one day in the AI-name sell-off; retail/hedge-fund crowd unwinding",
+        "relation": "crowded-long unwind",
+        "dir": "down",
+        "lr": 1.22,
+        "half_life": 30,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 504.8,
+    "ret6": 42.4,
+    "ret1": -18.0,
+    "dd": -22.3,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Nov 2"
+  },
+  "INTC": {
+    "prior": 50,
+    "post": 44.2,
+    "items": [
+      {
+        "id": "intc-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "Intel -28% in one day after earnings, -50% from high",
+        "relation": "earnings disappointment + unwinding",
+        "dir": "down",
+        "lr": 1.26,
+        "half_life": 30,
+        "lr_eff": 1.26,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 65.76,
+    "ret6": -30.4,
+    "ret1": -45.2,
+    "dd": -53.3,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Nov 2"
+  },
+  "ARM": {
+    "prior": 50,
+    "post": 45.0,
+    "items": [
+      {
+        "id": "arm-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "Arm -50% from high; cited among hyped/hedge-fund-crowded names he refuses to touch",
+        "relation": "crowded-high-multiple unwind",
+        "dir": "down",
+        "lr": 1.22,
+        "half_life": 30,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 205.97,
+    "ret6": -2.1,
+    "ret1": -29.5,
+    "dd": -53.1,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Nov 2"
+  },
+  "SNDK": {
+    "prior": 50,
+    "post": 45.0,
+    "items": [
+      {
+        "id": "sndk-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "SanDisk -13.47% in one day, -50% from high",
+        "relation": "crowded AI-memory unwind",
+        "dir": "down",
+        "lr": 1.22,
+        "half_life": 30,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 1150.89,
+    "ret6": 5.0,
+    "ret1": -35.6,
+    "dd": -50.7,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Nov 2"
+  },
+  "GOOGL": {
+    "prior": 50,
+    "post": 52.7,
+    "items": [
+      {
+        "id": "googl-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 Hyperscalers Crash",
+        "claim": "Rev +25%, op income +30%; Q3 op-cash-flow dip = EU fine + TPU inventory build (cash returns 2027), not business decline",
+        "relation": "one-off accounting noise masks intact earnings engine",
+        "dir": "up",
+        "lr": 1.28,
+        "half_life": 90,
+        "lr_eff": 1.28,
+        "age": 0
+      },
+      {
+        "id": "googl-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "-13% post-earnings, -30% from high on capex sentiment",
+        "relation": "sentiment-driven de-rating short-term",
+        "dir": "down",
+        "lr": 1.15,
+        "half_life": 30,
+        "lr_eff": 1.15,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 279.84,
+    "ret6": -27.3,
+    "ret1": -17.3,
+    "dd": -30.5,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 30 (tKygzktysRk)"
+  },
+  "META": {
+    "prior": 50,
+    "post": 52.3,
+    "items": [
+      {
+        "id": "meta-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 Hyperscalers Crash",
+        "claim": "Rev +26%; op income 'down 37%' is the addiction-lawsuit fine, +11% ex-one-off; op cash flow +24% LTM",
+        "relation": "earnings engine intact, drop is sentiment",
+        "dir": "up",
+        "lr": 1.26,
+        "half_life": 90,
+        "lr_eff": 1.26,
+        "age": 0
+      },
+      {
+        "id": "meta-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "-7% post-earnings (was -12%), -30% from high",
+        "relation": "short-term de-rating",
+        "dir": "down",
+        "lr": 1.15,
+        "half_life": 30,
+        "lr_eff": 1.15,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 614.99,
+    "ret6": 0.5,
+    "ret1": -15.3,
+    "dd": -20.9,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 30"
+  },
+  "AMZN": {
+    "prior": 50,
+    "post": 52.7,
+    "items": [
+      {
+        "id": "amzn-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 Hyperscalers Crash",
+        "claim": "Rev +13% FX-neutral, op income +61%, op cash flow +29% LTM; negative FCF = datacenter growth capex",
+        "relation": "growth capex converts to future cash flow",
+        "dir": "up",
+        "lr": 1.28,
+        "half_life": 90,
+        "lr_eff": 1.28,
+        "age": 0
+      },
+      {
+        "id": "amzn-2",
+        "date": "2026-11-02",
+        "source": "Adam Khoo",
+        "claim": "-7.8% post-earnings on FCF fear",
+        "relation": "short-term de-rating",
+        "dir": "down",
+        "lr": 1.15,
+        "half_life": 30,
+        "lr_eff": 1.15,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 240.35,
+    "ret6": -9.3,
+    "ret1": -3.2,
+    "dd": -15.4,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 30"
+  },
+  "MSFT": {
+    "prior": 50,
+    "post": 55.0,
+    "items": [
+      {
+        "id": "msft-1",
+        "date": "2026-11-02",
+        "source": "Adam Khoo \u2014 Hyperscalers Crash",
+        "claim": "Named alongside hyperscalers whose negative FCF is growth capex into AI datacenters with growing operating cash flow",
+        "relation": "growth capex -> future cash flow",
+        "dir": "up",
+        "lr": 1.22,
+        "half_life": 90,
+        "lr_eff": 1.22,
+        "age": 0
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 521.91,
+    "ret6": 28.0,
+    "ret1": 1.8,
+    "dd": -4.0,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 30"
+  }
+}

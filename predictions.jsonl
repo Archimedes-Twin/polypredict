@@ -9,3 +9,15 @@
 {"date": "2026-11-02", "asset": "XLV", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false}
 {"date": "2026-11-02", "asset": "ZROZ", "rating": "very bullish", "conf": "high", "prob_up": 76.0, "expires": "2027-01-31", "signals": [{"sig": "cut_jul27", "basis": "Fed rate cut by July 2027 meeting?", "prob_up": 76.0, "invalid": "revises if cut-by-July-2027 odds fall under 40%"}], "resolved": false}
 {"date": "2026-11-02", "asset": "HYG", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "SPY", "rating": "neutral", "conf": "high", "prob_up": 49.8, "prior": 27.9, "expires": "2027-01-31", "signals": [{"sig": "iran_break", "basis": "US x Iran ceasefire continues through December 31? \u2014 market prob 26%", "prob_up": 27.9, "invalid": "revises if ceasefire-hold odds recover over 55%"}], "resolved": false}
+{"date": "2026-11-02", "asset": "SCHD", "rating": "bullish", "conf": "low", "prob_up": 58.9, "prior": 47.8, "expires": "2027-01-31", "signals": [{"sig": "fed_hike", "basis": "hike odds 72% at Dec '26 meeting", "prob_up": 72.0, "invalid": "revises if hike odds fall under 45%"}, {"sig": "cut_jul27", "basis": "Fed rate cut by July 2027 meeting? \u2014 market prob 53%", "prob_up": 23.5, "invalid": "revises if cut-by-July-2027 odds fall under 40%"}], "resolved": false}
+{"date": "2026-11-02", "asset": "NVDA", "rating": "neutral", "conf": "low", "prob_up": 52.7, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "MU", "rating": "neutral", "conf": "low", "prob_up": 45.0, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "AMD", "rating": "neutral", "conf": "low", "prob_up": 45.0, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "INTC", "rating": "neutral", "conf": "low", "prob_up": 44.2, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "ARM", "rating": "neutral", "conf": "low", "prob_up": 45.0, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "SNDK", "rating": "neutral", "conf": "low", "prob_up": 45.0, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "GOOGL", "rating": "neutral", "conf": "low", "prob_up": 52.7, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "META", "rating": "neutral", "conf": "low", "prob_up": 52.3, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "AMZN", "rating": "neutral", "conf": "low", "prob_up": 52.7, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
+{"date": "2026-11-02", "asset": "MSFT", "rating": "neutral", "conf": "low", "prob_up": 55.0, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
