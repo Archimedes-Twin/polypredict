@@ -1,0 +1,25 @@
+{
+  "asset": "PANW",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.PANW",
+  "prior": 50,
+  "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "panw-1",
+      "group": "g-yguWtahHw:PANW:up",
+      "date": "2026-10-14",
+      "video_id": "g-yguWtahHw",
+      "source": "Adam Khoo — Q4 Game Plan",
+      "claim": "Palo Alto +115% YTD (+148% vs cost); third cybersecurity secular holding under the same AI-attack-surface thesis",
+      "relation": "AI-era attack surface → structural security-spending demand",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 180
+    }
+  ]
+}

@@ -14,7 +14,19 @@
       "dir": "up",
       "lr": 1.17,
       "half_life": 30
+    },
+    {
+      "id": "xlf-2",
+      "group": "t9P3BKPndnI:XLF:up",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+      "claim": "Banks and insurers outperform as long rates rise: net interest margin expands (DBS/OCBC/UOB, JPM), insurers reinvest float at higher yields (Arch Capital ACGL), ICE earns margin interest and rides rising energy-futures volume",
+      "relation": "rising long rates → NIM and float-income expansion for financials",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 120
     }
   ],
-  "resolution": "Agrees with rotation prior (rate curve steepening + value rotation)."
+  "resolution": "Agrees with rotation prior (rate curve steepening + value rotation). Second, independent leg (Sep-14 NIM/float mechanism) now supports the same up-direction as the rotation flow evidence; no conflict."
 }

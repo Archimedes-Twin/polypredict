@@ -30,6 +30,18 @@
       "lr": 1.15,
       "half_life": 30,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "meta-3",
+      "group": "g-yguWtahHw:META:up",
+      "date": "2026-10-14",
+      "video_id": "g-yguWtahHw",
+      "source": "Adam Khoo — My Stock Market Q4 Game Plan (Oct 14)",
+      "claim": "Meta's News/Muse consumer-agent app hit 7M downloads in <30 days (ChatGPT took 75 days to 7M, Grok 165, Gemini 180 days to 3M) — #1 on both US app stores; addiction lawsuit resolved; conservative intrinsic value $900 is ~17% above price, consensus-DCF $1,300–$2,000",
+      "relation": "fastest-ever agent-app adoption + resolved legal overhang → re-rating catalyst",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60
     }
   ]
 }

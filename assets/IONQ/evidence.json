@@ -1,0 +1,25 @@
+{
+  "asset": "IONQ",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.IONQ",
+  "prior": 50,
+  "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "ionq-1",
+      "group": "t9P3BKPndnI:IONQ:down",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks?",
+      "claim": "IonQ (quantum) makes no money — cited as the archetype of the unprofitable-tech cohort most exposed to rising long rates; the July bubble deflation already took it -36% on leveraged crowding",
+      "relation": "rising discount rate + leveraged-crowded unwind → continued downside risk",
+      "dir": "down",
+      "lr": 1.26,
+      "half_life": 120
+    }
+  ]
+}

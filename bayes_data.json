@@ -1,7 +1,7 @@
 {
   "SPY": {
-    "prior": 37.7,
-    "post": 44.8,
+    "prior": 38.3,
+    "post": 49.0,
     "items": [
       {
         "id": "spy-1",
@@ -81,14 +81,30 @@
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
+      },
+      {
+        "id": "spy-6",
+        "group": "t9P3BKPndnI:SPY:up",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+        "claim": "10-year yield ~4.9% is at/below the 76-year mean 5.52% (median 4.72%); the 1980s decade averaged a 10.6% yield while the S&P compounded +17%/yr \u2014 high long rates have historically coexisted with strong bull markets; what matters is the speed of the rise and whether earnings grow alongside",
+        "relation": "yield at historical norm + rising earnings \u2192 no structural multiple crash",
+        "dir": "up",
+        "lr": 1.2,
+        "half_life": 150,
+        "lr_eff": 1.16,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
       }
     ],
-    "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers \u2014 Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue).",
+    "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers \u2014 Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue). The Sep-14 rate-normalcy pattern (1980s analogue: 10.6% decade-average yield with +17%/yr S&P) argues the hawkish-rate regime is survivable for equities while earnings grow; it offsets a fraction of the policy-risk drag \u2014 net stance still bearish-leaning.",
     "source": "market prior + video evidence"
   },
   "QQQ": {
-    "prior": 41.4,
-    "post": 45.3,
+    "prior": 40.0,
+    "post": 43.8,
     "items": [
       {
         "id": "qqq-1",
@@ -132,8 +148,8 @@
     "source": "market prior + video evidence"
   },
   "SCHD": {
-    "prior": 58.6,
-    "post": 65.5,
+    "prior": 54.9,
+    "post": 62.0,
     "items": [
       {
         "id": "schd-1",
@@ -212,7 +228,7 @@
   },
   "XLF": {
     "prior": 50.0,
-    "post": 53.9,
+    "post": 58.8,
     "items": [
       {
         "id": "xlf-1",
@@ -225,14 +241,30 @@
         "half_life": 30,
         "lr_eff": 1.17,
         "age": 0
+      },
+      {
+        "id": "xlf-2",
+        "group": "t9P3BKPndnI:XLF:up",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+        "claim": "Banks and insurers outperform as long rates rise: net interest margin expands (DBS/OCBC/UOB, JPM), insurers reinvest float at higher yields (Arch Capital ACGL), ICE earns margin interest and rides rising energy-futures volume",
+        "relation": "rising long rates \u2192 NIM and float-income expansion for financials",
+        "dir": "up",
+        "lr": 1.3,
+        "half_life": 120,
+        "lr_eff": 1.22,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
       }
     ],
-    "resolution": "Agrees with rotation prior (rate curve steepening + value rotation).",
+    "resolution": "Agrees with rotation prior (rate curve steepening + value rotation). Second, independent leg (Sep-14 NIM/float mechanism) now supports the same up-direction as the rotation flow evidence; no conflict.",
     "source": "market prior + video evidence"
   },
   "XLC": {
-    "prior": 31.2,
-    "post": 32.5,
+    "prior": 28.9,
+    "post": 26.7,
     "items": [
       {
         "id": "xlc-1",
@@ -258,14 +290,30 @@
         "video_id": "tKygzktysRk",
         "lr_eff": 1.27,
         "age": 3
+      },
+      {
+        "id": "xlc-3",
+        "group": "g-yguWtahHw:XLC:down",
+        "date": "2026-10-14",
+        "video_id": "g-yguWtahHw",
+        "source": "Adam Khoo \u2014 My Stock Market Q4 Game Plan (Oct 14)",
+        "claim": "Consumer AI agents (Meta News/Muse app \u2014 #1 on both US stores; ChatGPT 'Dots') route purchases through agents instead of humans: ad-funded search marketplaces lose (display ads become worthless to agents), middlemen get disintermediated (Booking retains inventory moat but Tripadvisor/Upwork/Fiverr and non-diversified platforms like Snap/Pinterest/Reddit are at structural risk)",
+        "relation": "agentic disintermediation \u2192 advertising-revenue erosion for ad-funded platforms",
+        "dir": "down",
+        "lr": 1.2,
+        "half_life": 180,
+        "lr_eff": 1.18,
+        "age": 19,
+        "applied": true,
+        "group_n": 1
       }
     ],
-    "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow \u2014 bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off.",
+    "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow \u2014 bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off. The Oct-14 agentic-disintermediation claim adds a structural (180d half-life) down-leg against the ad-funded members, reinforcing the bearish stance for this window beyond the short-term flow leg.",
     "source": "market prior + video evidence"
   },
   "XLE": {
-    "prior": 58.9,
-    "post": 61.8,
+    "prior": 55.1,
+    "post": 60.7,
     "items": [
       {
         "id": "xle-1",
@@ -278,9 +326,49 @@
         "half_life": 30,
         "lr_eff": 1.13,
         "age": 0
+      },
+      {
+        "id": "xle-2",
+        "group": "t9P3BKPndnI:XLE:up",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+        "claim": "Rates rise with inflation, and energy/commodity stocks did very well in that regime this year \u2014 the rate-up/inflation-up pairing is a tailwind for the energy complex (though he avoids the sector long-run as unpredictable and volatile)",
+        "relation": "inflation-driven rate rise \u2192 commodity revenue tailwind",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 90,
+        "lr_eff": 1.11,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "Reinforces existing very-bullish odds-driven view; no conflict.",
+    "source": "market prior + video evidence"
+  },
+  "ZROZ": {
+    "prior": 51.0,
+    "post": 46.1,
+    "items": [
+      {
+        "id": "zroz-1",
+        "group": "t9P3BKPndnI:ZROZ:down",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+        "claim": "Long rate \u2248 inflation + real GDP: 3.4% CPI + 1.5% GDP = 4.9% and heading toward 5\u20135.5%; the Fed controls only the short rate \u2014 a hot-inflation regime mechanically pushes long yields up regardless of Fed policy",
+        "relation": "inflation-anchored long-rate drift up \u2192 20+yr bond prices down",
+        "dir": "down",
+        "lr": 1.3,
+        "half_life": 120,
+        "lr_eff": 1.22,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "Consistent with the bearish market prior (hot-CPI buckets + hike odds pressuring the long end); Khoo's mechanism reinforces it. His counterpoint \u2014 5% yields are historically normal and only a fast spike hurts \u2014 is equity-focused and does not protect 20+yr bond prices from a further yield grind higher.",
     "source": "market prior + video evidence"
   },
   "NVDA": {
@@ -317,10 +405,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 204.64,
-    "ret6": 2.5,
-    "ret1": -11.4,
-    "dd": -14.5,
+    "last": 207.73,
+    "ret6": 4.7,
+    "ret1": -11.2,
+    "dd": -13.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2 (oq3B28tS6c4)"
   },
@@ -345,10 +433,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 884.74,
-    "ret6": 71.1,
-    "ret1": -19.4,
-    "dd": -27.1,
+    "last": 869.83,
+    "ret6": 50.9,
+    "ret1": -19.1,
+    "dd": -28.3,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -373,10 +461,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 504.8,
-    "ret6": 42.4,
-    "ret1": -18.0,
-    "dd": -22.3,
+    "last": 492.84,
+    "ret6": 44.3,
+    "ret1": -22.3,
+    "dd": -24.1,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -401,10 +489,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 65.76,
-    "ret6": -30.4,
-    "ret1": -45.2,
-    "dd": -53.3,
+    "last": 63.08,
+    "ret6": -34.1,
+    "ret1": -47.1,
+    "dd": -55.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -429,10 +517,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 205.97,
-    "ret6": -2.1,
-    "ret1": -29.5,
-    "dd": -53.1,
+    "last": 205.54,
+    "ret6": 1.1,
+    "ret1": -33.2,
+    "dd": -53.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -457,16 +545,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 1150.89,
-    "ret6": 5.0,
-    "ret1": -35.6,
-    "dd": -50.7,
+    "last": 1122.75,
+    "ret6": -10.6,
+    "ret1": -34.7,
+    "dd": -51.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "GOOGL": {
     "prior": 50,
-    "post": 52.8,
+    "post": 56.2,
     "items": [
       {
         "id": "googl-1",
@@ -493,21 +581,37 @@
         "video_id": "tKygzktysRk",
         "lr_eff": 1.14,
         "age": 3
+      },
+      {
+        "id": "googl-3",
+        "group": "t9P3BKPndnI:GOOGL:up",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+        "claim": "Cash-rich megacaps (Google, Apple, Meta, Microsoft) are immune to rising long rates: interest income on cash and equivalents offsets data-center debt interest, so net interest expense is near zero",
+        "relation": "rate rise \u2192 net-neutral for net-cash megacaps",
+        "dir": "up",
+        "lr": 1.2,
+        "half_life": 120,
+        "lr_eff": 1.15,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 279.84,
-    "ret6": -27.3,
-    "ret1": -17.3,
-    "dd": -30.5,
+    "last": 283.13,
+    "ret6": -26.1,
+    "ret1": -17.6,
+    "dd": -29.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30 (tKygzktysRk)"
   },
   "META": {
     "prior": 50,
-    "post": 52.4,
+    "post": 57.6,
     "items": [
       {
         "id": "meta-1",
@@ -534,15 +638,31 @@
         "video_id": "tKygzktysRk",
         "lr_eff": 1.14,
         "age": 3
+      },
+      {
+        "id": "meta-3",
+        "group": "g-yguWtahHw:META:up",
+        "date": "2026-10-14",
+        "video_id": "g-yguWtahHw",
+        "source": "Adam Khoo \u2014 My Stock Market Q4 Game Plan (Oct 14)",
+        "claim": "Meta's News/Muse consumer-agent app hit 7M downloads in <30 days (ChatGPT took 75 days to 7M, Grok 165, Gemini 180 days to 3M) \u2014 #1 on both US app stores; addiction lawsuit resolved; conservative intrinsic value $900 is ~17% above price, consensus-DCF $1,300\u2013$2,000",
+        "relation": "fastest-ever agent-app adoption + resolved legal overhang \u2192 re-rating catalyst",
+        "dir": "up",
+        "lr": 1.3,
+        "half_life": 60,
+        "lr_eff": 1.23,
+        "age": 19,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 614.99,
-    "ret6": 0.5,
-    "ret1": -15.3,
-    "dd": -20.9,
+    "last": 610.45,
+    "ret6": 0.0,
+    "ret1": -16.2,
+    "dd": -21.5,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
@@ -580,16 +700,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 240.35,
-    "ret6": -9.3,
-    "ret1": -3.2,
-    "dd": -15.4,
+    "last": 251.7,
+    "ret6": -7.5,
+    "ret1": 0.1,
+    "dd": -11.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
   "MSFT": {
     "prior": 50,
-    "post": 54.8,
+    "post": 58.2,
     "items": [
       {
         "id": "msft-1",
@@ -603,21 +723,223 @@
         "video_id": "tKygzktysRk",
         "lr_eff": 1.21,
         "age": 3
+      },
+      {
+        "id": "msft-2",
+        "group": "t9P3BKPndnI:MSFT:up",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+        "claim": "Microsoft named among cash-rich megacaps immune to long-rate rises \u2014 interest income on cash offsets data-center borrowings",
+        "relation": "rate rise \u2192 net-neutral for net-cash megacap",
+        "dir": "up",
+        "lr": 1.2,
+        "half_life": 120,
+        "lr_eff": 1.15,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 521.91,
-    "ret6": 28.0,
-    "ret1": 1.8,
-    "dd": -4.0,
+    "last": 524.26,
+    "ret6": 26.7,
+    "ret1": 1.3,
+    "dd": -3.5,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
+  "FTNT": {
+    "prior": 50,
+    "post": 55.2,
+    "items": [
+      {
+        "id": "ftnt-1",
+        "group": "g-yguWtahHw:FTNT:up",
+        "date": "2026-10-14",
+        "video_id": "g-yguWtahHw",
+        "source": "Adam Khoo \u2014 Q4 Game Plan",
+        "claim": "Fortinet +139% YTD, his #1 portfolio contributor; cybersecurity is a strong secular theme \u2014 AI-powered hacking forces every enterprise to buy advanced security; he holds through short-term overvaluation expecting further multiples over 3\u20135 years",
+        "relation": "AI-era attack surface \u2192 structural security-spending demand",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 180,
+        "lr_eff": 1.23,
+        "age": 19,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 130.34,
+    "ret6": 46.1,
+    "ret1": -28.0,
+    "dd": -33.1,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
+  },
+  "CRWD": {
+    "prior": 50,
+    "post": 55.2,
+    "items": [
+      {
+        "id": "crwd-1",
+        "group": "g-yguWtahHw:CRWD:up",
+        "date": "2026-10-14",
+        "video_id": "g-yguWtahHw",
+        "source": "Adam Khoo \u2014 Q4 Game Plan",
+        "claim": "CrowdStrike +131% YTD (+217% vs his cost); same AI-driven cybersecurity secular thesis; won't sell despite overvaluation \u2014 fears running off without re-entry",
+        "relation": "AI-era attack surface \u2192 structural security-spending demand",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 180,
+        "lr_eff": 1.23,
+        "age": 19,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 250.93,
+    "ret6": 113.9,
+    "ret1": -7.1,
+    "dd": -10.0,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
+  },
+  "PANW": {
+    "prior": 50,
+    "post": 55.2,
+    "items": [
+      {
+        "id": "panw-1",
+        "group": "g-yguWtahHw:PANW:up",
+        "date": "2026-10-14",
+        "video_id": "g-yguWtahHw",
+        "source": "Adam Khoo \u2014 Q4 Game Plan",
+        "claim": "Palo Alto +115% YTD (+148% vs cost); third cybersecurity secular holding under the same AI-attack-surface thesis",
+        "relation": "AI-era attack surface \u2192 structural security-spending demand",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 180,
+        "lr_eff": 1.23,
+        "age": 19,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 363.47,
+    "ret6": 96.9,
+    "ret1": -9.9,
+    "dd": -13.4,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
+  },
+  "SNOW": {
+    "prior": 50,
+    "post": 45.7,
+    "items": [
+      {
+        "id": "snow-1",
+        "group": "t9P3BKPndnI:SNOW:down",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks?",
+        "claim": "Snowflake is currently unprofitable \u2014 its cash flows are far in the future, so a higher discount rate from ~5% long yields cuts intrinsic value hardest",
+        "relation": "rising discount rate \u2192 deep de-rating of unprofitable growth",
+        "dir": "down",
+        "lr": 1.26,
+        "half_life": 120,
+        "lr_eff": 1.19,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 302.83,
+    "ret6": 110.0,
+    "ret1": -11.2,
+    "dd": -17.9,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
+  },
+  "NET": {
+    "prior": 50,
+    "post": 45.7,
+    "items": [
+      {
+        "id": "net-1",
+        "group": "t9P3BKPndnI:NET:down",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks?",
+        "claim": "Cloudflare (named 'Cloudfare') still loses money \u2014 same discount-rate vulnerability as other unprofitable emerging tech at 5% long yields",
+        "relation": "rising discount rate \u2192 deep de-rating of unprofitable growth",
+        "dir": "down",
+        "lr": 1.26,
+        "half_life": 120,
+        "lr_eff": 1.19,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 276.48,
+    "ret6": 23.3,
+    "ret1": -20.8,
+    "dd": -23.4,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
+  },
+  "IONQ": {
+    "prior": 50,
+    "post": 45.7,
+    "items": [
+      {
+        "id": "ionq-1",
+        "group": "t9P3BKPndnI:IONQ:down",
+        "date": "2026-09-14",
+        "video_id": "t9P3BKPndnI",
+        "source": "Adam Khoo \u2014 Will Rising Long Term Rates Crash Stocks?",
+        "claim": "IonQ (quantum) makes no money \u2014 cited as the archetype of the unprofitable-tech cohort most exposed to rising long rates; the July bubble deflation already took it -36% on leveraged crowding",
+        "relation": "rising discount rate + leveraged-crowded unwind \u2192 continued downside risk",
+        "dir": "down",
+        "lr": 1.26,
+        "half_life": 120,
+        "lr_eff": 1.19,
+        "age": 49,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 29.93,
+    "ret6": -34.6,
+    "ret1": -31.6,
+    "dd": -58.5,
+    "added": "2026-11-02",
+    "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
+  },
   "_meta": {
-    "generated_at": 1793621606.5289934,
-    "started_at": 1793621605.279219,
+    "generated_at": 1793636395.993383,
+    "started_at": 1793636393.8320425,
     "run_date": "2026-11-02"
   }
 }

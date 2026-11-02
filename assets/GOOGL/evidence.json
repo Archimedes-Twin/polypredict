@@ -30,6 +30,18 @@
       "lr": 1.15,
       "half_life": 30,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "googl-3",
+      "group": "t9P3BKPndnI:GOOGL:up",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+      "claim": "Cash-rich megacaps (Google, Apple, Meta, Microsoft) are immune to rising long rates: interest income on cash and equivalents offsets data-center debt interest, so net interest expense is near zero",
+      "relation": "rate rise → net-neutral for net-cash megacaps",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 120
     }
   ]
 }

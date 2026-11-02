@@ -59,7 +59,19 @@
       "dir": "up",
       "lr": 1.1,
       "half_life": 60
+    },
+    {
+      "id": "spy-6",
+      "group": "t9P3BKPndnI:SPY:up",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+      "claim": "10-year yield ~4.9% is at/below the 76-year mean 5.52% (median 4.72%); the 1980s decade averaged a 10.6% yield while the S&P compounded +17%/yr — high long rates have historically coexisted with strong bull markets; what matters is the speed of the rise and whether earnings grow alongside",
+      "relation": "yield at historical norm + rising earnings → no structural multiple crash",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 150
     }
   ],
-  "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers — Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue)."
+  "resolution": "Khoo's flow/positioning/seasonality evidence (de-grossing, midterms, breadth) argues near-bottom and conflicts with the market prior's very-bearish read (72% Dec hike, 74% ceasefire-break, 44.5% hot CPI). Resolution: the two describe different drivers — Khoo addresses market structure and earnings (short-term flows), not the Fed-rehike/CPI macro regime that the odds encode. We accept the flow evidence as shrinking the severity of downside (bearish, not very-bearish) while keeping policy/geopolitical risk as the dominant constraint. If the Dec hike materializes alongside hot CPI, seasonality historically loses to policy shocks (2018 analogue). The Sep-14 rate-normalcy pattern (1980s analogue: 10.6% decade-average yield with +17%/yr S&P) argues the hawkish-rate regime is survivable for equities while earnings grow; it offsets a fraction of the policy-risk drag — net stance still bearish-leaning."
 }

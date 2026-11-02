@@ -25,7 +25,19 @@
       "lr": 1.28,
       "half_life": 90,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "xlc-3",
+      "group": "g-yguWtahHw:XLC:down",
+      "date": "2026-10-14",
+      "video_id": "g-yguWtahHw",
+      "source": "Adam Khoo — My Stock Market Q4 Game Plan (Oct 14)",
+      "claim": "Consumer AI agents (Meta News/Muse app — #1 on both US stores; ChatGPT 'Dots') route purchases through agents instead of humans: ad-funded search marketplaces lose (display ads become worthless to agents), middlemen get disintermediated (Booking retains inventory moat but Tripadvisor/Upwork/Fiverr and non-diversified platforms like Snap/Pinterest/Reddit are at structural risk)",
+      "relation": "agentic disintermediation → advertising-revenue erosion for ad-funded platforms",
+      "dir": "down",
+      "lr": 1.2,
+      "half_life": 180
     }
   ],
-  "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow — bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off."
+  "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow — bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off. The Oct-14 agentic-disintermediation claim adds a structural (180d half-life) down-leg against the ad-funded members, reinforcing the bearish stance for this window beyond the short-term flow leg."
 }

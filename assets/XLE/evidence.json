@@ -14,6 +14,18 @@
       "dir": "up",
       "lr": 1.13,
       "half_life": 30
+    },
+    {
+      "id": "xle-2",
+      "group": "t9P3BKPndnI:XLE:up",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+      "claim": "Rates rise with inflation, and energy/commodity stocks did very well in that regime this year — the rate-up/inflation-up pairing is a tailwind for the energy complex (though he avoids the sector long-run as unpredictable and volatile)",
+      "relation": "inflation-driven rate rise → commodity revenue tailwind",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 90
     }
   ],
   "resolution": "Reinforces existing very-bullish odds-driven view; no conflict."

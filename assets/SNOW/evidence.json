@@ -1,0 +1,25 @@
+{
+  "asset": "SNOW",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.SNOW",
+  "prior": 50,
+  "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "snow-1",
+      "group": "t9P3BKPndnI:SNOW:down",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks?",
+      "claim": "Snowflake is currently unprofitable — its cash flows are far in the future, so a higher discount rate from ~5% long yields cuts intrinsic value hardest",
+      "relation": "rising discount rate → deep de-rating of unprofitable growth",
+      "dir": "down",
+      "lr": 1.26,
+      "half_life": 120
+    }
+  ]
+}

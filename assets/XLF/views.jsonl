@@ -1,3 +1,5 @@
 {"date": "2026-11-02", "asset": "XLF", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false}
 {"date": "2026-11-02", "asset": "XLF", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false, "raw": true}
 {"date": "2026-11-02", "asset": "XLF", "rating": "neutral", "conf": "low", "prob_up": 53.9, "prior": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false, "raw": false}
+{"date": "2026-11-02", "asset": "XLF", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false, "raw": true}
+{"date": "2026-11-02", "asset": "XLF", "rating": "bullish", "conf": "low", "prob_up": 58.8, "prior": 50.0, "expires": "2027-01-31", "signals": [], "resolved": false, "raw": false}

@@ -1,0 +1,25 @@
+{
+  "asset": "CRWD",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.CRWD",
+  "prior": 50,
+  "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)",
+  "added": "2026-11-02",
+  "note": "",
+  "evidence": [
+    {
+      "id": "crwd-1",
+      "group": "g-yguWtahHw:CRWD:up",
+      "date": "2026-10-14",
+      "video_id": "g-yguWtahHw",
+      "source": "Adam Khoo — Q4 Game Plan",
+      "claim": "CrowdStrike +131% YTD (+217% vs his cost); same AI-driven cybersecurity secular thesis; won't sell despite overvaluation — fears running off without re-entry",
+      "relation": "AI-era attack surface → structural security-spending demand",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 180
+    }
+  ]
+}

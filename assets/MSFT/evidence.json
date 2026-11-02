@@ -19,6 +19,18 @@
       "lr": 1.22,
       "half_life": 90,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "msft-2",
+      "group": "t9P3BKPndnI:MSFT:up",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+      "claim": "Microsoft named among cash-rich megacaps immune to long-rate rises — interest income on cash offsets data-center borrowings",
+      "relation": "rate rise → net-neutral for net-cash megacap",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 120
     }
   ]
 }

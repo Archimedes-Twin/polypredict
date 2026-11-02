@@ -4,6 +4,19 @@
   "derived": true,
   "generated_by": "bayes.py",
   "source_of_truth": "../inbox/beliefs.json -> assets.ZROZ",
-  "evidence": [],
-  "resolution": ""
+  "evidence": [
+    {
+      "id": "zroz-1",
+      "group": "t9P3BKPndnI:ZROZ:down",
+      "date": "2026-09-14",
+      "video_id": "t9P3BKPndnI",
+      "source": "Adam Khoo — Will Rising Long Term Rates Crash Stocks? (Sep 14)",
+      "claim": "Long rate ≈ inflation + real GDP: 3.4% CPI + 1.5% GDP = 4.9% and heading toward 5–5.5%; the Fed controls only the short rate — a hot-inflation regime mechanically pushes long yields up regardless of Fed policy",
+      "relation": "inflation-anchored long-rate drift up → 20+yr bond prices down",
+      "dir": "down",
+      "lr": 1.3,
+      "half_life": 120
+    }
+  ],
+  "resolution": "Consistent with the bearish market prior (hot-CPI buckets + hike odds pressuring the long end); Khoo's mechanism reinforces it. His counterpoint — 5% yields are historically normal and only a fast spike hurts — is equity-focused and does not protect 20+yr bond prices from a further yield grind higher."
 }
