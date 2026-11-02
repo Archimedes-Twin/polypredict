@@ -3,13 +3,15 @@
 Stdlib-only. Odds basket -> per-signal asset up-probabilities -> ONE rating per asset
 (very bearish..very bullish, high/med/low confidence, 90-day horizon) -> static mobile
 site (index rows + per-asset details pages) pushed to GitHub Pages."""
-import json, os, re, subprocess, urllib.parse, urllib.request
+import json, os, re, subprocess, sys, urllib.parse, urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 HOME = os.path.expanduser("~")
 SITE = os.path.join(HOME, "signals/polypredict/site")
 ARCHIVE = os.path.join(SITE, "predictions.jsonl")
 os.makedirs(os.path.join(SITE, "details"), exist_ok=True)
+os.makedirs(os.path.join(SITE, "narratives"), exist_ok=True)
+NARR = os.path.join(SITE, "narratives")
 UA = {"User-Agent": "Mozilla/5.0"}
 GAMMA = "https://gamma-api.polymarket.com"
 BASKET = ["SPY","QQQ","SCHD","XLE","XLF","XLC","XLY","XLP","XLV","ZROZ","HYG"]
@@ -223,6 +225,59 @@ def latest_active(rows):
             last[r["asset"]] = r
     return last
 
+# ---------- per-asset performance + trend analysis ----------
+ASSET_NOTE = {
+ "SPY":"Broad US equity market; sensitive to Fed policy path, credit conditions, and geopolitical risk-off.",
+ "QQQ":"Mega-cap growth; multiples squeezed by rising real yields/hike odds, relieved by easing.",
+ "SCHD":"Dividend-value basket loaded on energy, healthcare, staples; wins while the Fed stays hawkish and crude stays bid.",
+ "XLE":"Energy equities; earnings track crude directly - the oil supply shock is the dominant driver.",
+ "XLF":"Financials; benefits from steep curve and no-recession credit, hurt by recession odds.",
+ "XLC":"Telecom/media - long-duration content businesses with weak pricing power; rate-sensitive.",
+ "XLY":"Consumer discretionary; vulnerable to rate persistence + labor softening.",
+ "XLP":"Consumer staples; pricing-power shelter in cost-push inflation.",
+ "XLV":"Healthcare; pricing power + defensive bid, but credit blowouts hit biotech/pharma.",
+ "ZROZ":"Long-duration Treasuries; convex recession hedge, gains when easing odds rise.",
+ "HYG":"High-yield credit; dies with recession/regime risk, thrives in soft landing.",
+}
+def perf_stats(tk):
+    s = series(tk)
+    if not s or len(s) < 10: return None
+    w = [q for q in s if q[0] >= s[-1][0] - timedelta(days=182)]
+    if len(w) < 5: w = s[-20:]
+    ret6 = (w[-1][1]/w[0][1]-1)*100
+    hi = max(w, key=lambda q:q[1]); lo = min(w, key=lambda q:q[1])
+    peak = -1; dd = 0.0
+    for _,c in w:
+        peak = max(peak,c); dd = min(dd,(c/peak-1)*100)
+    w1 = [q for q in s if q[0] >= s[-1][0] - timedelta(days=30)]
+    ret1 = (w1[-1][1]/w1[0][1]-1)*100 if len(w1) > 1 else 0.0
+    return dict(ret6=round(ret6,1), ret1=round(ret1,1), hi=[str(hi[0]),round(hi[1],2)],
+                lo=[str(lo[0]),round(lo[1],2)], dd=round(dd,1), last=round(w[-1][1],2))
+
+def trend_of(p):
+    if p is None: return "unknown"
+    return "up" if p["ret6"] >= 5 else ("down" if p["ret6"] <= -5 else "sideways")
+
+def trend_verdict(trend, m):
+    view = "bullish" if m > 58 else ("bearish" if m < 42 else "neutral")
+    if view == "neutral":
+        return "Odds imply no strong 3-month direction (neutral zone); the realized trend may drift either way.", view
+    if view == trend:
+        return f"Odds AGREE with the 6-month trend - the crowd expects continuation ({view}).", view
+    return f"Odds CONTRADICT the 6-month trend - the crowd expects a REVERSAL ({view} view vs {trend} trend).", view
+
+def build_detail_data(V, rows):
+    out = {}
+    for a in BASKET:
+        d = V[a]; pf = perf_stats(a); tr = trend_of(pf)
+        vtxt, vview = trend_verdict(tr, d["prob_up"])
+        act = [r for r in rows if r["asset"]==a and not r.get("resolved")]
+        out[a] = dict(asset=a, rating=d["rating"], conf=d["conf"], prob_up=d["prob_up"],
+                      perf=pf, trend=tr, verdict=vtxt, view=vview,
+                      signals=[{k:s[k] for k in ("sig","basis","prob_up","invalid")} for s in d["signals"]],
+                      expires=act[-1]["expires"] if act else None, note=ASSET_NOTE.get(a,""))
+    return out
+
 # ---------- html ----------
 def esc(x): return str(x).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
 SNAME = {"fed_hike":"Fed hike","cut_jul27":"Fed cut by Jul 2027","wti_dip90":"WTI dips below $90",
@@ -266,6 +321,39 @@ def page(title, body, back=False):
     h.append(f"<p class='sub'>generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} &mdash; Polymarket Gamma API odds; rules engine + calibration history in predictions.jsonl</p></body></html>")
     return "\n".join(h)
 
+def md_lite(txt):
+    out = []
+    for block in [x.strip() for x in txt.split("\n\n") if x.strip()]:
+        if block.startswith("## "):
+            out.append(f"<h2>{esc(block[3:].strip())}</h2>")
+        else:
+            para = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", esc(block)).replace("\n", " ")
+            out.append(f"<p style='line-height:1.6;margin:8px 0'>{para}</p>")
+    return "\n".join(out)
+
+def load_narrative(a):
+    fp = os.path.join(NARR, f"{a}.md")
+    if os.path.exists(fp) and (today - date.fromtimestamp(os.path.getmtime(fp))).days <= 3:
+        with open(fp) as f: return f.read()
+    return None
+
+def fallback_narrative(a, dd):
+    pf = dd["perf"]
+    if pf:
+        perf = (f"## Performance (6 months)\n\n"
+                f"{a} returned **{pf['ret6']:+.1f}%** over the past 6 months (last close {pf['last']:,.2f}). "
+                f"Peak {pf['hi'][1]:,.2f} on {pf['hi'][0]}, trough {pf['lo'][1]:,.2f} on {pf['lo'][0]}; "
+                f"worst pullback inside the window was {pf['dd']:.1f}%. Last 30 days: {pf['ret1']:+.1f}%. Trend: {dd['trend']}.")
+    else:
+        perf = f"## Performance (6 months)\n\nNo price history available for {a}."
+    sig_txt = "; ".join(f"{SNAME.get(s['sig'], s['sig'])}: {s['basis']}" for s in dd["signals"]) or "no odds crossed rule thresholds"
+    drivers = (f"## Drivers\n\n{dd['note']} Active market odds: {sig_txt}.")
+    ev = ("Active signal evidence: " + "; ".join(
+          f"{SNAME.get(s['sig'], s['sig'])} up-prob {s['prob_up']:.0f}% (invalidation: {s['invalid']})" for s in dd["signals"])
+          if dd["signals"] else "No active signals - the view rests only on the asset's baseline role in the basket.")
+    ana = f"## Continue or revert\n\n{dd['verdict']} {ev}"
+    return perf + "\n\n" + drivers + "\n\n" + ana
+
 def index_html(V, rows, cal, o):
     b = [f"<h1>Polymarket &#8594; ETF views</h1><div class='sub'>{today.isoformat()} &middot; 3-month horizon &middot; crowd odds mapped through auditable rules</div>"]
     for a in BASKET:
@@ -284,18 +372,18 @@ def index_html(V, rows, cal, o):
     b.append("</table>")
     return page("Polymarket -> ETF views", "\n".join(b))
 
-def detail_html(a, V, rows):
-    d = V[a]
-    b = [f"<h1>{a} &mdash; <span class='tag {RCLS[d['rating']]}'>{d['rating']}</span></h1>"
-         f"<div class='sub'>{d['conf']} confidence &middot; implied 3-month up-probability {d['prob_up']:.0f}% &middot; {today.isoformat()}</div>{prob_bar(d['prob_up'])}"]
-    b.append("<h2>DRIVING SIGNALS</h2>")
-    if d["signals"]:
-        for s in d["signals"]:
+def detail_html(a, dd, rows):
+    b = [f"<h1>{a} &mdash; <span class='tag {RCLS[dd['rating']]}'>{dd['rating']}</span></h1>"
+         f"<div class='sub'>{dd['conf']} confidence &middot; implied 3-month up-probability {dd['prob_up']:.0f}% &middot; trend: {dd['trend']} &middot; {today.isoformat()}</div>{prob_bar(dd['prob_up'])}"]
+    b.append(md_lite(load_narrative(a) or fallback_narrative(a, dd)))
+    b.append("<h2>ODDS EVIDENCE</h2>")
+    if dd["signals"]:
+        for s in dd["signals"]:
             b.append(f"<div class='card'><div class='top'><span class='name'>{esc(SNAME.get(s['sig'], s['sig']))}</span>"
                      f"<span class='prob'>{a} 3mo up-prob {s['prob_up']:.0f}%</span></div>"
                      f"<div class='basis'>{esc(s['basis'])}</div>"
                      f"<div class='inv'>&#9888; invalidation: {esc(s['invalid'])}</div></div>")
-        b.append(f"<div class='comp'>Composite: mean of {a} up-probs &rarr; {d['prob_up']:.0f}% &rarr; <b>{d['rating']}</b> ({d['conf']} confidence)</div>")
+        b.append(f"<div class='comp'>Composite: mean of {a} up-probs &rarr; {dd['prob_up']:.0f}% &rarr; <b>{dd['rating']}</b> ({dd['conf']} confidence)</div>")
     else:
         b.append("<div class='comp'>No odds crossed rule thresholds today &mdash; held neutral.</div>")
     acal = calibration(rows, asset=a)
@@ -316,6 +404,24 @@ def detail_html(a, V, rows):
     return page(f"{a} details", "\n".join(b), back=True)
 
 # ---------- main ----------
+def push():
+    subprocess.run(["git","add","-A"], cwd=SITE, capture_output=True)
+    subprocess.run(["git","commit","-m",f"update {today.isoformat()}"], cwd=SITE, capture_output=True)
+    r = subprocess.run(["git","push"], cwd=SITE, capture_output=True, text=True)
+    r2 = subprocess.run(["git","push","-f","origin","main:gh-pages"], cwd=SITE, capture_output=True, text=True)
+    return (r.returncode, r2.returncode, (r.stderr or r2.stderr or "")[-200:])
+
+if "--render" in sys.argv:
+    # narrative files were updated externally; rebuild detail pages from cached data, no fetching
+    with open(os.path.join(SITE, "detail_data.json")) as f: DD = json.load(f)
+    rows = load()
+    for a in DD:
+        with open(os.path.join(SITE, "details", f"{a}.html"), "w") as f:
+            f.write(detail_html(a, DD[a], rows))
+    rc1, rc2, err = push()
+    print(f"render-only: re-rendered {len(DD)} detail pages; push rc={rc1}/{rc2}; {err if (rc1 or rc2) else 'pushed ok'}")
+    sys.exit(0)
+
 fetch()
 rows = load()
 resolve(rows)
@@ -333,16 +439,16 @@ for a in BASKET:
                     resolved=False))
 with open(ARCHIVE, "w") as f:
     for r in rows + new: f.write(json.dumps(r)+"\n")
+DD = build_detail_data(V, rows + new)
+with open(os.path.join(SITE, "detail_data.json"), "w") as f:
+    json.dump(DD, f)
 with open(os.path.join(SITE, "index.html"), "w") as f:
     f.write(index_html(V, rows+new, calibration(rows+new), odds))
 for a in BASKET:
     with open(os.path.join(SITE, "details", f"{a}.html"), "w") as f:
-        f.write(detail_html(a, V, rows+new))
+        f.write(detail_html(a, DD[a], rows+new))
 
-subprocess.run(["git","add","-A"], cwd=SITE, capture_output=True)
-subprocess.run(["git","commit","-m",f"update {today.isoformat()}"], cwd=SITE, capture_output=True)
-r = subprocess.run(["git","push"], cwd=SITE, capture_output=True, text=True)
-r2 = subprocess.run(["git","push","-f","origin","main:gh-pages"], cwd=SITE, capture_output=True, text=True)
+rc1, rc2, err = push()
 print("views: " + ", ".join(f"{a}={V[a]['rating']}({V[a]['conf']})" for a in BASKET))
-print(f"odds: {len(odds)} markets; view changes: {len(new)}; archive rows: {len(rows)+len(new)}; push rc={r.returncode}/{r2.returncode}")
-print((r.stderr or r2.stderr)[-300:] if (r.returncode or r2.returncode) else "pushed ok")
+print(f"odds: {len(odds)} markets; view changes: {len(new)}; archive rows: {len(rows)+len(new)}; push rc={rc1}/{rc2}")
+print(err if (rc1 or rc2) else "pushed ok")
