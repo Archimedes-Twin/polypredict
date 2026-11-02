@@ -11,23 +11,25 @@
   "evidence": [
     {
       "id": "googl-1",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo — Hyperscalers Crash",
       "claim": "Rev +25%, op income +30%; Q3 op-cash-flow dip = EU fine + TPU inventory build (cash returns 2027), not business decline",
       "relation": "one-off accounting noise masks intact earnings engine",
       "dir": "up",
       "lr": 1.28,
-      "half_life": 90
+      "half_life": 90,
+      "video_id": "tKygzktysRk"
     },
     {
       "id": "googl-2",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo",
       "claim": "-13% post-earnings, -30% from high on capex sentiment",
       "relation": "sentiment-driven de-rating short-term",
       "dir": "down",
       "lr": 1.15,
-      "half_life": 30
+      "half_life": 30,
+      "video_id": "tKygzktysRk"
     }
   ]
 }

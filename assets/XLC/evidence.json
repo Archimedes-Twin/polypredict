@@ -17,13 +17,14 @@
     },
     {
       "id": "xlc-2",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo — Hyperscalers Crash After Earnings (Oct 30)",
       "claim": "Capex fear is growth capex: GOOGL rev +25%/op income +30%; META op income +11% ex one-off fine; negative FCF driven by one-offs (EU fine, TPU inventory cash returning 2027)",
       "relation": "growth capex -> future earnings up; drop is sentiment not fundamentals",
       "dir": "up",
       "lr": 1.28,
-      "half_life": 90
+      "half_life": 90,
+      "video_id": "tKygzktysRk"
     }
   ],
   "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow — bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off."

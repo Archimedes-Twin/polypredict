@@ -11,13 +11,14 @@
   "evidence": [
     {
       "id": "arm-1",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo",
       "claim": "Arm -50% from high; cited among hyped/hedge-fund-crowded names he refuses to touch",
       "relation": "crowded-high-multiple unwind",
       "dir": "down",
       "lr": 1.22,
-      "half_life": 30
+      "half_life": 30,
+      "video_id": "tKygzktysRk"
     }
   ]
 }

@@ -87,8 +87,8 @@
     "source": "market prior + video evidence"
   },
   "QQQ": {
-    "prior": 40.9,
-    "post": 44.9,
+    "prior": 41.4,
+    "post": 45.3,
     "items": [
       {
         "id": "qqq-1",
@@ -116,23 +116,24 @@
       },
       {
         "id": "qqq-3",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo \u2014 Hyperscalers Crash After Earnings (Oct 30)",
         "claim": "Hyperscaler negative FCF = growth capex + one-offs (EU fine, TPU inventory), NOT declining operating cash flow; rev growth GOOGL+25% META+26% AMZN+13%",
         "relation": "growth capex -> future operating cash flow up; fundamentals intact despite price drop",
         "dir": "up",
         "lr": 1.3,
         "half_life": 90,
-        "lr_eff": 1.3,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.29,
+        "age": 3
       }
     ],
     "resolution": "Short-term rotation-out evidence (qqq-1) vs fundamental-intact evidence (qqq-3) genuinely conflict; both kept. Resolution: rotation is a flow phenomenon (weeks), fundamentals a valuation phenomenon (quarters). For the 90-day view the flow leg dominates while Fed-hike odds (already in prior) suppress multiples \u2014 posterior stays near neutral, slightly above the pre-evidence market wash because earnings breadth data is the strongest verified fact in the set.",
     "source": "market prior + video evidence"
   },
   "SCHD": {
-    "prior": 59.1,
-    "post": 65.9,
+    "prior": 58.6,
+    "post": 65.5,
     "items": [
       {
         "id": "schd-1",
@@ -231,7 +232,7 @@
   },
   "XLC": {
     "prior": 31.2,
-    "post": 32.6,
+    "post": 32.5,
     "items": [
       {
         "id": "xlc-1",
@@ -247,23 +248,24 @@
       },
       {
         "id": "xlc-2",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo \u2014 Hyperscalers Crash After Earnings (Oct 30)",
         "claim": "Capex fear is growth capex: GOOGL rev +25%/op income +30%; META op income +11% ex one-off fine; negative FCF driven by one-offs (EU fine, TPU inventory cash returning 2027)",
         "relation": "growth capex -> future earnings up; drop is sentiment not fundamentals",
         "dir": "up",
         "lr": 1.28,
         "half_life": 90,
-        "lr_eff": 1.28,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.27,
+        "age": 3
       }
     ],
     "resolution": "Direct conflict (short-term flow out vs fundamentals intact). Resolution: fundamentals argument applies on a quarters horizon; our 90-day view is dominated by the Fed-hike leg (72%) and the observed outflow \u2014 bearish stance kept for the current window; revisit in Q1-2027 when the inventory cash returns and hike risk rolls off.",
     "source": "market prior + video evidence"
   },
   "XLE": {
-    "prior": 58.8,
-    "post": 61.7,
+    "prior": 58.9,
+    "post": 61.8,
     "items": [
       {
         "id": "xle-1",
@@ -283,31 +285,33 @@
   },
   "NVDA": {
     "prior": 50,
-    "post": 52.7,
+    "post": 52.6,
     "items": [
       {
         "id": "nvda-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "NVDA fwd PE 17 vs Cisco's 131x before dotcom burst; Cisco ran to +4200% before collapsing \u2014 structural valuation headroom",
         "relation": "cheap multiple relative to prior-cycle peak -> upside risk skewed",
         "dir": "up",
         "lr": 1.28,
         "half_life": 120,
-        "lr_eff": 1.28,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.27,
+        "age": 3
       },
       {
         "id": "nvda-2",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "GOOGL/AMZN selling their own AI chips (TPUs) \u2014 competing with Nvidia",
         "relation": "competition -> long-term moat erosion risk",
         "dir": "down",
         "lr": 1.15,
         "half_life": 180,
+        "video_id": "tKygzktysRk",
         "lr_eff": 1.15,
-        "age": 0
+        "age": 3
       }
     ],
     "resolution": "",
@@ -322,19 +326,20 @@
   },
   "MU": {
     "prior": 50,
-    "post": 45.0,
+    "post": 45.4,
     "items": [
       {
         "id": "mu-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "Micron -5.3% in one day, -30% from high; hedge-fund crowded AI long, 'I don't own it, too dangerous'",
         "relation": "crowded-long unwind -> continued downside pressure",
         "dir": "down",
         "lr": 1.22,
         "half_life": 30,
-        "lr_eff": 1.22,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.2,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -349,19 +354,20 @@
   },
   "AMD": {
     "prior": 50,
-    "post": 45.0,
+    "post": 45.4,
     "items": [
       {
         "id": "amd-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "AMD -10.88% in one day in the AI-name sell-off; retail/hedge-fund crowd unwinding",
         "relation": "crowded-long unwind",
         "dir": "down",
         "lr": 1.22,
         "half_life": 30,
-        "lr_eff": 1.22,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.2,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -376,19 +382,20 @@
   },
   "INTC": {
     "prior": 50,
-    "post": 44.2,
+    "post": 44.6,
     "items": [
       {
         "id": "intc-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "Intel -28% in one day after earnings, -50% from high",
         "relation": "earnings disappointment + unwinding",
         "dir": "down",
         "lr": 1.26,
         "half_life": 30,
-        "lr_eff": 1.26,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.24,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -403,19 +410,20 @@
   },
   "ARM": {
     "prior": 50,
-    "post": 45.0,
+    "post": 45.4,
     "items": [
       {
         "id": "arm-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "Arm -50% from high; cited among hyped/hedge-fund-crowded names he refuses to touch",
         "relation": "crowded-high-multiple unwind",
         "dir": "down",
         "lr": 1.22,
         "half_life": 30,
-        "lr_eff": 1.22,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.2,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -430,19 +438,20 @@
   },
   "SNDK": {
     "prior": 50,
-    "post": 45.0,
+    "post": 45.4,
     "items": [
       {
         "id": "sndk-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "SanDisk -13.47% in one day, -50% from high",
         "relation": "crowded AI-memory unwind",
         "dir": "down",
         "lr": 1.22,
         "half_life": 30,
-        "lr_eff": 1.22,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.2,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -457,31 +466,33 @@
   },
   "GOOGL": {
     "prior": 50,
-    "post": 52.7,
+    "post": 52.8,
     "items": [
       {
         "id": "googl-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo \u2014 Hyperscalers Crash",
         "claim": "Rev +25%, op income +30%; Q3 op-cash-flow dip = EU fine + TPU inventory build (cash returns 2027), not business decline",
         "relation": "one-off accounting noise masks intact earnings engine",
         "dir": "up",
         "lr": 1.28,
         "half_life": 90,
-        "lr_eff": 1.28,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.27,
+        "age": 3
       },
       {
         "id": "googl-2",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "-13% post-earnings, -30% from high on capex sentiment",
         "relation": "sentiment-driven de-rating short-term",
         "dir": "down",
         "lr": 1.15,
         "half_life": 30,
-        "lr_eff": 1.15,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.14,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -496,31 +507,33 @@
   },
   "META": {
     "prior": 50,
-    "post": 52.3,
+    "post": 52.4,
     "items": [
       {
         "id": "meta-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo \u2014 Hyperscalers Crash",
         "claim": "Rev +26%; op income 'down 37%' is the addiction-lawsuit fine, +11% ex-one-off; op cash flow +24% LTM",
         "relation": "earnings engine intact, drop is sentiment",
         "dir": "up",
         "lr": 1.26,
         "half_life": 90,
-        "lr_eff": 1.26,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.25,
+        "age": 3
       },
       {
         "id": "meta-2",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "-7% post-earnings (was -12%), -30% from high",
         "relation": "short-term de-rating",
         "dir": "down",
         "lr": 1.15,
         "half_life": 30,
-        "lr_eff": 1.15,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.14,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -535,31 +548,33 @@
   },
   "AMZN": {
     "prior": 50,
-    "post": 52.7,
+    "post": 52.8,
     "items": [
       {
         "id": "amzn-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo \u2014 Hyperscalers Crash",
         "claim": "Rev +13% FX-neutral, op income +61%, op cash flow +29% LTM; negative FCF = datacenter growth capex",
         "relation": "growth capex converts to future cash flow",
         "dir": "up",
         "lr": 1.28,
         "half_life": 90,
-        "lr_eff": 1.28,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.27,
+        "age": 3
       },
       {
         "id": "amzn-2",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo",
         "claim": "-7.8% post-earnings on FCF fear",
         "relation": "short-term de-rating",
         "dir": "down",
         "lr": 1.15,
         "half_life": 30,
-        "lr_eff": 1.15,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.14,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -574,19 +589,20 @@
   },
   "MSFT": {
     "prior": 50,
-    "post": 55.0,
+    "post": 54.8,
     "items": [
       {
         "id": "msft-1",
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "source": "Adam Khoo \u2014 Hyperscalers Crash",
         "claim": "Named alongside hyperscalers whose negative FCF is growth capex into AI datacenters with growing operating cash flow",
         "relation": "growth capex -> future cash flow",
         "dir": "up",
         "lr": 1.22,
         "half_life": 90,
-        "lr_eff": 1.22,
-        "age": 0
+        "video_id": "tKygzktysRk",
+        "lr_eff": 1.21,
+        "age": 3
       }
     ],
     "resolution": "",
@@ -600,8 +616,8 @@
     "found_in": "Adam Khoo video Oct 30"
   },
   "_meta": {
-    "generated_at": 1793620702.6014109,
-    "started_at": 1793620701.4661686,
+    "generated_at": 1793621312.6216643,
+    "started_at": 1793621311.2797556,
     "run_date": "2026-11-02"
   }
 }

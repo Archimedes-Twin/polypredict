@@ -11,23 +11,25 @@
   "evidence": [
     {
       "id": "meta-1",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo — Hyperscalers Crash",
       "claim": "Rev +26%; op income 'down 37%' is the addiction-lawsuit fine, +11% ex-one-off; op cash flow +24% LTM",
       "relation": "earnings engine intact, drop is sentiment",
       "dir": "up",
       "lr": 1.26,
-      "half_life": 90
+      "half_life": 90,
+      "video_id": "tKygzktysRk"
     },
     {
       "id": "meta-2",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo",
       "claim": "-7% post-earnings (was -12%), -30% from high",
       "relation": "short-term de-rating",
       "dir": "down",
       "lr": 1.15,
-      "half_life": 30
+      "half_life": 30,
+      "video_id": "tKygzktysRk"
     }
   ]
 }

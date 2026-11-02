@@ -11,23 +11,25 @@
   "evidence": [
     {
       "id": "amzn-1",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo — Hyperscalers Crash",
       "claim": "Rev +13% FX-neutral, op income +61%, op cash flow +29% LTM; negative FCF = datacenter growth capex",
       "relation": "growth capex converts to future cash flow",
       "dir": "up",
       "lr": 1.28,
-      "half_life": 90
+      "half_life": 90,
+      "video_id": "tKygzktysRk"
     },
     {
       "id": "amzn-2",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo",
       "claim": "-7.8% post-earnings on FCF fear",
       "relation": "short-term de-rating",
       "dir": "down",
       "lr": 1.15,
-      "half_life": 30
+      "half_life": 30,
+      "video_id": "tKygzktysRk"
     }
   ]
 }

@@ -11,13 +11,14 @@
   "evidence": [
     {
       "id": "intc-1",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo",
       "claim": "Intel -28% in one day after earnings, -50% from high",
       "relation": "earnings disappointment + unwinding",
       "dir": "down",
       "lr": 1.26,
-      "half_life": 30
+      "half_life": 30,
+      "video_id": "tKygzktysRk"
     }
   ]
 }

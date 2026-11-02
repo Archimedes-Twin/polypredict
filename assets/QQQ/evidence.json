@@ -27,13 +27,14 @@
     },
     {
       "id": "qqq-3",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo — Hyperscalers Crash After Earnings (Oct 30)",
       "claim": "Hyperscaler negative FCF = growth capex + one-offs (EU fine, TPU inventory), NOT declining operating cash flow; rev growth GOOGL+25% META+26% AMZN+13%",
       "relation": "growth capex -> future operating cash flow up; fundamentals intact despite price drop",
       "dir": "up",
       "lr": 1.3,
-      "half_life": 90
+      "half_life": 90,
+      "video_id": "tKygzktysRk"
     }
   ],
   "resolution": "Short-term rotation-out evidence (qqq-1) vs fundamental-intact evidence (qqq-3) genuinely conflict; both kept. Resolution: rotation is a flow phenomenon (weeks), fundamentals a valuation phenomenon (quarters). For the 90-day view the flow leg dominates while Fed-hike odds (already in prior) suppress multiples — posterior stays near neutral, slightly above the pre-evidence market wash because earnings breadth data is the strongest verified fact in the set."

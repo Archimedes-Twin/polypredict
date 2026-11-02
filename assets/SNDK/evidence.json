@@ -11,13 +11,14 @@
   "evidence": [
     {
       "id": "sndk-1",
-      "date": "2026-11-02",
+      "date": "2026-10-30",
       "source": "Adam Khoo",
       "claim": "SanDisk -13.47% in one day, -50% from high",
       "relation": "crowded AI-memory unwind",
       "dir": "down",
       "lr": 1.22,
-      "half_life": 30
+      "half_life": 30,
+      "video_id": "tKygzktysRk"
     }
   ]
 }
