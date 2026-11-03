@@ -97,12 +97,17 @@ def fetch():
                 odds["wti_dip90"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
             if re.search(r"\(HIGH\) \$120\b", m.get("question","")) and (y:=poly_yes(m)) is not None:
                 odds["wti_spike120"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
-    for e in poly_search("US-Iran ceasefire"):
-        if e.get("closed"): continue
-        for m in poly_open(e):
-            if "December 31" in m.get("question","") and (y:=poly_yes(m)) is not None:
-                odds["iran_peace_dec"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
-        break
+    found_ceas = False
+    for q in ("US-Iran ceasefire", "Israel Iran ceasefire", "Iran ceasefire", "ceasefire"):
+        if found_ceas: break
+        for e in poly_search(q):
+            if e.get("closed"): continue
+            for m in poly_open(e):
+                if "December 31" in m.get("question","") and "ceasefire" in m.get("question","").lower() and (y:=poly_yes(m)) is not None:
+                    proxy = "" if re.search(r"US[- ]Iran", m.get("question","")) else f" (proxy bet: {(e.get('title') or '')[:34]})"
+                    odds["iran_peace_dec"] = (y, f"{m.get('question','')} — market prob {y:.0f}%{proxy}")
+                    found_ceas = True
+            if found_ceas: break
     found_rec = False
     for q in ("US recession by end", "recession 2027", "US recession"):
         if found_rec: break
