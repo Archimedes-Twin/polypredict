@@ -103,12 +103,17 @@ def fetch():
             if "December 31" in m.get("question","") and (y:=poly_yes(m)) is not None:
                 odds["iran_peace_dec"] = (y, f"{m.get('question','')} — market prob {y:.0f}%")
         break
-    for e in poly_search("US recession by end"):
-        if e.get("closed"): continue
-        for m in poly_open(e):
-            if e.get("title","").strip() == "US recession by end of 2027?" and (y:=poly_yes(m)) is not None:
-                odds["rec27"] = (y, f"{e.get('title','')} — market prob {y:.0f}%")
-        break
+    found_rec = False
+    for q in ("US recession by end", "recession 2027", "US recession"):
+        if found_rec: break
+        for e in poly_search(q):
+            if e.get("closed") or e.get("title", "").strip() != "US recession by end of 2027?":
+                continue
+            for m in poly_open(e):
+                if (y := poly_yes(m)) is not None:
+                    odds["rec27"] = (y, f"{e.get('title','')} — market prob {y:.0f}%")
+                    found_rec = True
+            break
     cpi = [e for e in poly_search("Core CPI MoM")
            if re.match(r"Core CPI MoM - \w+ \d{4}", e.get("title","")) and not e.get("closed")]
     if cpi:
