@@ -179,9 +179,12 @@ class EvidenceGroups(unittest.TestCase):
     def test_beliefs_file_grouped(self):
         with open(B.BELIEFS) as f: bel = json.load(f)
         for a in ("SPY", "SCHD"):
-            gs = {e.get("group") for e in bel["assets"][a]["evidence"]}
-            self.assertEqual(len(gs), 1, a)
-            self.assertIsNotNone(gs.pop(), a)
+            ev = bel["assets"][a]["evidence"]
+            gs = {e.get("group") for e in ev}
+            # every item must belong to a group; multiple single-direction
+            # groups (different videos) are legitimate and combine multiplicatively
+            self.assertTrue(all(g is not None for g in gs), a)
+            self.assertGreaterEqual(len(gs), 1, a)
         for sec in ("assets", "watchlist"):
             for a, b in bel[sec].items():
                 B.posterior(50, b.get("evidence", []), self.T)    # no mixed-direction group

@@ -1,11 +1,11 @@
 ## Performance (6 months)
 
-GLD fell **-12.4%** over six months (363.14 last; peak 434.65 on May 11, trough 355.78 on Oct 30), with **-4.3% in the last 30 days** and a deep -18.1% drawdown — gold de-rated through the autumn despite the geopolitical noise.
+GLD fell **-13.8%** over six months (360.42 last; peak 434.65 on May 11, trough 355.78 on Oct 30), with **-5.0% in the last 30 days** and a deep -18.1% drawdown — gold de-rated through the autumn despite the geopolitical noise.
 
 ## Drivers
 
-Three odds legs, no video evidence yet on GLD. Against: **74% December hike odds** → 28.9% up-prob (rising real yields are gold's classic headwind). For: **51% Fed cut by July 2027** → 51.0%, and the **28% ceasefire-hold odds** → 63.6% up-prob (a US-Iran break buys the safe-haven bid). The composite averages to a bare neutral 47.8: the hedge legs outnumber the yield leg but each is a coin-flip.
+Two odds legs remain, no video evidence on GLD. Against: **75% December hike odds** → 27.5% up-prob (rising real yields are gold's classic headwind). For: **52% Fed cut by July 2027** → 52.5%, a coin-flip relief leg that lands after this window. The ceasefire leg (US-Iran break ~72% → 63.6% safe-haven up-prob) rolled off the basket with that market today (visible index warning), removing the strongest bullish contributor. The recession hedge leg is also unavailable (rec-2027 market missing). Composite: 40.0, bearish, no evidence adjustment.
 
 ## Continue or revert
 
-**Neutral (low confidence): 47.8 with no evidence adjustment — the composite is a genuine three-way wash.** The realized downtrend argues the market is already pricing the yield leg, while the hedge legs (ceasefire-break ~72%, cut ~51%) are unpriced insurance. Direction resolves on which leg materializes first: ceasefire-hold odds recovering over 55% removes the geopolitical bid; hike odds falling under 45% removes the yield drag and gold likely re-rises. Until one trigger fires, no edge — the bar sits essentially at 50.
+**Bearish (medium confidence): 40.0 — the three-way wash of yesterday resolved bearish once the geopolitical bid rolled.** The realized downtrend agrees: the crowd expects continuation. The market is already pricing the yield drag; what changed is that the unpriced insurance (ceasefire-break hedge, cut tail) either vanished or stays too weak. Direction re-resolves on the triggers: hike odds falling under 45% removes the yield drag and gold likely re-rises; if the ceasefire market returns with hold-odds under 45% (break bid), the safe-haven leg reattaches and pulls the composite back toward neutral. Until one fires, the bar reads bearish on one dominant leg — single-driver conviction, so confidence is capped at medium.
