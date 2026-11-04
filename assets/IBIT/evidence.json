@@ -4,6 +4,19 @@
   "derived": true,
   "generated_by": "bayes.py",
   "source_of_truth": "../inbox/beliefs.json -> assets.IBIT",
-  "evidence": [],
+  "evidence": [
+    {
+      "id": "ibit-1",
+      "group": "b_0X0ejOCeI:IBIT:down",
+      "date": "2026-07-01",
+      "source": "Adam Khoo — Is the 2026 Stock Market Bubble Ready to Burst? (2026-07-01)",
+      "video_id": "b_0X0ejOCeI",
+      "claim": "Khoo says he may agree with Grantham's view that Bitcoin goes to zero.",
+      "relation": "A speculative asset with no earnings or cash flow that Khoo regards as a mania-chasing vehicle.",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 30.0
+    }
+  ],
   "resolution": ""
 }

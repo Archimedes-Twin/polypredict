@@ -71,6 +71,102 @@
       "dir": "up",
       "lr": 1.2,
       "half_life": 150
+    },
+    {
+      "id": "spy-7",
+      "group": "xWG11RH570Q:SPY:up",
+      "date": "2026-09-03",
+      "source": "Adam Khoo — Stock Market Insights. The Last 4 Months of 2026 (2026-09-03)",
+      "video_id": "xWG11RH570Q",
+      "claim": "Q2 S&P 500 earnings grew 52% against about 23% expected, so the forward PE fell from 22x in January to 19.6x (5-year average 19.9x) while the index rose about 13% YTD.",
+      "relation": "Earnings are growing faster than price, which compresses the multiple and makes the rally earnings-driven and more sustainable, with no valuation stretch to unwind.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60.0
+    },
+    {
+      "id": "spy-8",
+      "group": "xWG11RH570Q:SPY:up",
+      "date": "2026-09-03",
+      "source": "Adam Khoo — Stock Market Insights. The Last 4 Months of 2026 (2026-09-03)",
+      "video_id": "xWG11RH570Q",
+      "claim": "On SPY the 20 EMA is above the 40 EMA, the 50 MA is above the 150 MA and the 200 MA is rising, so Khoo says higher prices into year-end are more probable than not.",
+      "relation": "Aligned short-, medium- and long-term trends historically favor trend continuation until the 50 MA crosses below the 150 MA with both sloping down.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 45.0
+    },
+    {
+      "id": "spy-9",
+      "group": "EQnmtPEcOMg:SPY:up",
+      "date": "2026-08-17",
+      "source": "Adam Khoo — The S&P 500 Just Hit 7,800. Can It Go Higher, or Is This the Top? (2026-08-17)",
+      "video_id": "EQnmtPEcOMg",
+      "claim": "Q2 2026 S&P 500 earnings grew about 50% (32% ex-Alphabet/Amazon) against 23% expected, full-year 2026 growth estimates rose from 15% to 30%, and forward PE fell from 22x to 20x (5-yr avg 19.9x) while the index rose 13% YTD.",
+      "relation": "Earnings are growing faster than price, so valuation is compressing and the rally is backed by fundamentals rather than multiple expansion, which supports further index upside.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60.0
+    },
+    {
+      "id": "spy-10",
+      "group": "EQnmtPEcOMg:SPY:up",
+      "date": "2026-08-17",
+      "source": "Adam Khoo — The S&P 500 Just Hit 7,800. Can It Go Higher, or Is This the Top? (2026-08-17)",
+      "video_id": "EQnmtPEcOMg",
+      "claim": "In midterm years August and September are historically weak, but a rally starts about 22 trading days before the election, and the market gained 10.4% to 16.1% in the 6 months after past midterms.",
+      "relation": "Midterm-cycle seasonality (Carson, BlackRock/Bloomberg) gives a positive drift into year-end, whichever party wins.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 60.0
+    },
+    {
+      "id": "spy-11",
+      "group": "EQnmtPEcOMg:SPY:down",
+      "date": "2026-08-17",
+      "source": "Adam Khoo — The S&P 500 Just Hit 7,800. Can It Go Higher, or Is This the Top? (2026-08-17)",
+      "video_id": "EQnmtPEcOMg",
+      "claim": "Khoo guesses a 5-10% wave-down in the next 1-2 months, within a clear uptrend, with weekly supports at 7380, 7000 and 6461.",
+      "relation": "August/September seasonal weakness and a pullback after a wave-up make a shallow retracement toward the 20 EMA/50 SMA support likely.",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 30.0
+    },
+    {
+      "id": "spy-12",
+      "group": "b_0X0ejOCeI:SPY:up",
+      "date": "2026-07-01",
+      "source": "Adam Khoo — Is the 2026 Stock Market Bubble Ready to Burst? (2026-07-01)",
+      "video_id": "b_0X0ejOCeI",
+      "claim": "Over the last 75 years 78.7% of years ended positive, +20-30% years occurred 21.3% of the time versus 2.7% for -20-30%, and a >30% annual loss occurred only 1.3% of the time (2008).",
+      "relation": "Skewed historical base rates mean staying long has positive expected value, and crash predictions rarely pay off.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 120.0
+    },
+    {
+      "id": "spy-13",
+      "group": "b_0X0ejOCeI:SPY:up",
+      "date": "2026-07-01",
+      "source": "Adam Khoo — Is the 2026 Stock Market Bubble Ready to Burst? (2026-07-01)",
+      "video_id": "b_0X0ejOCeI",
+      "claim": "Khoo's recession dashboard is green (no downturn signal in 12 months), the bubble-froth dashboard is at 65-70% (below the 80% warning level), and the 50-day MA is still above the 150-day MA.",
+      "relation": "Past bear markets in 2008 and 2022 were preceded by recession or froth triggers (froth hit 80% in Oct 2007 and late 2021) plus a 50/150 MA cross, and none of these have fired now.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 45.0
+    },
+    {
+      "id": "spy-14",
+      "group": "3qPLIYiejas:SPY:up",
+      "date": "2026-06-20",
+      "source": "Adam Khoo — How to Compound Your Way to $10 Million (The Real Math)? (2026-06-20)",
+      "video_id": "3qPLIYiejas",
+      "claim": "The S&P 500 ETF compounded at 10.89% a year over the last 20 years, 15% over 10 years and 14.42% over 5 years, through the GFC, COVID and the trade war.",
+      "relation": "Long-horizon compounding of index earnings rewards staying invested, so ~10% a year is a reasonable baseline expectation.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 150.0
     }
   ],
   "resolution": "Yesterday's bearish-leaning resolution was anchored by the ceasefire-break leg (raw up-prob 38.3) that rolled off today's basket with the Nov market, so SPY's prior is now the neutral 50% and the view is evidence-only. Khoo's earnings-breadth/margin fact (lr 1.34, applied) and the Sep-14 rate-normalcy analogue meet no opposing market leg now — prior 50 → posterior 60.7, bullish (low confidence). This is a mechanical revert, not new information: the policy/geopolitical regime is simply unmeasured for SPY today, so the bear risk is absent from the model rather than resolved — if the ceasefire market returns with break odds over 55% or a CPI/hike leg maps onto SPY at hawkish odds, the 2018 analogue (seasonality loses to policy shocks) argues the flip back. Confidence stays low precisely because no market leg corroborates the evidence side."

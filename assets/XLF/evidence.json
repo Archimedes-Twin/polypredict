@@ -26,6 +26,18 @@
       "dir": "up",
       "lr": 1.3,
       "half_life": 120
+    },
+    {
+      "id": "xlf-3",
+      "group": "xWG11RH570Q:XLF:up",
+      "date": "2026-09-03",
+      "source": "Adam Khoo — Stock Market Insights. The Last 4 Months of 2026 (2026-09-03)",
+      "video_id": "xWG11RH570Q",
+      "claim": "The 10-year Treasury yield rose from 4.19% to 4.78% YTD, steepening the yield curve, and Khoo says banks are doing very well.",
+      "relation": "A steeper curve lets banks borrow at short rates and lend at long rates, which expands net interest margin and earnings.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 45.0
     }
   ],
   "resolution": "Agrees with rotation prior (rate curve steepening + value rotation). Second, independent leg (Sep-14 NIM/float mechanism) now supports the same up-direction as the rotation flow evidence; no conflict."
