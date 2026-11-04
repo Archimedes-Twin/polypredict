@@ -1,11 +1,8 @@
 ## Performance (6 months)
-
-IBIT is **-5.4%** over six months (43.80 last; peak 49.01 on Sep 21, trough 33.29 on Jun 30) with **-9.8% in the last 30 days** and the deepest drawdown in the basket (-28.4%) — a sideways tape punctuated by violent risk-asset-style swings.
+Bitcoin exposure moved sideways over six months in a very wide range. It troughed in late June, rallied to a September high, and has since slipped. The drawdown from the high is large, and the fund ended near the middle of its range.
 
 ## Drivers
-
-Two policy-path legs: **75% December hike odds** map to a 27.5% IBIT up-prob — a hike is exactly what squeezes speculative risk assets, and IBIT trades like high-beta growth, not like a diversifier. The **52% July-2027 cut odds** map to 52.5% — the easing tail only half-offsets within this 90-day window because the cut lands after it. No video evidence on IBIT; no recession leg (rec-2027 market missing today). Composite 40.0, unchanged from yesterday.
+Liquidity and the Fed path are the main macro drivers. Elevated hike odds and only a coin-flip chance of cuts by mid next year tighten financial conditions for a zero-cash-flow speculative asset. Khoo's remark that he may agree Bitcoin goes to zero is an opinion about a non-earning asset, not an analysis of near-term flows. It is a weak, sentiment-level signal.
 
 ## Continue or revert
-
-**Bearish (medium confidence): 40.0 — odds contradict the realized swings; the downtrend channel from the Sep peak is intact.** IBIT's -28.4% drawdown already shows the risk-channel sensitivity. The bear leg invalidates if December-hike odds fall under 45%; the view flips bullish only when cut odds clear the 58% bullish band. The honest read: within 90 days, a hawkish-Fed crowd has no natural ally in IBIT.
+Judgment: bearish. The raw market-prior view was also bearish, and the evidence confirms it, although the evidence is thin and opinion-based. A restrictive rate backdrop and no earnings anchor argue for caution over this horizon. The view would be revisited if hike odds fall below the revision threshold shown on this page or if cut-by-July-2027 odds fall below the revision threshold shown on this page, which would revise the rates signal.

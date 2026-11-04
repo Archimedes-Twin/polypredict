@@ -1,11 +1,8 @@
 ## Performance (6 months)
-
-META is dead flat over six months (**+0.0%** — it has round-tripped) but **down 16.2% in the last 30 days** from its highs, now at 610.45 with a -21.5% drawdown inside the window.
+No six-month price history is available for this watchlist ticker, so the performance view is qualitative only. The stock fell after its latest earnings and sits well below its high, though part of the initial drop has been recovered.
 
 ## Drivers
-
-No market-odds leg — this is a watchlist name scored against a neutral 50 prior by video evidence only. Three evidence legs: fundamentals intact — revenue +26%, the 'down 37%' operating income is the addiction-lawsuit fine, +11% ex-one-off, operating cash flow +24% LTM (LR 1.26, 90d, fresh); short-term de-rating, -7% post-earnings and -30% from high (LR 1.15 down-leg, 30d); and the newest from Oct-14 — the News/Muse consumer-agent app hit 7M downloads in under 30 days (ChatGPT took 75, Grok 165) with the lawsuit resolved and a conservative intrinsic value ($900) ~17% above price (LR 1.30, decayed to 1.23 at 19 days).
+The earnings cycle drives the view. Khoo points to strong revenue growth and operating cash flow, with the headline profit decline caused by a legal fine. He also cites rapid adoption of its consumer-agent app and a resolved legal overhang as potential re-rating catalysts. The balance sheet is strong, and cash-rich megacaps are relatively insulated from rate rises. Capex sentiment and AI rotation remain near-term drags.
 
 ## Continue or revert
-
-**Neutral (low confidence): posterior 57.6 vs prior 50 — bullish-leaning but inside the neutral band.** The two up-legs (intact earnings engine + fastest-ever agent-app adoption) outweigh the small flow de-rating; Khoo flags META as his highest-upside hyperscaler, which is exactly what the posterior encodes. Risk to the thesis: the same agentic wave he cites as META's catalyst is the disintermediation risk he flags for ad-funded platforms elsewhere — if the fine/regulatory overhang returns, the down-leg re-dominates. Re-check when the 30d flow leg decays out (~Dec 2).
+Judgment: bullish. This is a watchlist ticker with no odds leg, so the view is evidence-driven only. The discount to Khoo's intrinsic-value estimates, intact earnings and a cheap forward multiple support a catch-up. Those valuations are his model outputs and opinions, not verified facts. The view would be revisited if capex rises without matching revenue growth, or if agent-app adoption fades.

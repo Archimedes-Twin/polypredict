@@ -1,11 +1,8 @@
 ## Performance (6 months)
-
-SCHD is **+12.7%** over six months (trough 31.54 on May 7, last 35.72 just under the window high 35.90 set Nov 2) and **+9.2% in the last 30 days** — dividend-value outperforming SPY by ~8pp while QQQ chopped around zero.
+The dividend-value fund has been in a steady uptrend over six months, rising from a spring low to a fresh high in the latest session. The most recent month was especially strong, and the drawdown from its prior peak has been fully recovered.
 
 ## Drivers
-
-The odds legs split by regime: hawkish is friendly — **75% Dec-hike odds map to a 72.5% SCHD up-prob** (cash-generative value wins while the Fed stays tight); the **52% July-2027 cut odds** (47.5) and the now-firmer **66% odds WTI dips below $90 in November** (42.3 on the energy sleeve) pull it back, averaging a raw composite of 54.1. Video evidence tips it bullish: the October rotation into exactly SCHD's sleeve — staples +11%, healthcare +9%, energy +10%, utilities +8% — is a verified tape fact at LR 1.34 (applied at age 1; the staged-rotation claim in the same group is absorbed per protocol).
+The macro driver is the rotation from AI-heavy growth into staples, healthcare, energy and utilities, which are the fund's core sleeves. Khoo describes this as staged and likely to repeat over one to two years, which is an opinion about flows. Oil supply risk and an inflation-linked rate path support the energy and defensive value sleeves. Fed hike odds are elevated, but the fund's cash-generative holdings are less rate-sensitive than long-duration growth. Oil-dip odds are also supportive.
 
 ## Continue or revert
-
-**Bullish (low confidence): posterior 61.2 vs prior 54.1**, agreeing with the realized uptrend. No conflict to resolve — rotation evidence and the hawkish-odds picture point the same way. Slight erosion vs yesterday (62.0) because the WTI dip-below-$90 odds firmed 63%→66%. The asymmetric risk is crude: dip-under-$90 odds past the 45% revision floor flip the energy leg bearish regardless of the Fed leg; if hike odds fall under 45% the value-rotation bid fades. Bullish holds only while hawkish Fed AND bid crude persist.
+Judgment: bullish. The raw market-prior view was neutral. The evidence on sector rotation, with the fund's exact sleeves leading the tape, pushes us above the odds-based read. Khoo's claim that rotations come in stages is a pattern, not a certainty, and the fund has already run hard. The view would be revisited if odds of a sub-90-dollar WTI dip fall below the revision threshold shown on this page, if hike odds fall below the revision threshold shown on this page, or if cut-by-July-2027 odds fall below the revision threshold shown on this page. A reversal of the rotation back into AI would also warrant a downgrade.

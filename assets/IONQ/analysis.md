@@ -1,11 +1,8 @@
 ## Performance (6 months)
-
-IONQ is **-34.6%** over six months with **-31.6% in the last 30 days alone** — last $29.93, -58.5% from window high, the deepest drawdown on the entire watchlist. The bubble deflation is already underway, not a forecast.
+No six-month price history is available for this watchlist ticker, so the performance view is qualitative only. The stock suffered a steep drop during the summer deflation of speculative AI names.
 
 ## Drivers
-
-New watchlist entry from Khoo's Sep-14 long-rates video, neutral prior, single down-leg: IonQ makes no money — Khoo cites it as the archetype of the unprofitable-emerging-tech cohort most exposed to the discount-rate channel of rising long yields, and the July bubble deflation already cut it -36% on leveraged crowding (LR 1.26, 120d, decayed to 1.19 at 49 days). Two channels compound: falling intrinsic value and forced-liquidation selling in over-leveraged names.
+Rates and the earnings cycle are the main drivers. As an unprofitable growth name, it is most exposed to a higher discount rate if long yields keep rising. Khoo flags its inflated narrative and leveraged speculative positioning, which leaves it vulnerable to forced selling. Against this, much of the deflation has already occurred, and sentiment-driven rebounds in speculative technology can be sharp.
 
 ## Continue or revert
-
-**Neutral (low confidence): posterior 45.7 vs prior 50 — mildly bearish, the weakest name in the watchlist's evidence layer.** Both channels Khoo describes are live in the tape (-58.5% from high), so the evidence and price agree; that also means the view is partly priced — the bear case fails if quantum contracts/deals accelerate enough to flip revenue expectations before the discount-rate drag bites, or if long yields roll over. Khoo's own discipline: he does not touch it. This page agrees — mildly bearish, no trade edge.
+Judgment: neutral. This is a watchlist ticker with no odds leg, so the view is evidence-driven only. The evidence is clearly cautious, with no earnings and rate sensitivity, but a large part of the speculative unwind has already happened. Khoo avoids the stock, which is his opinion about the cohort and not a forecast of price. The view would turn more bearish if long yields climb further or leveraged selling resumes.
