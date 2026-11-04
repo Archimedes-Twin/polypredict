@@ -11,6 +11,7 @@ SITE = os.path.join(HOME, "signals/polypredict/site")
 ARCHIVE = os.path.join(SITE, "predictions.jsonl")
 os.makedirs(os.path.join(SITE, "details"), exist_ok=True)      # generated HTML (publish path, unchanged)
 ASSETS = os.path.join(SITE, "assets")                          # per-asset folders: assets/<A>/analysis.md ...
+REPORT = os.path.join(SITE, "report.txt")                      # script-rendered daily report (delivered verbatim, no LLM)
 NARR = os.path.join(SITE, "narratives")                        # LEGACY narrative path (temporary fallback)
 os.makedirs(ASSETS, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0"}
@@ -330,6 +331,44 @@ def resolve(rows):
         r["outcome"] = 1 if up else 0
         r["hit"] = (r["prob_up"] >= 50) == up
         r["brier"] = round(((r["prob_up"]/100)-up)**2, 3)
+        r["resolved_date"] = today.isoformat()
+
+def report_block(Vm, raw_map, rows_all, missing):
+    """Script-rendered daily report — arithmetic only, delivered verbatim by the no_agent job.
+    The narrative agent must never re-type any of these numbers."""
+    L = [f"=== POLYPREDICT REPORT {today.isoformat()} ==="]
+    last_prev = {}
+    for r in rows_all:
+        if is_raw(r) or r.get("resolved") or r.get("date") == today.isoformat(): continue
+        last_prev[r["asset"]] = r
+    chg = []
+    for a, d in Vm.items():
+        p = last_prev.get(a)
+        if not p: continue
+        if (p["rating"], p["conf"]) != (d["rating"], d["conf"]) or abs(p["prob_up"] - d["prob_up"]) >= 1.0:
+            prp = (raw_map.get(a) or {}).get("prob_up")
+            chg.append(f"{a}: {p['rating']}/{p['conf']} ({p['prob_up']:.0f}%) -> {d['rating']}/{d['conf']} ({d['prob_up']:.0f}%)"
+                       + (f" [market prior {prp:.0f}%]" if prp is not None else ""))
+    L.append("VIEW CHANGES: " + ("; ".join(chg) if chg else "none"))
+    resl = [r for r in rows_all if r.get("resolved_date") == today.isoformat() and not is_raw(r)]
+    if resl:
+        L.append("RESOLVED TODAY: " + "; ".join(
+            f"{r['asset']} {'HIT' if r['hit'] else 'MISS'} ret {r['ret']:+.1f}% (prob was {r['prob_up']:.0f}%, issued {r['date']})" for r in resl))
+    fin = [r for r in rows_all if r.get("resolved") and not is_raw(r) and r.get("rating") != "neutral"]
+    if fin:
+        n = len(fin); hit = 100*sum(1 for r in fin if r["hit"])/n; br = sum(r["brier"] for r in fin)/n
+        L.append(f"CALIBRATION: {n} resolved posterior views | hit {hit:.0f}% | mean Brier {br:.3f}"
+                 + (" | NO demonstrated edge — honoring the honesty rule: keep publishing, do not tune thresholds" if n >= 10 and hit < 50 else ""))
+    else:
+        L.append("CALIBRATION: 0 resolved views yet (views resolve 90 days after issuance)")
+    L.append(f"MISSING MARKETS: {', '.join(missing) if missing else 'none'}")
+    L.append("SITE: https://archimedes-twin.github.io/polypredict/")
+    return "\n".join(L)
+
+def write_report(Vm, raw_map, rows_all, missing):
+    rep = report_block(Vm, raw_map, rows_all, missing)
+    with open(REPORT, "w") as f: f.write(rep + "\n")
+    return rep
 
 # Archive row kinds:
 #   raw: true   -> pre-Bayes market view, kept for auditing only, never scored
@@ -773,6 +812,15 @@ def detail_html(a, dd, rows):
     if narr:
         b.append(stale_banner(narr, dd["rating"], dd["prob_up"]))
     b.append(md_lite(narr or fallback_narrative(a, dd)))
+    if pf:
+        bits = (f"6m {pf['ret6']:+.1f}%" if pf.get("ret6") is not None else "6m n/a") + \
+               (f" &middot; 30d {pf['ret1']:+.1f}%" if pf.get("ret1") is not None else "") + \
+               (f" &middot; last close {pf['last']:,.2f}" if pf.get("last") is not None else "") + \
+               (f" &middot; drawdown {pf['dd']:.1f}%" if pf.get("dd") is not None else "")
+        hilo = (f"<div class='claim num'>peak {pf['hi'][1]:,.2f} on {esc(str(pf['hi'][0]))} &middot; trough {pf['lo'][1]:,.2f} on {esc(str(pf['lo'][0]))}</div>"
+                if pf.get("hi") and pf.get("lo") else "")
+        b.append(f"<div class='card'><div class='ct'><span class='ctitle'>Performance — script-rendered numbers</span></div>"
+                 f"<div class='claim num'>{bits}</div>{hilo}</div>")
     # 2) Bayesian update
     be = BAY.get(a)
     lab = "NEUTRAL PRIOR" if dd.get("watch") else "MARKET PRIOR"
@@ -889,6 +937,7 @@ def render():
     rc1, rc2, err = push()
     print(f"render-only: re-rendered {len(DD)} pages; view changes archived: {len(new)}; asset-folder files refreshed: {len(fs['written'])}; "
           f"push rc={rc1}/{rc2}; {err if (rc1 or rc2) else 'pushed ok'}")
+    print(write_report(V, raw, rows, missing))
 
 def main():
     t0 = time.time()
@@ -922,8 +971,18 @@ def main():
           f"view changes: {len([r for r in new if not is_raw(r)])} (+{len([r for r in new if is_raw(r)])} raw audit rows); "
           f"archive rows: {len(rows)+len(new)}; push rc={rc1}/{rc2}")
     print(err if (rc1 or rc2) else "pushed ok")
+    print(write_report(V, raw, rows+new, missing))
 
 if __name__ == "__main__":
+    if "--report" in sys.argv:
+        try:
+            with open(REPORT) as f: txt = f.read().rstrip()
+        except FileNotFoundError:
+            txt = "=== POLYPREDICT REPORT ===\nno report file — the pipeline has not run yet"
+        if today.isoformat() not in (txt.split("\n")[0] if txt else ""):
+            txt += f"\nWARNING: report is stale — pipeline did not run today ({today.isoformat()})"
+        print(txt)
+        sys.exit(0)
     if "--render" in sys.argv:
         render()
     else:
