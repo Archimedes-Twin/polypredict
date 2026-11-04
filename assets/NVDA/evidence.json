@@ -30,6 +30,42 @@
       "lr": 1.15,
       "half_life": 180,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "nvda-3",
+      "group": "xWG11RH570Q:NVDA:up",
+      "date": "2026-09-03",
+      "source": "Adam Khoo — Stock Market Insights. The Last 4 Months of 2026 (2026-09-03)",
+      "video_id": "xWG11RH570Q",
+      "claim": "Nvidia reported blowout quarter-2 earnings in the season that just ended and its stock gapped up.",
+      "relation": "An earnings beat on strong AI compute demand lifts the earnings base and the share price.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 30.0
+    },
+    {
+      "id": "nvda-4",
+      "group": "5PmJrJBcjTo:NVDA:up",
+      "date": "2026-07-31",
+      "source": "Adam Khoo — AI Bubble Burst. Is it Finally Over? (2026-07-31)",
+      "video_id": "5PmJrJBcjTo",
+      "claim": "TSMC raised revenue guidance by 40% and Azure grew about 43%, so Khoo attributes the July AI-stock drop to forced deleveraging rather than weak demand and expects higher highs.",
+      "relation": "Compute demand and earnings are still growing, so a leverage-driven price drop is a temporary dislocation and not a change in fundamentals for AI infrastructure.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60.0
+    },
+    {
+      "id": "nvda-5",
+      "group": "k_-PAhvvTU8:NVDA:up",
+      "date": "2026-07-31",
+      "source": "Adam Khoo — How to Pick Winning Stocks (The Simple Way) by Adam Khoo (2026-07-31)",
+      "video_id": "k_-PAhvvTU8",
+      "claim": "Nvidia is about 10% below intrinsic value, with a projected 3-5 year earnings growth rate of about 43%.",
+      "relation": "Modest undervaluation combined with very high consensus growth gives upside as earnings compound.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 90.0
     }
   ]
 }

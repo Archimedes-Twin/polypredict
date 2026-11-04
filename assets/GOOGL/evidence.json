@@ -42,6 +42,18 @@
       "dir": "up",
       "lr": 1.2,
       "half_life": 120
+    },
+    {
+      "id": "googl-4",
+      "group": "VNE11qpvVBY:GOOGL:up",
+      "date": "2026-08-19",
+      "source": "Adam Khoo — How to Know if a Stock is Cheap or Expensive? Part 1 of 2 (2026-08-19)",
+      "video_id": "VNE11qpvVBY",
+      "claim": "Alphabet's intrinsic value is $319 against a price of $344 (about 7% overvalued), and Khoo holds his average cost of $111 and will not sell because intrinsic value keeps compounding.",
+      "relation": "A wide-moat business that keeps growing profit and cash flow raises its intrinsic value over time, so a small overvaluation does not justify selling.",
+      "dir": "up",
+      "lr": 1.15,
+      "half_life": 90.0
     }
   ]
 }

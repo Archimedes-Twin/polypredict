@@ -1,5 +1,5 @@
 === POLYPREDICT REPORT 2026-11-04 ===
-VIEW CHANGES: SPY: neutral/low (55%) -> neutral/low (49%) [market prior 39%]; QQQ: neutral/low (44%) -> bearish/medium (39%) [market prior 35%]; XLC: very bearish/high (27%) -> very bearish/high (18%) [market prior 20%]; IBIT: bearish/medium (40%) -> bearish/medium (35%) [market prior 35%]
+VIEW CHANGES: SPY: neutral/low (55%) -> bullish/low (62%) [market prior 41%]; SCHD: bullish/low (62%) -> bullish/low (59%) [market prior 52%]; XLE: neutral/low (56%) -> neutral/low (51%) [market prior 45%]; XLF: bullish/low (59%) -> bullish/low (61%) [market prior 50%]; XLC: very bearish/high (27%) -> very bearish/high (20%) [market prior 22%]; IBIT: bearish/medium (40%) -> bearish/medium (36%) [market prior 37%]
 CALIBRATION: 0 resolved views yet (views resolve 90 days after issuance)
 MISSING MARKETS: none
 SITE: https://archimedes-twin.github.io/polypredict/

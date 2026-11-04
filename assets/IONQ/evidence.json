@@ -20,6 +20,18 @@
       "dir": "down",
       "lr": 1.26,
       "half_life": 120
+    },
+    {
+      "id": "ionq-2",
+      "group": "5PmJrJBcjTo:IONQ:down",
+      "date": "2026-07-31",
+      "source": "Adam Khoo — AI Bubble Burst. Is it Finally Over? (2026-07-31)",
+      "video_id": "5PmJrJBcjTo",
+      "claim": "IonQ sits at the top of Khoo's AI bubble pyramid as a quantum name with little profit and an inflated narrative, and it fell 36% in 30 days; he avoids it individually.",
+      "relation": "Narrative-driven valuation with no earnings, plus leveraged speculators being liquidated, leaves it vulnerable to further forced selling and deflation.",
+      "dir": "down",
+      "lr": 1.2,
+      "half_life": 60.0
     }
   ]
 }

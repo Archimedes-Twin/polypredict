@@ -31,6 +31,54 @@
       "dir": "up",
       "lr": 1.2,
       "half_life": 120
+    },
+    {
+      "id": "msft-3",
+      "group": "QzqQwF9hCNY:MSFT:up",
+      "date": "2026-08-14",
+      "source": "Adam Khoo — Will AI Kill Value Investing? How to Beat the Algorithms in 2026. (2026-08-14)",
+      "video_id": "QzqQwF9hCNY",
+      "claim": "Stock Oracle shows Microsoft about 11.98% undervalued, with ROIC of 26%, ROE of 34%, a wide moat and very consistent revenue and cash-flow growth.",
+      "relation": "Price below a DCF-based intrinsic value for a high-quality compounder implies reversion upward as intrinsic value rises.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60.0
+    },
+    {
+      "id": "msft-4",
+      "group": "5PmJrJBcjTo:MSFT:up",
+      "date": "2026-07-31",
+      "source": "Adam Khoo — AI Bubble Burst. Is it Finally Over? (2026-07-31)",
+      "video_id": "5PmJrJBcjTo",
+      "claim": "Microsoft has Azure growth of about 43%, a forward PE of about 20x, and Khoo is accumulating it as a fairly priced or undervalued AI-capex name.",
+      "relation": "Strong cloud-demand growth at a moderate multiple gives earnings-driven upside with valuation support.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60.0
+    },
+    {
+      "id": "msft-5",
+      "group": "EQnmtPEcOMg:MSFT:up",
+      "date": "2026-08-17",
+      "source": "Adam Khoo — The S&P 500 Just Hit 7,800. Can It Go Higher, or Is This the Top? (2026-08-17)",
+      "video_id": "EQnmtPEcOMg",
+      "claim": "Microsoft is listed as 10-30% undervalued versus intrinsic value among white-moat S&P stocks.",
+      "relation": "A discount to intrinsic value on a quality compounder implies upside as the price reverts toward IV.",
+      "dir": "up",
+      "lr": 1.2,
+      "half_life": 90.0
+    },
+    {
+      "id": "msft-6",
+      "group": "k_-PAhvvTU8:MSFT:up",
+      "date": "2026-07-31",
+      "source": "Adam Khoo — How to Pick Winning Stocks (The Simple Way) by Adam Khoo (2026-07-31)",
+      "video_id": "k_-PAhvvTU8",
+      "claim": "Microsoft is 18% below intrinsic value even after a pop, despite being down 18% YTD.",
+      "relation": "A high-quality compounder trading at a discount to intrinsic value implies mean reversion upward.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 90.0
     }
   ]
 }

@@ -19,6 +19,30 @@
       "lr": 1.22,
       "half_life": 30,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "mu-2",
+      "group": "VNE11qpvVBY:MU:down",
+      "date": "2026-08-19",
+      "source": "Adam Khoo — How to Know if a Stock is Cheap or Expensive? Part 1 of 2 (2026-08-19)",
+      "video_id": "VNE11qpvVBY",
+      "claim": "Micron's operating income and cash flow are highly cyclical, so its valuation is unreliable and the recent profit jump may not be sustainable; Khoo treats it as trade-only and not investable.",
+      "relation": "If peak cyclical profits mean-revert, the current price embeds earnings that will not persist, so the downside risk is larger than the headline multiple suggests.",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 60.0
+    },
+    {
+      "id": "mu-3",
+      "group": "k_-PAhvvTU8:MU:down",
+      "date": "2026-07-31",
+      "source": "Adam Khoo — How to Pick Winning Stocks (The Simple Way) by Adam Khoo (2026-07-31)",
+      "video_id": "k_-PAhvvTU8",
+      "claim": "Micron's forward PE of 5.6 is an illusion from peak memory-cycle earnings; on the 5-year mean PE its value is about $556, making it roughly 57% overvalued.",
+      "relation": "If memory undersupply ends and profits normalize, EPS falls and the PE re-expands toward about 30x, so the price falls even though the PE looks cheap.",
+      "dir": "down",
+      "lr": 1.25,
+      "half_life": 60.0
     }
   ]
 }

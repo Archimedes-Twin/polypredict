@@ -1,3 +1,4 @@
 {"date": "2026-11-02", "asset": "GOOGL", "rating": "neutral", "conf": "low", "prob_up": 52.7, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false}
 {"date": "2026-11-02", "asset": "GOOGL", "rating": "neutral", "conf": "low", "prob_up": 52.8, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false, "raw": false}
 {"date": "2026-11-02", "asset": "GOOGL", "rating": "neutral", "conf": "low", "prob_up": 56.2, "prior": 50, "expires": "2027-01-31", "signals": [], "resolved": false, "raw": false}
+{"date": "2026-11-04", "asset": "GOOGL", "rating": "bullish", "conf": "low", "prob_up": 58.1, "prior": 50, "expires": "2027-02-02", "signals": [], "resolved": false, "raw": false}
