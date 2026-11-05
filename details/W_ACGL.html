@@ -1,0 +1,117 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta name='color-scheme' content='dark'><meta name='theme-color' content='#0a0d13'><title>ACGL details</title><style>
+:root{--bg:#0a0d13;--sf:#11161f;--sf2:#171d29;--bd:#222a37;--bd2:#1a212c;--tx:#e7eaf0;--tx2:#c9cfda;--mu:#8a93a6;
+--ac:#7aa2f7;--vbull:#34d17a;--bull:#86cf9c;--neu:#97a0b0;--bear:#eea0a0;--vbear:#ff6464;--rk:var(--neu)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:24px 18px 40px}
+a{color:var(--ac)}
+h1{font-size:23px;font-weight:700;letter-spacing:-.015em;margin:0 0 4px;line-height:1.25}
+h2{font-size:12px;font-weight:650;letter-spacing:.09em;color:var(--mu);margin:32px 0 10px;text-transform:uppercase}
+.sub{color:var(--mu);font-size:13px;line-height:1.5}
+.num,.pct,.tbl td{font-variant-numeric:tabular-nums}
+.up{color:var(--vbull)}.down{color:var(--vbear)}.dim{color:var(--mu)}
+.rk-vbull{--rk:var(--vbull)}.rk-bull{--rk:var(--bull)}.rk-neu{--rk:var(--neu)}.rk-bear{--rk:var(--bear)}.rk-vbear{--rk:var(--vbear)}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:750;letter-spacing:.07em;white-space:nowrap;border:1px solid;line-height:1.4}
+.pill.vbull{color:#03200e;background:var(--vbull);border-color:var(--vbull)}
+.pill.bull{color:var(--bull);background:rgba(134,207,156,.11);border-color:rgba(134,207,156,.38)}
+.pill.neu{color:var(--neu);background:rgba(151,160,176,.09);border-color:rgba(151,160,176,.3)}
+.pill.bear{color:var(--bear);background:rgba(238,160,160,.11);border-color:rgba(238,160,160,.38)}
+.pill.vbear{color:#2b0505;background:var(--vbear);border-color:var(--vbear)}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.back{display:inline-block;font-size:13px;text-decoration:none;margin-bottom:16px;color:var(--mu)}
+.back:hover{color:var(--ac)}
+.list{display:flex;flex-direction:column;gap:8px}
+.row{background:var(--sf);border:1px solid var(--bd);border-left:3px solid var(--rk);border-radius:12px;padding:12px 14px}
+.rh{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tk{font-weight:750;font-size:16px;letter-spacing:.01em;min-width:58px}
+.conf{font-size:12.5px;color:var(--mu)}
+.det{margin-left:auto;font-size:13px;font-weight:600;text-decoration:none;padding:6px 12px;border:1px solid var(--bd);border-radius:8px;background:var(--sf2);white-space:nowrap;color:var(--ac)}
+.det:hover{border-color:var(--ac)}
+.rb{display:flex;align-items:center;gap:12px;margin-top:10px}
+.bar{position:relative;flex:1 1 auto;height:6px;background:#1b2230;border-radius:3px;min-width:0}
+.bar i{position:absolute;left:50%;top:-3px;width:1px;height:12px;background:#3b4558}
+.bar b{position:absolute;top:0;height:6px;border-radius:3px;background:var(--rk)}
+.pct{font-size:13px;font-weight:650;white-space:nowrap;min-width:64px;text-align:right}
+.prior{margin-top:7px;font-size:12.5px;color:var(--mu)}
+.prior b{color:var(--tx);font-weight:650}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin:10px 0}
+.hero{border-left:3px solid var(--rk);padding:16px 18px}
+.hero h1{font-size:26px;margin:0}
+.big{font-size:30px;font-weight:750;letter-spacing:-.02em;line-height:1.1}
+.kv{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:10px 0 10px}
+.kv .lbl{font-size:12.5px;color:var(--mu)}
+.hero .bar{margin:4px 0 12px}
+.narr p{margin:6px 0 14px;line-height:1.68;color:var(--tx2)}
+.narr b{color:var(--tx)}
+.narr h2:first-child{margin-top:26px}
+.pp{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:2px 0 10px}
+.pp .side{display:flex;flex-direction:column}
+.pp .side span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--mu)}
+.pp .arr{font-size:22px;color:var(--mu)}
+.note{font-size:13px;color:var(--mu);line-height:1.6;margin:8px 0}
+.note b{color:var(--tx2)}
+.ev{border-left:3px solid var(--bd)}
+.ev.up{border-left-color:var(--vbull)}.ev.down{border-left-color:var(--vbear)}
+.ct{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.badge{font-size:11.5px;font-weight:650;padding:2px 9px;border-radius:6px;background:var(--sf2);color:var(--tx2);border:1px solid var(--bd);white-space:nowrap}
+.badge.up{color:var(--vbull)}.badge.down{color:var(--vbear)}
+.ctitle{font-weight:650;font-size:14.5px}
+.claim{font-size:14px;line-height:1.58;color:var(--tx)}
+.rel{font-size:12.5px;color:var(--mu);margin-top:8px;line-height:1.5}
+.inv{font-size:12.5px;color:var(--mu);margin-top:10px;padding-top:9px;border-top:1px solid var(--bd2);line-height:1.5}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 14px;margin-top:12px;padding-top:11px;border-top:1px solid var(--bd2)}
+.meta div{min-width:0}
+.meta span{display:block;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--mu);margin-bottom:1px}
+.meta b{font-weight:550;font-size:13px;color:var(--tx2)}
+.meta .w2{grid-column:span 2}.meta .w3{grid-column:1/-1}
+.tblc{padding:4px 6px}
+.tbl{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13.5px}
+.tbl th{text-align:left;color:var(--mu);font-weight:650;font-size:11px;text-transform:uppercase;letter-spacing:.07em;padding:9px 10px;border-bottom:1px solid var(--bd)}
+.tbl td{padding:9px 10px;border-bottom:1px solid var(--bd2)}
+.tbl tr:last-child td{border-bottom:0}
+.odds{list-style:none;margin:0;padding:4px 0}
+.odds li{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--bd2)}
+.odds li:last-child{border-bottom:0}
+.odds .q{flex:1 1 auto;min-width:0;font-size:13.5px;color:var(--tx2);line-height:1.45}
+.odds .v{font-weight:650;font-size:13.5px;white-space:nowrap}
+.cv{border-left:3px solid var(--rk)}
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--bd);font-size:12px;color:var(--mu);line-height:1.6}
+@media (max-width:720px){
+.wrap{padding:16px 12px 32px}
+h1{font-size:20px}.hero h1{font-size:22px}
+h2{margin:26px 0 8px}
+.row{padding:12px}
+.rh{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"tk pl dt" "cf cf cf";gap:6px 10px}
+.rh .tk{grid-area:tk;min-width:0}.rh .pill{grid-area:pl;justify-self:start}.rh .det{grid-area:dt;margin-left:0}.rh .conf{grid-area:cf}
+.pct{min-width:0}
+.card{padding:12px 13px}.hero{padding:14px}
+.big{font-size:26px}
+.meta{grid-template-columns:repeat(2,minmax(0,1fr))}.meta .w2,.meta .w3{grid-column:1/-1}
+.tbl{font-size:12.5px}.tbl th,.tbl td{padding:8px 6px}
+.odds li{padding:10px 12px}
+}
+@media (max-width:370px){
+.rh{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"tk dt" "pl cf"}
+.rh .conf{justify-self:end;text-align:right}
+.tk{font-size:15px}
+}
+</style></head><body><main class='wrap'>
+<a class='back' href='../'>&larr; All assets</a>
+<header class='card hero rk-neu'><div class='top'><h1>ACGL</h1><span class='pill neu'>NEARLY NEUTRAL</span><span class='conf'>low confidence</span></div><div class='kv'><span class='big num'>52%</span><span class='lbl'>probability of rising over 3 months</span></div><div class='bar' title='up-probability 52%'><i></i><b style='left:50%;width:2.2%'></b></div><div class='prior num'>neutral prior 50% &rarr; <b>52%</b></div><div class='sub' style='margin-top:6px'>trend: up &middot; 6m +17.9% &middot; 30d +17.5% &middot; 2026-11-05 &middot; video-evidence watchlist</div></header>
+<section class='narr'><h2>PERFORMANCE (6 MONTHS)</h2>
+<p>ACGL returned <b>+17.9%</b> over the past 6 months (last close 111.45). Peak 111.45 on 2026-11-05, trough 87.62 on 2026-06-02; worst pullback inside the window was -13.3%. Last 30 days: +17.5%. Trend: up.</p>
+<h2>DRIVERS</h2>
+<p>Watched stock named in a tracked macro YouTube video; scored against a neutral prior by video evidence only (no Polymarket leg). Active market odds: no odds crossed rule thresholds.</p>
+<h2>CONTINUE OR REVERT</h2>
+<p>Odds imply no strong 3-month direction (neutral zone); the realized trend may drift either way. No active signals - the view rests only on the asset's baseline role in the basket.</p></section>
+<div class='card'><div class='ct'><span class='ctitle'>Performance — script-rendered numbers</span></div><div class='claim num'>6m +17.9% &middot; 30d +17.5% &middot; last close 111.45 &middot; drawdown -13.3%</div><div class='claim num'>peak 111.45 on 2026-11-05 &middot; trough 87.62 on 2026-06-02</div></div>
+<h2>BAYESIAN UPDATE &middot; NEUTRAL PRIOR &rarr; POSTERIOR</h2>
+<div class='card'><div class='pp'><div class='side'><span>neutral prior</span><b class='big num dim'>50%</b></div><div class='arr'>&rarr;</div><div class='side'><span>posterior</span><b class='big num'>52%</b></div><span class='pill neu'>NEARLY NEUTRAL</span></div><div class='note'>Posterior odds = prior odds &times; likelihood ratios of video facts, each decayed by its half-life; facts from the same video backing the same claim count once (strongest LR only). 1 active evidence item &middot; sources: Adam Khoo.</div></div>
+<div class='card ev up'><div class='ct'><span class='badge up'>&#9650; supports rise</span><span class='badge num'>LR 1.09</span><span class='badge'>video group &middot; strongest of 1 &middot; applied</span></div><div class='claim'>Khoo holds Arch Capital (ACGL) as a flagship non-AI 'great business' — specialty insurance earning heavily, zero AI exposure — part of the 60% anti-bubble sleeve he keeps adding to.</div><div class='rel'>causal link: Profitable non-AI compounders are the named destination of the post-AI rotation.</div><div class='meta'><div><span>source</span><b>Adam Khoo</b></div><div class='w2'><span>title</span><b>Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)</b></div><div><span>date</span><b class='num'>2026-07-09</b></div><div><span>LR raw &rarr; effective</span><b class='num'>1.25 &rarr; 1.09</b></div><div><span>age</span><b class='num'>119d</b></div><div class='w3'><span>decay</span><b class='num'>half-life 90d &middot; weight 40%</b></div></div></div>
+<h2>ODDS EVIDENCE</h2>
+<div class='card note' style='margin:10px 0'>No Polymarket leg for this name &mdash; the score comes entirely from video evidence (see Bayesian update above).</div>
+<h2>TRACK RECORD ON THIS ASSET</h2>
+<div class='sub'>no resolved views yet</div>
+<h2>CURRENT VIEW</h2><div class='card cv rk-neu'><div class='top'><b>ACGL</b><span class='pill neu'>NEARLY NEUTRAL</span><span class='conf'>low confidence &middot; up 52%</span></div><div class='sub'>issued 2026-11-05 &middot; expires 2027-02-03 &middot; resolved on total return (adjusted close) on expiry vs issue date</div></div>
+<footer class='foot'>last updated 2026-11-05 16:22 UTC &middot; Polymarket Gamma API odds &rarr; rules engine &rarr; Bayesian video-evidence update &middot; calibration history in predictions.jsonl</footer></main></body></html>

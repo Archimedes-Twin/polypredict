@@ -54,6 +54,18 @@
       "dir": "up",
       "lr": 1.15,
       "half_life": 90.0
+    },
+    {
+      "id": "googl-5",
+      "group": "eirc3A9xP74:GOOGL:up",
+      "date": "2026-06-02",
+      "source": "Adam Khoo — Highlight: Alphabet: The Secret SpaceX and AI Portfolio (2026-06-02)",
+      "video_id": "eirc3A9xP74",
+      "claim": "Alphabet's private venture stake includes ~7% of SpaceX ($900M invested 2015, pre-IPO valuation quoted $87-140B), ~14% of Anthropic, plus Stripe, Waymo, AST SpaceMobile and Planet Labs — none of it reflected in GOOGL's share price.",
+      "relation": "Hidden private-portfolio value not priced into equity -> upside optionality on the listed stock.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 90
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "asset": "ACGL",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.ACGL",
+  "prior": 50,
+  "found_in": "Adam Khoo highlight Bs25DN_1ZUs (2026-07-09)",
+  "added": "2026-11-05",
+  "note": "",
+  "evidence": [
+    {
+      "id": "acgl-1",
+      "group": "Bs25DN_1ZUs:ACGL:up",
+      "date": "2026-07-09",
+      "source": "Adam Khoo — Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+      "video_id": "Bs25DN_1ZUs",
+      "claim": "Khoo holds Arch Capital (ACGL) as a flagship non-AI 'great business' — specialty insurance earning heavily, zero AI exposure — part of the 60% anti-bubble sleeve he keeps adding to.",
+      "relation": "Profitable non-AI compounders are the named destination of the post-AI rotation.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 90
+    }
+  ]
+}

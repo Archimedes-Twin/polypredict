@@ -167,6 +167,18 @@
       "dir": "up",
       "lr": 1.2,
       "half_life": 150.0
+    },
+    {
+      "id": "spy-15",
+      "group": "Bs25DN_1ZUs:SPY:up",
+      "date": "2026-07-09",
+      "source": "Adam Khoo — Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+      "video_id": "Bs25DN_1ZUs",
+      "claim": "60% of his book has almost no AI exposure — 'great businesses' like Arch Capital (ACGL); dot-com analogy: when the AI bubble pops, money flows into the ignored non-AI profitable companies (McDonald's/Walmart/Boeing analogs) that then go up double digits.",
+      "relation": "Capital rotation from AI to unloved profitable non-AI value lifts broad/value indices at the transition.",
+      "dir": "up",
+      "lr": 1.3,
+      "half_life": 60
     }
   ],
   "resolution": "Yesterday's bearish-leaning resolution was anchored by the ceasefire-break leg (raw up-prob 38.3) that rolled off today's basket with the Nov market, so SPY's prior is now the neutral 50% and the view is evidence-only. Khoo's earnings-breadth/margin fact (lr 1.34, applied) and the Sep-14 rate-normalcy analogue meet no opposing market leg now — prior 50 → posterior 60.7, bullish (low confidence). This is a mechanical revert, not new information: the policy/geopolitical regime is simply unmeasured for SPY today, so the bear risk is absent from the model rather than resolved — if the ceasefire market returns with break odds over 55% or a CPI/hike leg maps onto SPY at hawkish odds, the 2018 analogue (seasonality loses to policy shocks) argues the flip back. Confidence stays low precisely because no market leg corroborates the evidence side."

@@ -14,6 +14,18 @@
       "dir": "up",
       "lr": 1.22,
       "half_life": 60
+    },
+    {
+      "id": "xlp-2",
+      "group": "Bs25DN_1ZUs:XLP:up",
+      "date": "2026-07-09",
+      "source": "Adam Khoo — Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+      "video_id": "Bs25DN_1ZUs",
+      "claim": "Explicit dot-com playbook names of the winners after the burst: Coca-Cola, McDonald's, Walmart — consumer staples as the post-bubble rotation destination.",
+      "relation": "Staples are the named beneficiaries of a post-AI-mania rotation.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 60
     }
   ],
   "resolution": "Consistent with defensive-rotation prior; no conflict."

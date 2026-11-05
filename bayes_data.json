@@ -1,7 +1,7 @@
 {
   "SPY": {
-    "prior": 40.7,
-    "post": 61.6,
+    "prior": 40.3,
+    "post": 62.6,
     "items": [
       {
         "id": "spy-1",
@@ -13,8 +13,8 @@
         "dir": "up",
         "lr": 1.22,
         "half_life": 90,
-        "lr_eff": 1.22,
-        "age": 2,
+        "lr_eff": 1.21,
+        "age": 3,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -30,7 +30,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.21,
-        "age": 2,
+        "age": 3,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -45,8 +45,8 @@
         "dir": "up",
         "lr": 1.34,
         "half_life": 120,
-        "lr_eff": 1.34,
-        "age": 2,
+        "lr_eff": 1.33,
+        "age": 3,
         "applied": true,
         "group_n": 5
       },
@@ -61,7 +61,7 @@
         "lr": 1.17,
         "half_life": 120,
         "lr_eff": 1.17,
-        "age": 2,
+        "age": 3,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -77,7 +77,7 @@
         "lr": 1.1,
         "half_life": 60,
         "lr_eff": 1.1,
-        "age": 2,
+        "age": 3,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -94,7 +94,7 @@
         "lr": 1.2,
         "half_life": 150,
         "lr_eff": 1.15,
-        "age": 51,
+        "age": 52,
         "applied": true,
         "group_n": 1
       },
@@ -110,7 +110,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.14,
-        "age": 62,
+        "age": 63,
         "applied": true,
         "group_n": 2
       },
@@ -126,7 +126,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.07,
-        "age": 62,
+        "age": 63,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-7"
@@ -143,7 +143,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.11,
-        "age": 79,
+        "age": 80,
         "applied": true,
         "group_n": 2
       },
@@ -159,7 +159,7 @@
         "lr": 1.2,
         "half_life": 60.0,
         "lr_eff": 1.08,
-        "age": 79,
+        "age": 80,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-9"
@@ -176,7 +176,7 @@
         "lr": 1.15,
         "half_life": 30.0,
         "lr_eff": 1.02,
-        "age": 79,
+        "age": 80,
         "applied": true,
         "group_n": 1
       },
@@ -192,7 +192,7 @@
         "lr": 1.25,
         "half_life": 120.0,
         "lr_eff": 1.11,
-        "age": 126,
+        "age": 127,
         "applied": true,
         "group_n": 2
       },
@@ -208,7 +208,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.03,
-        "age": 126,
+        "age": 127,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-12"
@@ -225,7 +225,23 @@
         "lr": 1.2,
         "half_life": 150.0,
         "lr_eff": 1.1,
-        "age": 137,
+        "age": 138,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "spy-15",
+        "group": "Bs25DN_1ZUs:SPY:up",
+        "date": "2026-07-09",
+        "source": "Adam Khoo \u2014 Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+        "video_id": "Bs25DN_1ZUs",
+        "claim": "60% of his book has almost no AI exposure \u2014 'great businesses' like Arch Capital (ACGL); dot-com analogy: when the AI bubble pops, money flows into the ignored non-AI profitable companies (McDonald's/Walmart/Boeing analogs) that then go up double digits.",
+        "relation": "Capital rotation from AI to unloved profitable non-AI value lifts broad/value indices at the transition.",
+        "dir": "up",
+        "lr": 1.3,
+        "half_life": 60,
+        "lr_eff": 1.07,
+        "age": 119,
         "applied": true,
         "group_n": 1
       }
@@ -234,8 +250,8 @@
     "source": "market prior + video evidence"
   },
   "QQQ": {
-    "prior": 36.6,
-    "post": 43.9,
+    "prior": 42.1,
+    "post": 48.0,
     "items": [
       {
         "id": "qqq-1",
@@ -246,8 +262,8 @@
         "dir": "down",
         "lr": 1.27,
         "half_life": 30,
-        "lr_eff": 1.26,
-        "age": 2
+        "lr_eff": 1.25,
+        "age": 3
       },
       {
         "id": "qqq-2",
@@ -259,7 +275,7 @@
         "lr": 1.15,
         "half_life": 150,
         "lr_eff": 1.15,
-        "age": 2
+        "age": 3
       },
       {
         "id": "qqq-3",
@@ -271,8 +287,8 @@
         "lr": 1.3,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.29,
-        "age": 5
+        "lr_eff": 1.28,
+        "age": 6
       },
       {
         "id": "qqq-4",
@@ -286,7 +302,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.09,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       },
@@ -301,8 +317,24 @@
         "dir": "up",
         "lr": 1.2,
         "half_life": 45.0,
-        "lr_eff": 1.06,
-        "age": 79,
+        "lr_eff": 1.05,
+        "age": 80,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "qqq-6",
+        "group": "Bs25DN_1ZUs:QQQ:down",
+        "date": "2026-07-09",
+        "source": "Adam Khoo \u2014 Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+        "video_id": "Bs25DN_1ZUs",
+        "claim": "Khoo has been selling his pure AI-infrastructure stocks that are 'way overpriced' (not sustainable ones) and says when the AI bull market ends, pure-AI infrastructure stocks that are overvalued will have the deepest corrections \u2014 'easily drop 50%'.",
+        "relation": "Overvalued pure-AI exposure unwinds hardest at cycle end -> downside skew for AI-heavy indices.",
+        "dir": "down",
+        "lr": 1.3,
+        "half_life": 60,
+        "lr_eff": 1.07,
+        "age": 119,
         "applied": true,
         "group_n": 1
       }
@@ -311,8 +343,8 @@
     "source": "market prior + video evidence"
   },
   "SCHD": {
-    "prior": 52.0,
-    "post": 59.0,
+    "prior": 57.9,
+    "post": 65.9,
     "items": [
       {
         "id": "schd-1",
@@ -325,7 +357,7 @@
         "lr": 1.34,
         "half_life": 60,
         "lr_eff": 1.33,
-        "age": 2,
+        "age": 3,
         "applied": true,
         "group_n": 2
       },
@@ -340,10 +372,26 @@
         "lr": 1.17,
         "half_life": 90,
         "lr_eff": 1.17,
-        "age": 2,
+        "age": 3,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "schd-1"
+      },
+      {
+        "id": "schd-3",
+        "group": "Bs25DN_1ZUs:SCHD:up",
+        "date": "2026-07-09",
+        "source": "Adam Khoo \u2014 Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+        "video_id": "Bs25DN_1ZUs",
+        "claim": "He is buying non-AI profitable dividend-type compounders 'almost every day' in anticipation of the anti-bubble rotation.",
+        "relation": "Rotation into profitable non-AI names favors dividend/value factor baskets.",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 60,
+        "lr_eff": 1.06,
+        "age": 119,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "No conflict: Khoo's rotation thesis agrees with the market-odds picture (hawkish/CPI regime favors value) and with SCHD's realized 6-month path. Only tension is the oil leg (48% WTI<$90 odds), which Khoo does not address \u2014 kept out of these items.",
@@ -363,7 +411,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.21,
-        "age": 2
+        "age": 3
       }
     ],
     "resolution": "Consistent with the existing bullish view (tight HY OAS + pricing power); no conflict.",
@@ -371,7 +419,7 @@
   },
   "XLP": {
     "prior": 50.0,
-    "post": 54.8,
+    "post": 56.2,
     "items": [
       {
         "id": "xlp-1",
@@ -383,7 +431,23 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.21,
-        "age": 2
+        "age": 3
+      },
+      {
+        "id": "xlp-2",
+        "group": "Bs25DN_1ZUs:XLP:up",
+        "date": "2026-07-09",
+        "source": "Adam Khoo \u2014 Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+        "video_id": "Bs25DN_1ZUs",
+        "claim": "Explicit dot-com playbook names of the winners after the burst: Coca-Cola, McDonald's, Walmart \u2014 consumer staples as the post-bubble rotation destination.",
+        "relation": "Staples are the named beneficiaries of a post-AI-mania rotation.",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 60,
+        "lr_eff": 1.06,
+        "age": 119,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "Consistent with defensive-rotation prior; no conflict.",
@@ -391,7 +455,7 @@
   },
   "XLF": {
     "prior": 50.0,
-    "post": 60.6,
+    "post": 60.5,
     "items": [
       {
         "id": "xlf-1",
@@ -403,7 +467,7 @@
         "lr": 1.17,
         "half_life": 30,
         "lr_eff": 1.16,
-        "age": 2
+        "age": 3
       },
       {
         "id": "xlf-2",
@@ -416,8 +480,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 120,
-        "lr_eff": 1.22,
-        "age": 51,
+        "lr_eff": 1.21,
+        "age": 52,
         "applied": true,
         "group_n": 1
       },
@@ -433,7 +497,7 @@
         "lr": 1.25,
         "half_life": 45.0,
         "lr_eff": 1.09,
-        "age": 62,
+        "age": 63,
         "applied": true,
         "group_n": 1
       }
@@ -442,8 +506,8 @@
     "source": "market prior + video evidence"
   },
   "XLC": {
-    "prior": 21.7,
-    "post": 20.0,
+    "prior": 33.2,
+    "post": 31.0,
     "items": [
       {
         "id": "xlc-1",
@@ -455,7 +519,7 @@
         "lr": 1.2,
         "half_life": 30,
         "lr_eff": 1.19,
-        "age": 2
+        "age": 3
       },
       {
         "id": "xlc-2",
@@ -468,7 +532,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.27,
-        "age": 5
+        "age": 6
       },
       {
         "id": "xlc-3",
@@ -482,7 +546,7 @@
         "lr": 1.2,
         "half_life": 180,
         "lr_eff": 1.18,
-        "age": 21,
+        "age": 22,
         "applied": true,
         "group_n": 1
       }
@@ -491,8 +555,8 @@
     "source": "market prior + video evidence"
   },
   "XLE": {
-    "prior": 45.9,
-    "post": 51.5,
+    "prior": 62.9,
+    "post": 67.9,
     "items": [
       {
         "id": "xle-1",
@@ -504,7 +568,7 @@
         "lr": 1.13,
         "half_life": 30,
         "lr_eff": 1.12,
-        "age": 2
+        "age": 3
       },
       {
         "id": "xle-2",
@@ -518,7 +582,7 @@
         "lr": 1.17,
         "half_life": 90,
         "lr_eff": 1.11,
-        "age": 51,
+        "age": 52,
         "applied": true,
         "group_n": 1
       }
@@ -527,8 +591,8 @@
     "source": "market prior + video evidence"
   },
   "ZROZ": {
-    "prior": 51.5,
-    "post": 46.6,
+    "prior": 51.0,
+    "post": 46.2,
     "items": [
       {
         "id": "zroz-1",
@@ -541,8 +605,8 @@
         "dir": "down",
         "lr": 1.3,
         "half_life": 120,
-        "lr_eff": 1.22,
-        "age": 51,
+        "lr_eff": 1.21,
+        "age": 52,
         "applied": true,
         "group_n": 1
       }
@@ -551,8 +615,8 @@
     "source": "market prior + video evidence"
   },
   "IBIT": {
-    "prior": 36.6,
-    "post": 36.4,
+    "prior": 42.1,
+    "post": 41.9,
     "items": [
       {
         "id": "ibit-1",
@@ -566,7 +630,7 @@
         "lr": 1.15,
         "half_life": 30.0,
         "lr_eff": 1.01,
-        "age": 126,
+        "age": 127,
         "applied": true,
         "group_n": 1
       }
@@ -576,7 +640,7 @@
   },
   "NVDA": {
     "prior": 50,
-    "post": 57.9,
+    "post": 57.8,
     "items": [
       {
         "id": "nvda-1",
@@ -589,7 +653,7 @@
         "half_life": 120,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.27,
-        "age": 5
+        "age": 6
       },
       {
         "id": "nvda-2",
@@ -602,7 +666,7 @@
         "half_life": 180,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.15,
-        "age": 5
+        "age": 6
       },
       {
         "id": "nvda-3",
@@ -616,7 +680,7 @@
         "lr": 1.2,
         "half_life": 30.0,
         "lr_eff": 1.04,
-        "age": 62,
+        "age": 63,
         "applied": true,
         "group_n": 1
       },
@@ -632,7 +696,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       },
@@ -648,7 +712,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.09,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       }
@@ -656,16 +720,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 201.91,
-    "ret6": 1.7,
-    "ret1": -15.6,
-    "dd": -15.6,
+    "last": 186.1,
+    "ret6": -5.3,
+    "ret1": -21.6,
+    "dd": -22.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2 (oq3B28tS6c4)"
   },
   "MU": {
     "prior": 50,
-    "post": 42.4,
+    "post": 42.5,
     "items": [
       {
         "id": "mu-1",
@@ -678,7 +742,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.19,
-        "age": 5
+        "age": 6
       },
       {
         "id": "mu-2",
@@ -692,7 +756,7 @@
         "lr": 1.15,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 77,
+        "age": 78,
         "applied": true,
         "group_n": 1
       },
@@ -708,7 +772,7 @@
         "lr": 1.25,
         "half_life": 60.0,
         "lr_eff": 1.08,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       }
@@ -716,16 +780,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 803.66,
-    "ret6": 39.4,
-    "ret1": -23.1,
-    "dd": -33.8,
+    "last": 707.4,
+    "ret6": 10.5,
+    "ret1": -35.0,
+    "dd": -41.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "AMD": {
     "prior": 50,
-    "post": 45.6,
+    "post": 45.7,
     "items": [
       {
         "id": "amd-1",
@@ -738,22 +802,22 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.19,
-        "age": 5
+        "age": 6
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 483.36,
-    "ret6": 41.5,
-    "ret1": -25.6,
-    "dd": -25.6,
+    "last": 429.24,
+    "ret6": 20.8,
+    "ret1": -33.5,
+    "dd": -33.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "INTC": {
     "prior": 50,
-    "post": 44.9,
+    "post": 45.0,
     "items": [
       {
         "id": "intc-1",
@@ -765,23 +829,23 @@
         "lr": 1.26,
         "half_life": 30,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.23,
-        "age": 5
+        "lr_eff": 1.22,
+        "age": 6
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 57.47,
-    "ret6": -40.0,
-    "ret1": -48.9,
-    "dd": -59.2,
+    "last": 55.12,
+    "ret6": -49.0,
+    "ret1": -51.3,
+    "dd": -60.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "ARM": {
     "prior": 50,
-    "post": 45.6,
+    "post": 45.7,
     "items": [
       {
         "id": "arm-1",
@@ -794,22 +858,22 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.19,
-        "age": 5
+        "age": 6
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 193.21,
-    "ret6": -4.9,
-    "ret1": -36.1,
-    "dd": -56.0,
+    "last": 169.95,
+    "ret6": -18.6,
+    "ret1": -42.3,
+    "dd": -61.3,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "SNDK": {
     "prior": 50,
-    "post": 45.6,
+    "post": 45.7,
     "items": [
       {
         "id": "sndk-1",
@@ -822,22 +886,22 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.19,
-        "age": 5
+        "age": 6
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 1028.09,
-    "ret6": -18.1,
-    "ret1": -38.1,
-    "dd": -56.0,
+    "last": 876.31,
+    "ret6": -37.7,
+    "ret1": -48.2,
+    "dd": -62.5,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "GOOGL": {
     "prior": 50,
-    "post": 58.1,
+    "post": 60.0,
     "items": [
       {
         "id": "googl-1",
@@ -850,7 +914,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.27,
-        "age": 5
+        "age": 6
       },
       {
         "id": "googl-2",
@@ -863,7 +927,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 5
+        "age": 6
       },
       {
         "id": "googl-3",
@@ -876,8 +940,8 @@
         "dir": "up",
         "lr": 1.2,
         "half_life": 120,
-        "lr_eff": 1.15,
-        "age": 51,
+        "lr_eff": 1.14,
+        "age": 52,
         "applied": true,
         "group_n": 1
       },
@@ -893,7 +957,23 @@
         "lr": 1.15,
         "half_life": 90.0,
         "lr_eff": 1.08,
-        "age": 77,
+        "age": 78,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "googl-5",
+        "group": "eirc3A9xP74:GOOGL:up",
+        "date": "2026-06-02",
+        "source": "Adam Khoo \u2014 Highlight: Alphabet: The Secret SpaceX and AI Portfolio (2026-06-02)",
+        "video_id": "eirc3A9xP74",
+        "claim": "Alphabet's private venture stake includes ~7% of SpaceX ($900M invested 2015, pre-IPO valuation quoted $87-140B), ~14% of Anthropic, plus Stripe, Waymo, AST SpaceMobile and Planet Labs \u2014 none of it reflected in GOOGL's share price.",
+        "relation": "Hidden private-portfolio value not priced into equity -> upside optionality on the listed stock.",
+        "dir": "up",
+        "lr": 1.3,
+        "half_life": 90,
+        "lr_eff": 1.08,
+        "age": 156,
         "applied": true,
         "group_n": 1
       }
@@ -901,16 +981,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 289.73,
-    "ret6": -24.4,
-    "ret1": -16.7,
-    "dd": -28.0,
+    "last": 284.43,
+    "ret6": -26.8,
+    "ret1": -18.9,
+    "dd": -29.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30 (tKygzktysRk)"
   },
   "META": {
     "prior": 50,
-    "post": 67.8,
+    "post": 67.7,
     "items": [
       {
         "id": "meta-1",
@@ -923,7 +1003,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.25,
-        "age": 5
+        "age": 6
       },
       {
         "id": "meta-2",
@@ -936,7 +1016,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 5
+        "age": 6
       },
       {
         "id": "meta-3",
@@ -950,7 +1030,7 @@
         "lr": 1.3,
         "half_life": 60,
         "lr_eff": 1.23,
-        "age": 21,
+        "age": 22,
         "applied": true,
         "group_n": 1
       },
@@ -966,7 +1046,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.11,
-        "age": 82,
+        "age": 83,
         "applied": true,
         "group_n": 1
       },
@@ -982,7 +1062,7 @@
         "lr": 1.25,
         "half_life": 60.0,
         "lr_eff": 1.08,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       },
@@ -998,7 +1078,7 @@
         "lr": 1.25,
         "half_life": 90.0,
         "lr_eff": 1.13,
-        "age": 79,
+        "age": 80,
         "applied": true,
         "group_n": 1
       },
@@ -1014,7 +1094,7 @@
         "lr": 1.35,
         "half_life": 90.0,
         "lr_eff": 1.15,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       }
@@ -1022,16 +1102,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 625.58,
-    "ret6": 2.5,
-    "ret1": -15.3,
-    "dd": -19.5,
+    "last": 605.1,
+    "ret6": 0.0,
+    "ret1": -16.1,
+    "dd": -22.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
   "AMZN": {
     "prior": 50,
-    "post": 52.8,
+    "post": 54.5,
     "items": [
       {
         "id": "amzn-1",
@@ -1044,7 +1124,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.27,
-        "age": 5
+        "age": 6
       },
       {
         "id": "amzn-2",
@@ -1057,22 +1137,38 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 5
+        "age": 6
+      },
+      {
+        "id": "amzn-3",
+        "group": "k-cb-BMxZsI:AMZN:up",
+        "date": "2026-06-01",
+        "source": "Adam Khoo \u2014 Highlight: SpaceX vs Amazon: Which Is Worth $2 Trillion? (2026-06-01)",
+        "video_id": "k-cb-BMxZsI",
+        "claim": "Khoo frames 'whole company' comparison: at ~$2T you get Amazon's $716B revenue and $146B profit (P/S ~3x, P/EBITDA ~16x) vs SpaceX $16B revenue/$8B EBITDA (P/S 109x, P/EBITDA 218x).",
+        "relation": "Valuation contrast vs the hyped SpaceX IPO marks Amazon as comparatively cheap.",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 90,
+        "lr_eff": 1.07,
+        "age": 157,
+        "applied": true,
+        "group_n": 1
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 265.39,
-    "ret6": -2.4,
-    "ret1": 3.6,
-    "dd": -6.6,
+    "last": 258.75,
+    "ret6": -5.4,
+    "ret1": -0.5,
+    "dd": -8.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
   "MSFT": {
     "prior": 50,
-    "post": 67.3,
+    "post": 67.2,
     "items": [
       {
         "id": "msft-1",
@@ -1085,7 +1181,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.21,
-        "age": 5
+        "age": 6
       },
       {
         "id": "msft-2",
@@ -1098,8 +1194,8 @@
         "dir": "up",
         "lr": 1.2,
         "half_life": 120,
-        "lr_eff": 1.15,
-        "age": 51,
+        "lr_eff": 1.14,
+        "age": 52,
         "applied": true,
         "group_n": 1
       },
@@ -1115,7 +1211,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.11,
-        "age": 82,
+        "age": 83,
         "applied": true,
         "group_n": 1
       },
@@ -1131,7 +1227,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       },
@@ -1147,7 +1243,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.1,
-        "age": 79,
+        "age": 80,
         "applied": true,
         "group_n": 1
       },
@@ -1163,7 +1259,7 @@
         "lr": 1.25,
         "half_life": 90.0,
         "lr_eff": 1.11,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       }
@@ -1171,10 +1267,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 552.59,
-    "ret6": 33.6,
-    "ret1": 4.4,
-    "dd": 0.0,
+    "last": 543.58,
+    "ret6": 32.1,
+    "ret1": 2.6,
+    "dd": -2.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
@@ -1194,7 +1290,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.23,
-        "age": 21,
+        "age": 22,
         "applied": true,
         "group_n": 1
       }
@@ -1202,10 +1298,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 127.79,
-    "ret6": 43.2,
-    "ret1": -33.2,
-    "dd": -34.4,
+    "last": 125.23,
+    "ret6": 39.3,
+    "ret1": -33.8,
+    "dd": -35.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1225,7 +1321,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.23,
-        "age": 21,
+        "age": 22,
         "applied": true,
         "group_n": 1
       }
@@ -1233,10 +1329,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 240.13,
-    "ret6": 104.7,
-    "ret1": -13.9,
-    "dd": -13.9,
+    "last": 220.0,
+    "ret6": 84.7,
+    "ret1": -17.1,
+    "dd": -21.1,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1256,7 +1352,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.23,
-        "age": 21,
+        "age": 22,
         "applied": true,
         "group_n": 1
       }
@@ -1264,10 +1360,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 347.56,
-    "ret6": 88.3,
-    "ret1": -17.2,
-    "dd": -17.2,
+    "last": 323.58,
+    "ret6": 75.9,
+    "ret1": -20.2,
+    "dd": -22.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1287,7 +1383,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.19,
-        "age": 51,
+        "age": 52,
         "applied": true,
         "group_n": 1
       }
@@ -1295,10 +1391,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 285.88,
-    "ret6": 98.2,
-    "ret1": -14.9,
-    "dd": -22.5,
+    "last": 278.25,
+    "ret6": 96.4,
+    "ret1": -16.4,
+    "dd": -24.6,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
@@ -1318,7 +1414,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.19,
-        "age": 51,
+        "age": 52,
         "applied": true,
         "group_n": 1
       }
@@ -1326,16 +1422,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 259.12,
-    "ret6": 15.6,
-    "ret1": -27.0,
-    "dd": -28.2,
+    "last": 242.08,
+    "ret6": -1.0,
+    "ret1": -29.4,
+    "dd": -32.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
   "IONQ": {
     "prior": 50,
-    "post": 44.2,
+    "post": 44.3,
     "items": [
       {
         "id": "ionq-1",
@@ -1349,7 +1445,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.19,
-        "age": 51,
+        "age": 52,
         "applied": true,
         "group_n": 1
       },
@@ -1365,7 +1461,7 @@
         "lr": 1.2,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 96,
+        "age": 97,
         "applied": true,
         "group_n": 1
       }
@@ -1373,16 +1469,47 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 28.76,
-    "ret6": -37.1,
-    "ret1": -33.6,
-    "dd": -60.1,
+    "last": 26.38,
+    "ret6": -45.0,
+    "ret1": -36.2,
+    "dd": -63.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
+  "ACGL": {
+    "prior": 50,
+    "post": 52.2,
+    "items": [
+      {
+        "id": "acgl-1",
+        "group": "Bs25DN_1ZUs:ACGL:up",
+        "date": "2026-07-09",
+        "source": "Adam Khoo \u2014 Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+        "video_id": "Bs25DN_1ZUs",
+        "claim": "Khoo holds Arch Capital (ACGL) as a flagship non-AI 'great business' \u2014 specialty insurance earning heavily, zero AI exposure \u2014 part of the 60% anti-bubble sleeve he keeps adding to.",
+        "relation": "Profitable non-AI compounders are the named destination of the post-AI rotation.",
+        "dir": "up",
+        "lr": 1.25,
+        "half_life": 90,
+        "lr_eff": 1.09,
+        "age": 119,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 111.45,
+    "ret6": 18.4,
+    "ret1": 18.1,
+    "dd": 0.0,
+    "added": "2026-11-05",
+    "found_in": "Adam Khoo highlight Bs25DN_1ZUs (2026-07-09)"
+  },
   "_meta": {
-    "generated_at": 1793809814.4897385,
-    "started_at": 1793809812.2178266,
-    "run_date": "2026-11-04"
+    "generated_at": 1793895732.419541,
+    "started_at": 1793895730.2653215,
+    "run_date": "2026-11-05"
   }
 }

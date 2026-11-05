@@ -26,6 +26,18 @@
       "dir": "up",
       "lr": 1.17,
       "half_life": 90
+    },
+    {
+      "id": "schd-3",
+      "group": "Bs25DN_1ZUs:SCHD:up",
+      "date": "2026-07-09",
+      "source": "Adam Khoo — Highlight: I'm Not Selling Nvidia, But I'm Buying These Stocks Instead (2026-07-09)",
+      "video_id": "Bs25DN_1ZUs",
+      "claim": "He is buying non-AI profitable dividend-type compounders 'almost every day' in anticipation of the anti-bubble rotation.",
+      "relation": "Rotation into profitable non-AI names favors dividend/value factor baskets.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 60
     }
   ],
   "resolution": "No conflict: Khoo's rotation thesis agrees with the market-odds picture (hawkish/CPI regime favors value) and with SCHD's realized 6-month path. Only tension is the oil leg (48% WTI<$90 odds), which Khoo does not address — kept out of these items."

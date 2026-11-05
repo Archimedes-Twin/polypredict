@@ -30,6 +30,18 @@
       "lr": 1.15,
       "half_life": 30,
       "video_id": "tKygzktysRk"
+    },
+    {
+      "id": "amzn-3",
+      "group": "k-cb-BMxZsI:AMZN:up",
+      "date": "2026-06-01",
+      "source": "Adam Khoo — Highlight: SpaceX vs Amazon: Which Is Worth $2 Trillion? (2026-06-01)",
+      "video_id": "k-cb-BMxZsI",
+      "claim": "Khoo frames 'whole company' comparison: at ~$2T you get Amazon's $716B revenue and $146B profit (P/S ~3x, P/EBITDA ~16x) vs SpaceX $16B revenue/$8B EBITDA (P/S 109x, P/EBITDA 218x).",
+      "relation": "Valuation contrast vs the hyped SpaceX IPO marks Amazon as comparatively cheap.",
+      "dir": "up",
+      "lr": 1.25,
+      "half_life": 90
     }
   ]
 }
