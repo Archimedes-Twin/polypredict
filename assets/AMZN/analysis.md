@@ -1,7 +1,11 @@
-<!-- analysis-placeholder: not written yet. Replace this WHOLE file (marker line included) with the three sections below; until then the site shows an auto-generated fallback. -->
-
 ## Performance (6 months)
+
+A six-month performance record is not available for Amazon in this file, so there is no range, peak, trough, or drawdown shape to describe. The only price behavior in the evidence is a sharp one-day de-rating after the late-October earnings release, and a single reaction does not amount to a trend.
 
 ## Drivers
 
+The drivers here are company fundamentals, since no macro signals are attached. The latest quarter showed solid FX-neutral revenue growth, a large jump in operating income, and strong trailing operating cash flow. Free cash flow turned negative because of datacenter capex, and that is what the market punished after earnings. The bullish reading is that this capex funds future cash generation, so the cash-flow squeeze is an investment phase rather than deteriorating economics. A separate valuation argument from Adam Khoo, made earlier in the summer, points the same way. He compares Amazon's revenue and profit at a roughly two-trillion-dollar market value against the richly priced SpaceX IPO, and on those multiples Amazon looks comparatively cheap. That is relative valuation, not a catalyst, and its weight has faded with time. The macro backdrop of Fed path, yields, and energy is not represented by any tracked signal, so it adds nothing to the call in either direction.
+
 ## Continue or revert
+
+The posterior is neutral with low confidence and a slight upward lean. The raw market prior is empty, with no Polymarket-derived rating, so there are no odds for the evidence to fight and nothing to override. The call rests entirely on the evidence, which is split. Operating leverage, cash-flow growth, and a cheap relative valuation argue for continuation, while the post-earnings de-rating on free-cash-flow fear argues that the market does not yet trust the capex payback. Those forces roughly offset, which is why the stance is neutral rather than a continue call or a revert call. The slight upward tilt reflects that the fundamentals are stronger than the one-day reaction implies. What would change the view is evidence on either side of the capex debate. Visible conversion of datacenter spending into cash flow, or stable free cash flow in coming quarters, would move the call toward continuation. Further capex escalation without matching revenue and margin growth would confirm the de-rating and push it toward reversion. Until a market-based signal exists to anchor the call, conviction stays low.
