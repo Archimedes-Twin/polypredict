@@ -1,7 +1,7 @@
 {
   "SPY": {
-    "prior": 40.3,
-    "post": 62.6,
+    "prior": 39.0,
+    "post": 62.0,
     "items": [
       {
         "id": "spy-1",
@@ -14,7 +14,7 @@
         "lr": 1.22,
         "half_life": 90,
         "lr_eff": 1.21,
-        "age": 3,
+        "age": 4,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -30,7 +30,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.21,
-        "age": 3,
+        "age": 4,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -46,7 +46,7 @@
         "lr": 1.34,
         "half_life": 120,
         "lr_eff": 1.33,
-        "age": 3,
+        "age": 4,
         "applied": true,
         "group_n": 5
       },
@@ -61,7 +61,7 @@
         "lr": 1.17,
         "half_life": 120,
         "lr_eff": 1.17,
-        "age": 3,
+        "age": 4,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -77,7 +77,7 @@
         "lr": 1.1,
         "half_life": 60,
         "lr_eff": 1.1,
-        "age": 3,
+        "age": 4,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -94,7 +94,7 @@
         "lr": 1.2,
         "half_life": 150,
         "lr_eff": 1.15,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       },
@@ -109,8 +109,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 60.0,
-        "lr_eff": 1.14,
-        "age": 63,
+        "lr_eff": 1.13,
+        "age": 64,
         "applied": true,
         "group_n": 2
       },
@@ -126,7 +126,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.07,
-        "age": 63,
+        "age": 64,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-7"
@@ -143,7 +143,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.11,
-        "age": 80,
+        "age": 81,
         "applied": true,
         "group_n": 2
       },
@@ -158,8 +158,8 @@
         "dir": "up",
         "lr": 1.2,
         "half_life": 60.0,
-        "lr_eff": 1.08,
-        "age": 80,
+        "lr_eff": 1.07,
+        "age": 81,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-9"
@@ -176,7 +176,7 @@
         "lr": 1.15,
         "half_life": 30.0,
         "lr_eff": 1.02,
-        "age": 80,
+        "age": 81,
         "applied": true,
         "group_n": 1
       },
@@ -192,7 +192,7 @@
         "lr": 1.25,
         "half_life": 120.0,
         "lr_eff": 1.11,
-        "age": 127,
+        "age": 128,
         "applied": true,
         "group_n": 2
       },
@@ -208,7 +208,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.03,
-        "age": 127,
+        "age": 128,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-12"
@@ -225,7 +225,7 @@
         "lr": 1.2,
         "half_life": 150.0,
         "lr_eff": 1.1,
-        "age": 138,
+        "age": 139,
         "applied": true,
         "group_n": 1
       },
@@ -241,7 +241,39 @@
         "lr": 1.3,
         "half_life": 60,
         "lr_eff": 1.07,
-        "age": 119,
+        "age": 120,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "spy-16",
+        "group": "y6f5fFjoNcc:SPY:up",
+        "date": "2026-11-06",
+        "source": "Adam Khoo \u2014 A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+        "video_id": "y6f5fFjoNcc",
+        "claim": "Khoo compares the selloff to Q4 2018 and April 2025, both policy/sentiment shocks with no earnings damage that recovered to all-time highs within 4 months and 11 weeks. He contrasts them with Nov 2008, when S&P earnings fell about 9% per quarter and recovery took years. With Q3 profits up 30%, he says a V-shaped rebound is likely.",
+        "relation": "The S&P recovers quickly when the drop is not backed by an earnings collapse. AI capex is currently a key driver of US growth.",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 60,
+        "lr_eff": 1.17,
+        "age": 0,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "spy-17",
+        "group": "y6f5fFjoNcc:SPY:down",
+        "date": "2026-11-06",
+        "source": "Adam Khoo \u2014 A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+        "video_id": "y6f5fFjoNcc",
+        "claim": "Khoo says the market could fall further in the short term. He says hedge funds with heavy leverage are reportedly blowing up and must sell to meet redemptions. He also says US leveraged-ETF flows are at a high after retail piled in on margin post-election, and that margin calls could force more selling. He frames this as 'could', not 'will', over the next few days.",
+        "relation": "Forced deleveraging by hedge funds and leveraged retail creates mechanical selling pressure. That selling can push prices below fundamentals in the short run.",
+        "dir": "down",
+        "lr": 1.13,
+        "half_life": 30,
+        "lr_eff": 1.13,
+        "age": 0,
         "applied": true,
         "group_n": 1
       }
@@ -250,8 +282,8 @@
     "source": "market prior + video evidence"
   },
   "QQQ": {
-    "prior": 42.1,
-    "post": 48.0,
+    "prior": 25.5,
+    "post": 33.7,
     "items": [
       {
         "id": "qqq-1",
@@ -262,8 +294,8 @@
         "dir": "down",
         "lr": 1.27,
         "half_life": 30,
-        "lr_eff": 1.25,
-        "age": 3
+        "lr_eff": 1.24,
+        "age": 4
       },
       {
         "id": "qqq-2",
@@ -275,7 +307,7 @@
         "lr": 1.15,
         "half_life": 150,
         "lr_eff": 1.15,
-        "age": 3
+        "age": 4
       },
       {
         "id": "qqq-3",
@@ -288,7 +320,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.28,
-        "age": 6
+        "age": 7
       },
       {
         "id": "qqq-4",
@@ -302,7 +334,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.09,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       },
@@ -318,7 +350,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.05,
-        "age": 80,
+        "age": 81,
         "applied": true,
         "group_n": 1
       },
@@ -334,17 +366,50 @@
         "lr": 1.3,
         "half_life": 60,
         "lr_eff": 1.07,
-        "age": 119,
+        "age": 120,
         "applied": true,
         "group_n": 1
+      },
+      {
+        "id": "qqq-7",
+        "group": "y6f5fFjoNcc:QQQ:up",
+        "date": "2026-11-06",
+        "source": "Adam Khoo \u2014 A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+        "video_id": "y6f5fFjoNcc",
+        "claim": "Khoo says the Nasdaq fell 5% and the S&P 4% in one day on Democratic AI/data-center moratorium rhetoric, which he calls a sentiment and policy shock rather than a fundamental crash. He cites Q4 2018 (-20%, back to all-time highs within 4 months) and April 2025 (-19%, back to highs within 11 weeks). He adds that Q3 earnings grew 30% and Q4 guidance is still rising, so he expects a V-shaped rebound.",
+        "relation": "A drawdown driven by sentiment or policy, with earnings intact, has historically mean-reverted quickly. AI capex and semiconductor names were the epicenter of the selloff, so their rebound lifts the Nasdaq-100.",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 60,
+        "lr_eff": 1.17,
+        "age": 0,
+        "applied": true,
+        "group_n": 2
+      },
+      {
+        "id": "qqq-8",
+        "group": "y6f5fFjoNcc:QQQ:up",
+        "date": "2026-11-06",
+        "source": "Adam Khoo \u2014 A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+        "video_id": "y6f5fFjoNcc",
+        "claim": "Khoo says the data-center moratorium is unlikely to pass. Democrats hold 54 Senate seats, a moratorium needs 60 votes, and Trump says he will veto, which would take 67 votes to override. He also says Texas's new Democratic governor-elect has said every currently permitted data center in Texas will finish construction. His conclusion is that 'money talks and walks', so the policy threat is mostly rhetoric.",
+        "relation": "If the Senate math blocks a moratorium, the risk of a real cut to AI capex fades. The policy-risk discount on AI and semiconductor-heavy Nasdaq names should then unwind.",
+        "dir": "up",
+        "lr": 1.17,
+        "half_life": 60,
+        "lr_eff": 1.17,
+        "age": 0,
+        "applied": false,
+        "group_n": 2,
+        "absorbed_by": "qqq-7"
       }
     ],
     "resolution": "Short-term rotation-out evidence (qqq-1) vs fundamental-intact evidence (qqq-3) genuinely conflict; both kept. Resolution: rotation is a flow phenomenon (weeks), fundamentals a valuation phenomenon (quarters). For the 90-day view the flow leg dominates while Fed-hike odds (already in prior) suppress multiples \u2014 posterior stays near neutral, slightly above the pre-evidence market wash because earnings breadth data is the strongest verified fact in the set.",
     "source": "market prior + video evidence"
   },
   "SCHD": {
-    "prior": 57.9,
-    "post": 65.9,
+    "prior": 74.5,
+    "post": 80.3,
     "items": [
       {
         "id": "schd-1",
@@ -356,8 +421,8 @@
         "dir": "up",
         "lr": 1.34,
         "half_life": 60,
-        "lr_eff": 1.33,
-        "age": 3,
+        "lr_eff": 1.32,
+        "age": 4,
         "applied": true,
         "group_n": 2
       },
@@ -371,8 +436,8 @@
         "dir": "up",
         "lr": 1.17,
         "half_life": 90,
-        "lr_eff": 1.17,
-        "age": 3,
+        "lr_eff": 1.16,
+        "age": 4,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "schd-1"
@@ -389,7 +454,7 @@
         "lr": 1.25,
         "half_life": 60,
         "lr_eff": 1.06,
-        "age": 119,
+        "age": 120,
         "applied": true,
         "group_n": 1
       }
@@ -399,7 +464,7 @@
   },
   "XLV": {
     "prior": 50.0,
-    "post": 54.8,
+    "post": 54.7,
     "items": [
       {
         "id": "xlv-1",
@@ -411,7 +476,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.21,
-        "age": 3
+        "age": 4
       }
     ],
     "resolution": "Consistent with the existing bullish view (tight HY OAS + pricing power); no conflict.",
@@ -419,7 +484,7 @@
   },
   "XLP": {
     "prior": 50.0,
-    "post": 56.2,
+    "post": 56.1,
     "items": [
       {
         "id": "xlp-1",
@@ -431,7 +496,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.21,
-        "age": 3
+        "age": 4
       },
       {
         "id": "xlp-2",
@@ -445,7 +510,7 @@
         "lr": 1.25,
         "half_life": 60,
         "lr_eff": 1.06,
-        "age": 119,
+        "age": 120,
         "applied": true,
         "group_n": 1
       }
@@ -455,7 +520,7 @@
   },
   "XLF": {
     "prior": 50.0,
-    "post": 60.5,
+    "post": 60.3,
     "items": [
       {
         "id": "xlf-1",
@@ -466,8 +531,8 @@
         "dir": "up",
         "lr": 1.17,
         "half_life": 30,
-        "lr_eff": 1.16,
-        "age": 3
+        "lr_eff": 1.15,
+        "age": 4
       },
       {
         "id": "xlf-2",
@@ -481,7 +546,7 @@
         "lr": 1.3,
         "half_life": 120,
         "lr_eff": 1.21,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       },
@@ -497,7 +562,7 @@
         "lr": 1.25,
         "half_life": 45.0,
         "lr_eff": 1.09,
-        "age": 63,
+        "age": 64,
         "applied": true,
         "group_n": 1
       }
@@ -506,8 +571,8 @@
     "source": "market prior + video evidence"
   },
   "XLC": {
-    "prior": 33.2,
-    "post": 31.0,
+    "prior": 25.5,
+    "post": 23.7,
     "items": [
       {
         "id": "xlc-1",
@@ -518,8 +583,8 @@
         "dir": "down",
         "lr": 1.2,
         "half_life": 30,
-        "lr_eff": 1.19,
-        "age": 3
+        "lr_eff": 1.18,
+        "age": 4
       },
       {
         "id": "xlc-2",
@@ -531,8 +596,8 @@
         "lr": 1.28,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.27,
-        "age": 6
+        "lr_eff": 1.26,
+        "age": 7
       },
       {
         "id": "xlc-3",
@@ -546,7 +611,7 @@
         "lr": 1.2,
         "half_life": 180,
         "lr_eff": 1.18,
-        "age": 22,
+        "age": 23,
         "applied": true,
         "group_n": 1
       }
@@ -555,8 +620,8 @@
     "source": "market prior + video evidence"
   },
   "XLE": {
-    "prior": 62.9,
-    "post": 67.9,
+    "prior": 64.7,
+    "post": 69.5,
     "items": [
       {
         "id": "xle-1",
@@ -568,7 +633,7 @@
         "lr": 1.13,
         "half_life": 30,
         "lr_eff": 1.12,
-        "age": 3
+        "age": 4
       },
       {
         "id": "xle-2",
@@ -582,7 +647,7 @@
         "lr": 1.17,
         "half_life": 90,
         "lr_eff": 1.11,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       }
@@ -591,8 +656,8 @@
     "source": "market prior + video evidence"
   },
   "ZROZ": {
-    "prior": 51.0,
-    "post": 46.2,
+    "prior": 50.0,
+    "post": 45.2,
     "items": [
       {
         "id": "zroz-1",
@@ -606,7 +671,7 @@
         "lr": 1.3,
         "half_life": 120,
         "lr_eff": 1.21,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       }
@@ -615,8 +680,8 @@
     "source": "market prior + video evidence"
   },
   "IBIT": {
-    "prior": 42.1,
-    "post": 41.9,
+    "prior": 25.5,
+    "post": 25.4,
     "items": [
       {
         "id": "ibit-1",
@@ -630,7 +695,7 @@
         "lr": 1.15,
         "half_life": 30.0,
         "lr_eff": 1.01,
-        "age": 127,
+        "age": 128,
         "applied": true,
         "group_n": 1
       }
@@ -653,7 +718,7 @@
         "half_life": 120,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.27,
-        "age": 6
+        "age": 7
       },
       {
         "id": "nvda-2",
@@ -666,7 +731,7 @@
         "half_life": 180,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.15,
-        "age": 6
+        "age": 7
       },
       {
         "id": "nvda-3",
@@ -680,7 +745,7 @@
         "lr": 1.2,
         "half_life": 30.0,
         "lr_eff": 1.04,
-        "age": 63,
+        "age": 64,
         "applied": true,
         "group_n": 1
       },
@@ -696,7 +761,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       },
@@ -712,7 +777,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.09,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       }
@@ -720,16 +785,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 187.56,
-    "ret6": -4.5,
-    "ret1": -21.0,
-    "dd": -21.6,
+    "last": 188.05,
+    "ret6": -9.5,
+    "ret1": -18.4,
+    "dd": -21.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2 (oq3B28tS6c4)"
   },
   "MU": {
     "prior": 50,
-    "post": 42.5,
+    "post": 42.6,
     "items": [
       {
         "id": "mu-1",
@@ -741,8 +806,8 @@
         "lr": 1.22,
         "half_life": 30,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.19,
-        "age": 6
+        "lr_eff": 1.18,
+        "age": 7
       },
       {
         "id": "mu-2",
@@ -756,7 +821,7 @@
         "lr": 1.15,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 78,
+        "age": 79,
         "applied": true,
         "group_n": 1
       },
@@ -771,8 +836,8 @@
         "dir": "down",
         "lr": 1.25,
         "half_life": 60.0,
-        "lr_eff": 1.08,
-        "age": 97,
+        "lr_eff": 1.07,
+        "age": 98,
         "applied": true,
         "group_n": 1
       }
@@ -780,16 +845,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 710.45,
-    "ret6": 11.0,
-    "ret1": -34.7,
-    "dd": -41.5,
+    "last": 688.45,
+    "ret6": 3.3,
+    "ret1": -33.5,
+    "dd": -43.3,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "AMD": {
     "prior": 50,
-    "post": 45.7,
+    "post": 45.8,
     "items": [
       {
         "id": "amd-1",
@@ -801,23 +866,23 @@
         "lr": 1.22,
         "half_life": 30,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.19,
-        "age": 6
+        "lr_eff": 1.18,
+        "age": 7
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 427.92,
-    "ret6": 20.5,
-    "ret1": -33.7,
-    "dd": -34.1,
+    "last": 441.3,
+    "ret6": 4.7,
+    "ret1": -28.9,
+    "dd": -32.0,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "INTC": {
     "prior": 50,
-    "post": 45.0,
+    "post": 45.1,
     "items": [
       {
         "id": "intc-1",
@@ -830,22 +895,22 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.22,
-        "age": 6
+        "age": 7
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 55.85,
-    "ret6": -48.4,
-    "ret1": -50.6,
-    "dd": -60.4,
+    "last": 55.39,
+    "ret6": -51.0,
+    "ret1": -48.3,
+    "dd": -60.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "ARM": {
     "prior": 50,
-    "post": 45.7,
+    "post": 45.8,
     "items": [
       {
         "id": "arm-1",
@@ -857,23 +922,23 @@
         "lr": 1.22,
         "half_life": 30,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.19,
-        "age": 6
+        "lr_eff": 1.18,
+        "age": 7
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 172.07,
-    "ret6": -17.6,
-    "ret1": -41.5,
-    "dd": -60.8,
+    "last": 171.8,
+    "ret6": -27.6,
+    "ret1": -37.6,
+    "dd": -60.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "SNDK": {
     "prior": 50,
-    "post": 45.7,
+    "post": 45.8,
     "items": [
       {
         "id": "sndk-1",
@@ -885,23 +950,23 @@
         "lr": 1.22,
         "half_life": 30,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.19,
-        "age": 6
+        "lr_eff": 1.18,
+        "age": 7
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 883.24,
-    "ret6": -37.2,
+    "last": 839.79,
+    "ret6": -40.4,
     "ret1": -47.8,
-    "dd": -62.2,
+    "dd": -64.0,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
   "GOOGL": {
     "prior": 50,
-    "post": 60.0,
+    "post": 63.1,
     "items": [
       {
         "id": "googl-1",
@@ -913,8 +978,8 @@
         "lr": 1.28,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.27,
-        "age": 6
+        "lr_eff": 1.26,
+        "age": 7
       },
       {
         "id": "googl-2",
@@ -927,7 +992,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 6
+        "age": 7
       },
       {
         "id": "googl-3",
@@ -941,7 +1006,7 @@
         "lr": 1.2,
         "half_life": 120,
         "lr_eff": 1.14,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       },
@@ -957,7 +1022,7 @@
         "lr": 1.15,
         "half_life": 90.0,
         "lr_eff": 1.08,
-        "age": 78,
+        "age": 79,
         "applied": true,
         "group_n": 1
       },
@@ -973,7 +1038,39 @@
         "lr": 1.3,
         "half_life": 90,
         "lr_eff": 1.08,
-        "age": 156,
+        "age": 157,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "goog-6",
+        "group": "y6f5fFjoNcc:GOOGL:up",
+        "date": "2026-11-06",
+        "source": "Adam Khoo \u2014 A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+        "video_id": "y6f5fFjoNcc",
+        "claim": "Khoo says Alphabet's intrinsic value is $374 against a current price of about $283, so it is undervalued. The stock broke below $295 support. He will add only at the next lower support or on a bullish reversal pattern.",
+        "relation": "A roughly 32% gap to his estimated intrinsic value, combined with the sentiment-driven selloff, implies upside as the panic fades.",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 90,
+        "lr_eff": 1.13,
+        "age": 0,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "goog-7",
+        "group": "hky-Ag3F2Zc:GOOGL:up",
+        "date": "2026-04-10",
+        "source": "Adam Khoo \u2014 SpaceX IPO a Buy? Here are Better Alternatives! (2026-04-10)",
+        "video_id": "hky-Ag3F2Zc",
+        "claim": "Alphabet is another of his biggest positions (over $800K). It trades at a $3.8T market cap with $400B revenue, $150B EBITDA, 9.5x price-to-sales and 25.5x price-to-EBITDA. It owns about 7% of SpaceX (invested $900M in 2015, now worth $87-140B pre-IPO) and 14% of Anthropic, plus Waymo, Stripe, AST SpaceMobile and Planet Labs. He says these stakes are 'not factored into' the share price.",
+        "relation": "A SpaceX IPO at $1.75-2T would mark the private SpaceX stake to market, and Anthropic and Waymo add further hidden value. This could narrow any gap between Alphabet's market value and the sum of its parts. The stake is only a few percent of the market cap, and 'not priced in' is his opinion, so the LR is discounted.",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 60,
+        "lr_eff": 1.01,
+        "age": 210,
         "applied": true,
         "group_n": 1
       }
@@ -981,16 +1078,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 284.89,
-    "ret6": -26.7,
-    "ret1": -18.7,
-    "dd": -29.2,
+    "last": 286.87,
+    "ret6": -27.9,
+    "ret1": -17.6,
+    "dd": -28.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30 (tKygzktysRk)"
   },
   "META": {
     "prior": 50,
-    "post": 67.7,
+    "post": 70.8,
     "items": [
       {
         "id": "meta-1",
@@ -1002,8 +1099,8 @@
         "lr": 1.26,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.25,
-        "age": 6
+        "lr_eff": 1.24,
+        "age": 7
       },
       {
         "id": "meta-2",
@@ -1016,7 +1113,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 6
+        "age": 7
       },
       {
         "id": "meta-3",
@@ -1029,8 +1126,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 60,
-        "lr_eff": 1.23,
-        "age": 22,
+        "lr_eff": 1.22,
+        "age": 23,
         "applied": true,
         "group_n": 1
       },
@@ -1045,8 +1142,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 60.0,
-        "lr_eff": 1.11,
-        "age": 83,
+        "lr_eff": 1.1,
+        "age": 84,
         "applied": true,
         "group_n": 1
       },
@@ -1061,8 +1158,8 @@
         "dir": "up",
         "lr": 1.25,
         "half_life": 60.0,
-        "lr_eff": 1.08,
-        "age": 97,
+        "lr_eff": 1.07,
+        "age": 98,
         "applied": true,
         "group_n": 1
       },
@@ -1078,7 +1175,7 @@
         "lr": 1.25,
         "half_life": 90.0,
         "lr_eff": 1.13,
-        "age": 80,
+        "age": 81,
         "applied": true,
         "group_n": 1
       },
@@ -1094,7 +1191,39 @@
         "lr": 1.35,
         "half_life": 90.0,
         "lr_eff": 1.15,
-        "age": 97,
+        "age": 98,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "meta-8",
+        "group": "y6f5fFjoNcc:META:up",
+        "date": "2026-11-06",
+        "source": "Adam Khoo \u2014 A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+        "video_id": "y6f5fFjoNcc",
+        "claim": "Khoo says Meta's intrinsic value is $900 to about $1,002, so it is very undervalued. Revenues and profits are growing, and the drop is purely sentiment-driven. He is adding in 4-5 tranches near support levels, starting around $580.",
+        "relation": "The price is below his estimated intrinsic value while earnings grow. A policy-driven sentiment selloff should therefore revert as fears fade.",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 90,
+        "lr_eff": 1.13,
+        "age": 0,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "meta-9",
+        "group": "QijKhOarie0:META:up",
+        "date": "2026-05-04",
+        "source": "Adam Khoo \u2014 Stock Market too Expensive? (2026-05-04)",
+        "video_id": "QijKhOarie0",
+        "claim": "Khoo calls Meta 'dirt cheap': Stock Oracle values it at $900 (capex-normalised, using the 5-year average capex) against a plain DCF of $7.49 (transcript figure is garbled). He cites projected growth of 19% for 5 years then about 14%, at a forward PE of only 17x. Free cash flow has dropped because of AI data-center capex, but he says the stock is still undervalued even on that lower figure.",
+        "relation": "A forward PE of 17x against about 19% earnings growth suggests the market is over-penalising the AI capex drag on free cash flow. If capex normalises and growth holds, the multiple should re-rate upward. The valuation comes from his own promoted tool, so the LR is discounted.",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 90,
+        "lr_eff": 1.03,
+        "age": 186,
         "applied": true,
         "group_n": 1
       }
@@ -1102,16 +1231,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 612.16,
-    "ret6": 1.2,
-    "ret1": -15.1,
-    "dd": -21.3,
+    "last": 617.42,
+    "ret6": 0.7,
+    "ret1": -14.4,
+    "dd": -20.6,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
   "AMZN": {
     "prior": 50,
-    "post": 54.5,
+    "post": 55.1,
     "items": [
       {
         "id": "amzn-1",
@@ -1123,8 +1252,8 @@
         "lr": 1.28,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.27,
-        "age": 6
+        "lr_eff": 1.26,
+        "age": 7
       },
       {
         "id": "amzn-2",
@@ -1137,7 +1266,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 6
+        "age": 7
       },
       {
         "id": "amzn-3",
@@ -1151,7 +1280,23 @@
         "lr": 1.25,
         "half_life": 90,
         "lr_eff": 1.07,
-        "age": 157,
+        "age": 158,
+        "applied": true,
+        "group_n": 1
+      },
+      {
+        "id": "amzn-4",
+        "group": "hky-Ag3F2Zc:AMZN:up",
+        "date": "2026-04-10",
+        "source": "Adam Khoo \u2014 SpaceX IPO a Buy? Here are Better Alternatives! (2026-04-10)",
+        "video_id": "hky-Ag3F2Zc",
+        "claim": "Amazon is his biggest position (about $800K across two accounts) and he keeps buying. At roughly a $2T market cap it has $716B revenue and $146B EBITDA, a price-to-sales of about 3x and price-to-EBITDA of about 16x. Amazon Kuiper (3,200+ LEO satellites) is Starlink's closest competitor. It has AWS bundling, about $70B a year of operating cash flow with no need to dilute, and a 'second source' demand from regulators and enterprise customers. He says the space business is a 'free call option' not priced in.",
+        "relation": "Cheap multiples on large, growing earnings, plus self-funded optionality in satellite broadband, give upside as Kuiper scales. A SpaceX IPO at 109x sales highlights how cheap Amazon looks by comparison and may draw attention to Kuiper. He says he is not recommending the stock, and the 'free option' claim is opinion, so the LR is discounted.",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 90,
+        "lr_eff": 1.02,
+        "age": 210,
         "applied": true,
         "group_n": 1
       }
@@ -1159,16 +1304,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 260.51,
-    "ret6": -4.8,
-    "ret1": 0.2,
-    "dd": -8.3,
+    "last": 262.86,
+    "ret6": -4.4,
+    "ret1": 3.5,
+    "dd": -7.5,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
   "MSFT": {
     "prior": 50,
-    "post": 67.2,
+    "post": 67.0,
     "items": [
       {
         "id": "msft-1",
@@ -1181,7 +1326,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.21,
-        "age": 6
+        "age": 7
       },
       {
         "id": "msft-2",
@@ -1195,7 +1340,7 @@
         "lr": 1.2,
         "half_life": 120,
         "lr_eff": 1.14,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       },
@@ -1210,8 +1355,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 60.0,
-        "lr_eff": 1.11,
-        "age": 83,
+        "lr_eff": 1.1,
+        "age": 84,
         "applied": true,
         "group_n": 1
       },
@@ -1227,7 +1372,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       },
@@ -1243,7 +1388,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.1,
-        "age": 80,
+        "age": 81,
         "applied": true,
         "group_n": 1
       },
@@ -1259,7 +1404,7 @@
         "lr": 1.25,
         "half_life": 90.0,
         "lr_eff": 1.11,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       }
@@ -1267,10 +1412,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 544.05,
-    "ret6": 32.2,
-    "ret1": 2.7,
-    "dd": -2.1,
+    "last": 535.22,
+    "ret6": 29.3,
+    "ret1": 2.4,
+    "dd": -3.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
@@ -1290,7 +1435,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.23,
-        "age": 22,
+        "age": 23,
         "applied": true,
         "group_n": 1
       }
@@ -1298,10 +1443,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 124.92,
-    "ret6": 38.9,
-    "ret1": -34.0,
-    "dd": -35.9,
+    "last": 120.65,
+    "ret6": 34.1,
+    "ret1": -36.2,
+    "dd": -38.0,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1321,7 +1466,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.23,
-        "age": 22,
+        "age": 23,
         "applied": true,
         "group_n": 1
       }
@@ -1329,10 +1474,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 221.96,
-    "ret6": 86.3,
+    "last": 219.82,
+    "ret6": 87.9,
     "ret1": -16.4,
-    "dd": -20.4,
+    "dd": -21.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1352,7 +1497,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.23,
-        "age": 22,
+        "age": 23,
         "applied": true,
         "group_n": 1
       }
@@ -1360,16 +1505,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 322.98,
-    "ret6": 75.6,
-    "ret1": -20.4,
-    "dd": -23.1,
+    "last": 318.16,
+    "ret6": 73.2,
+    "ret1": -20.2,
+    "dd": -24.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
   "SNOW": {
     "prior": 50,
-    "post": 45.7,
+    "post": 45.8,
     "items": [
       {
         "id": "snow-1",
@@ -1383,7 +1528,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.19,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       }
@@ -1391,16 +1536,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 278.77,
-    "ret6": 96.7,
-    "ret1": -16.2,
-    "dd": -24.4,
+    "last": 272.14,
+    "ret6": 94.7,
+    "ret1": -20.8,
+    "dd": -26.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
   "NET": {
     "prior": 50,
-    "post": 45.7,
+    "post": 45.8,
     "items": [
       {
         "id": "net-1",
@@ -1414,7 +1559,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.19,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       }
@@ -1422,10 +1567,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 242.63,
-    "ret6": -0.7,
-    "ret1": -29.3,
-    "dd": -32.8,
+    "last": 271.95,
+    "ret6": 9.4,
+    "ret1": -20.5,
+    "dd": -24.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
@@ -1445,7 +1590,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.19,
-        "age": 52,
+        "age": 53,
         "applied": true,
         "group_n": 1
       },
@@ -1461,7 +1606,7 @@
         "lr": 1.2,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       }
@@ -1469,10 +1614,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 26.7,
-    "ret6": -44.4,
-    "ret1": -35.4,
-    "dd": -63.0,
+    "last": 29.46,
+    "ret6": -44.0,
+    "ret1": -25.3,
+    "dd": -59.1,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
@@ -1492,7 +1637,7 @@
         "lr": 1.25,
         "half_life": 90,
         "lr_eff": 1.09,
-        "age": 119,
+        "age": 120,
         "applied": true,
         "group_n": 1
       }
@@ -1500,16 +1645,47 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 111.08,
-    "ret6": 18.0,
-    "ret1": 17.8,
-    "dd": 0.0,
+    "last": 107.89,
+    "ret6": 13.9,
+    "ret1": 12.3,
+    "dd": -2.5,
     "added": "2026-11-05",
     "found_in": "Adam Khoo highlight Bs25DN_1ZUs (2026-07-09)"
   },
+  "NOW": {
+    "prior": 50,
+    "post": 50.7,
+    "items": [
+      {
+        "id": "now-1",
+        "group": "QijKhOarie0:NOW:up",
+        "date": "2026-05-04",
+        "source": "Adam Khoo \u2014 Stock Market too Expensive? (2026-05-04)",
+        "video_id": "QijKhOarie0",
+        "claim": "ServiceNow is 'very undervalued': DCF value of $234 and Stock Oracle value of $205 versus a share price of $91. Projected growth is 19.77% for 5 years then 19.41%. He says the AI-disruption-of-software fear is not showing in the numbers: revenue, operating cash flow and free cash flow are all growing consistently and earnings were great.",
+        "relation": "The price drop reflects sentiment about agentic AI disrupting software, while reported fundamentals are still compounding. The gap between price and intrinsic value implies mean reversion if the disruption fears fail to show up in results. The valuation comes from his own promoted tool, so the LR is discounted.",
+        "dir": "up",
+        "lr": 1.13,
+        "half_life": 90,
+        "lr_eff": 1.03,
+        "age": 186,
+        "applied": true,
+        "group_n": 1
+      }
+    ],
+    "resolution": "",
+    "source": "neutral prior + video evidence",
+    "watch": true,
+    "last": 103.0,
+    "ret6": 15.7,
+    "ret1": -26.3,
+    "dd": -35.2,
+    "added": "2026-11-06",
+    "found_in": "Adam Khoo \u2014 Stock Market too Expensive? (2026-05-04)"
+  },
   "_meta": {
-    "generated_at": 1793896656.7144258,
-    "started_at": 1793896654.5058718,
-    "run_date": "2026-11-05"
+    "generated_at": 1793982176.128248,
+    "started_at": 1793982173.956624,
+    "run_date": "2026-11-06"
   }
 }

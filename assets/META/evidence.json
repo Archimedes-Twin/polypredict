@@ -90,6 +90,30 @@
       "dir": "up",
       "lr": 1.35,
       "half_life": 90.0
+    },
+    {
+      "id": "meta-8",
+      "group": "y6f5fFjoNcc:META:up",
+      "date": "2026-11-06",
+      "source": "Adam Khoo — A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+      "video_id": "y6f5fFjoNcc",
+      "claim": "Khoo says Meta's intrinsic value is $900 to about $1,002, so it is very undervalued. Revenues and profits are growing, and the drop is purely sentiment-driven. He is adding in 4-5 tranches near support levels, starting around $580.",
+      "relation": "The price is below his estimated intrinsic value while earnings grow. A policy-driven sentiment selloff should therefore revert as fears fade.",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 90
+    },
+    {
+      "id": "meta-9",
+      "group": "QijKhOarie0:META:up",
+      "date": "2026-05-04",
+      "source": "Adam Khoo — Stock Market too Expensive? (2026-05-04)",
+      "video_id": "QijKhOarie0",
+      "claim": "Khoo calls Meta 'dirt cheap': Stock Oracle values it at $900 (capex-normalised, using the 5-year average capex) against a plain DCF of $7.49 (transcript figure is garbled). He cites projected growth of 19% for 5 years then about 14%, at a forward PE of only 17x. Free cash flow has dropped because of AI data-center capex, but he says the stock is still undervalued even on that lower figure.",
+      "relation": "A forward PE of 17x against about 19% earnings growth suggests the market is over-penalising the AI capex drag on free cash flow. If capex normalises and growth holds, the multiple should re-rate upward. The valuation comes from his own promoted tool, so the LR is discounted.",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 90
     }
   ]
 }

@@ -71,6 +71,30 @@
       "dir": "down",
       "lr": 1.3,
       "half_life": 60
+    },
+    {
+      "id": "qqq-7",
+      "group": "y6f5fFjoNcc:QQQ:up",
+      "date": "2026-11-06",
+      "source": "Adam Khoo — A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+      "video_id": "y6f5fFjoNcc",
+      "claim": "Khoo says the Nasdaq fell 5% and the S&P 4% in one day on Democratic AI/data-center moratorium rhetoric, which he calls a sentiment and policy shock rather than a fundamental crash. He cites Q4 2018 (-20%, back to all-time highs within 4 months) and April 2025 (-19%, back to highs within 11 weeks). He adds that Q3 earnings grew 30% and Q4 guidance is still rising, so he expects a V-shaped rebound.",
+      "relation": "A drawdown driven by sentiment or policy, with earnings intact, has historically mean-reverted quickly. AI capex and semiconductor names were the epicenter of the selloff, so their rebound lifts the Nasdaq-100.",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 60
+    },
+    {
+      "id": "qqq-8",
+      "group": "y6f5fFjoNcc:QQQ:up",
+      "date": "2026-11-06",
+      "source": "Adam Khoo — A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+      "video_id": "y6f5fFjoNcc",
+      "claim": "Khoo says the data-center moratorium is unlikely to pass. Democrats hold 54 Senate seats, a moratorium needs 60 votes, and Trump says he will veto, which would take 67 votes to override. He also says Texas's new Democratic governor-elect has said every currently permitted data center in Texas will finish construction. His conclusion is that 'money talks and walks', so the policy threat is mostly rhetoric.",
+      "relation": "If the Senate math blocks a moratorium, the risk of a real cut to AI capex fades. The policy-risk discount on AI and semiconductor-heavy Nasdaq names should then unwind.",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 60
     }
   ],
   "resolution": "Short-term rotation-out evidence (qqq-1) vs fundamental-intact evidence (qqq-3) genuinely conflict; both kept. Resolution: rotation is a flow phenomenon (weeks), fundamentals a valuation phenomenon (quarters). For the 90-day view the flow leg dominates while Fed-hike odds (already in prior) suppress multiples — posterior stays near neutral, slightly above the pre-evidence market wash because earnings breadth data is the strongest verified fact in the set."

@@ -179,6 +179,30 @@
       "dir": "up",
       "lr": 1.3,
       "half_life": 60
+    },
+    {
+      "id": "spy-16",
+      "group": "y6f5fFjoNcc:SPY:up",
+      "date": "2026-11-06",
+      "source": "Adam Khoo — A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+      "video_id": "y6f5fFjoNcc",
+      "claim": "Khoo compares the selloff to Q4 2018 and April 2025, both policy/sentiment shocks with no earnings damage that recovered to all-time highs within 4 months and 11 weeks. He contrasts them with Nov 2008, when S&P earnings fell about 9% per quarter and recovery took years. With Q3 profits up 30%, he says a V-shaped rebound is likely.",
+      "relation": "The S&P recovers quickly when the drop is not backed by an earnings collapse. AI capex is currently a key driver of US growth.",
+      "dir": "up",
+      "lr": 1.17,
+      "half_life": 60
+    },
+    {
+      "id": "spy-17",
+      "group": "y6f5fFjoNcc:SPY:down",
+      "date": "2026-11-06",
+      "source": "Adam Khoo — A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+      "video_id": "y6f5fFjoNcc",
+      "claim": "Khoo says the market could fall further in the short term. He says hedge funds with heavy leverage are reportedly blowing up and must sell to meet redemptions. He also says US leveraged-ETF flows are at a high after retail piled in on margin post-election, and that margin calls could force more selling. He frames this as 'could', not 'will', over the next few days.",
+      "relation": "Forced deleveraging by hedge funds and leveraged retail creates mechanical selling pressure. That selling can push prices below fundamentals in the short run.",
+      "dir": "down",
+      "lr": 1.13,
+      "half_life": 30
     }
   ],
   "resolution": "Yesterday's bearish-leaning resolution was anchored by the ceasefire-break leg (raw up-prob 38.3) that rolled off today's basket with the Nov market, so SPY's prior is now the neutral 50% and the view is evidence-only. Khoo's earnings-breadth/margin fact (lr 1.34, applied) and the Sep-14 rate-normalcy analogue meet no opposing market leg now — prior 50 → posterior 60.7, bullish (low confidence). This is a mechanical revert, not new information: the policy/geopolitical regime is simply unmeasured for SPY today, so the bear risk is absent from the model rather than resolved — if the ceasefire market returns with break odds over 55% or a CPI/hike leg maps onto SPY at hawkish odds, the 2018 analogue (seasonality loses to policy shocks) argues the flip back. Confidence stays low precisely because no market leg corroborates the evidence side."

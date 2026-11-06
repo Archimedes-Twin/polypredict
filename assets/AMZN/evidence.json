@@ -42,6 +42,18 @@
       "dir": "up",
       "lr": 1.25,
       "half_life": 90
+    },
+    {
+      "id": "amzn-4",
+      "group": "hky-Ag3F2Zc:AMZN:up",
+      "date": "2026-04-10",
+      "source": "Adam Khoo — SpaceX IPO a Buy? Here are Better Alternatives! (2026-04-10)",
+      "video_id": "hky-Ag3F2Zc",
+      "claim": "Amazon is his biggest position (about $800K across two accounts) and he keeps buying. At roughly a $2T market cap it has $716B revenue and $146B EBITDA, a price-to-sales of about 3x and price-to-EBITDA of about 16x. Amazon Kuiper (3,200+ LEO satellites) is Starlink's closest competitor. It has AWS bundling, about $70B a year of operating cash flow with no need to dilute, and a 'second source' demand from regulators and enterprise customers. He says the space business is a 'free call option' not priced in.",
+      "relation": "Cheap multiples on large, growing earnings, plus self-funded optionality in satellite broadband, give upside as Kuiper scales. A SpaceX IPO at 109x sales highlights how cheap Amazon looks by comparison and may draw attention to Kuiper. He says he is not recommending the stock, and the 'free option' claim is opinion, so the LR is discounted.",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 90
     }
   ]
 }

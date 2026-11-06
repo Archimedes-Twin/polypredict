@@ -26,6 +26,18 @@
       "dir": "up",
       "lr": 1.17,
       "half_life": 90
+    },
+    {
+      "id": "xle-3",
+      "group": "PPs1cZ39ZMc:XLE:up",
+      "date": "2026-04-15",
+      "source": "Adam Khoo — The stock market has been choppy in the first quarter of 2026... (2026-04-15)",
+      "video_id": "PPs1cZ39ZMc",
+      "claim": "The S&P 500 is down only about 9% YTD because it is 'held up by the energy stocks', while many quality stocks (Microsoft, Nvidia, Meta, Palo Alto) are down double digits or 20-30%. His reason: 'Oil goes up, energy companies make a lot of money.'",
+      "relation": "Higher oil prices lift energy-company earnings, so energy has been supporting the index while tech and growth sectors fall. This is a current-regime flow and earnings effect that continues while oil stays elevated. He calls the period a 'bizarro' year, so persistence is uncertain.",
+      "dir": "up",
+      "lr": 1.12,
+      "half_life": 30
     }
   ],
   "resolution": "The ceasefire leg (65.6 up-prob) rolled off with the Nov market and WTI dip-under-$90 odds firmed 63% → 66%, flipping the raw prior from 55.1 to a bearish-leaning 42.3. Khoo's October-rotation leg (lr 1.13, age 1) and the Sep-14 rate-up/inflation-up mechanism (decayed lr_eff 1.11, age 50) add up-evidence that lifts the posterior to 47.9 — neutral (low confidence), genuinely two-sided. The bullish tilt that combined the oil-supply bid with the geopolitical tail is gone; revisit if the ceasefire market returns with break odds over 55% (tail reattaches) or if dip-under-$90 odds firm past the 45% revision floor (bear lean dominates)."

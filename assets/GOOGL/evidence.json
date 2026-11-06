@@ -66,6 +66,30 @@
       "dir": "up",
       "lr": 1.3,
       "half_life": 90
+    },
+    {
+      "id": "goog-6",
+      "group": "y6f5fFjoNcc:GOOGL:up",
+      "date": "2026-11-06",
+      "source": "Adam Khoo — A.I. Data Centre Ban Crashes Markets! What I Am Doing. (2026-11-06)",
+      "video_id": "y6f5fFjoNcc",
+      "claim": "Khoo says Alphabet's intrinsic value is $374 against a current price of about $283, so it is undervalued. The stock broke below $295 support. He will add only at the next lower support or on a bullish reversal pattern.",
+      "relation": "A roughly 32% gap to his estimated intrinsic value, combined with the sentiment-driven selloff, implies upside as the panic fades.",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 90
+    },
+    {
+      "id": "goog-7",
+      "group": "hky-Ag3F2Zc:GOOGL:up",
+      "date": "2026-04-10",
+      "source": "Adam Khoo — SpaceX IPO a Buy? Here are Better Alternatives! (2026-04-10)",
+      "video_id": "hky-Ag3F2Zc",
+      "claim": "Alphabet is another of his biggest positions (over $800K). It trades at a $3.8T market cap with $400B revenue, $150B EBITDA, 9.5x price-to-sales and 25.5x price-to-EBITDA. It owns about 7% of SpaceX (invested $900M in 2015, now worth $87-140B pre-IPO) and 14% of Anthropic, plus Waymo, Stripe, AST SpaceMobile and Planet Labs. He says these stakes are 'not factored into' the share price.",
+      "relation": "A SpaceX IPO at $1.75-2T would mark the private SpaceX stake to market, and Anthropic and Waymo add further hidden value. This could narrow any gap between Alphabet's market value and the sum of its parts. The stake is only a few percent of the market cap, and 'not priced in' is his opinion, so the LR is discounted.",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 60
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "asset": "NOW",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.NOW",
+  "prior": 50,
+  "found_in": "Adam Khoo — Stock Market too Expensive? (2026-05-04)",
+  "added": "2026-11-06",
+  "note": "",
+  "evidence": [
+    {
+      "id": "now-1",
+      "group": "QijKhOarie0:NOW:up",
+      "date": "2026-05-04",
+      "source": "Adam Khoo — Stock Market too Expensive? (2026-05-04)",
+      "video_id": "QijKhOarie0",
+      "claim": "ServiceNow is 'very undervalued': DCF value of $234 and Stock Oracle value of $205 versus a share price of $91. Projected growth is 19.77% for 5 years then 19.41%. He says the AI-disruption-of-software fear is not showing in the numbers: revenue, operating cash flow and free cash flow are all growing consistently and earnings were great.",
+      "relation": "The price drop reflects sentiment about agentic AI disrupting software, while reported fundamentals are still compounding. The gap between price and intrinsic value implies mean reversion if the disruption fears fail to show up in results. The valuation comes from his own promoted tool, so the LR is discounted.",
+      "dir": "up",
+      "lr": 1.13,
+      "half_life": 90
+    }
+  ]
+}
