@@ -122,3 +122,8 @@
 {"date": "2026-11-06", "asset": "IBIT", "rating": "very bearish", "conf": "high", "prob_up": 25.4, "prior": 25.5, "expires": "2027-02-04", "signals": [{"sig": "fed_hike", "basis": "hike odds 77% at Dec '26 meeting", "prob_up": 25.5, "invalid": "revises if hike odds fall under 45%"}], "resolved": false, "raw": false}
 {"date": "2026-11-06", "asset": "META", "rating": "very bullish", "conf": "low", "prob_up": 70.8, "prior": 50, "expires": "2027-02-04", "signals": [], "resolved": false, "raw": false}
 {"date": "2026-11-06", "asset": "NOW", "rating": "neutral", "conf": "low", "prob_up": 50.7, "prior": 50, "expires": "2027-02-04", "signals": [], "resolved": false, "raw": false}
+{"date": "2026-11-07", "asset": "SPY", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-02-05", "signals": [], "resolved": false, "raw": true}
+{"date": "2026-11-07", "asset": "SPY", "rating": "very bullish", "conf": "low", "prob_up": 71.8, "prior": 50.0, "expires": "2027-02-05", "signals": [], "resolved": false, "raw": false}
+{"date": "2026-11-07", "asset": "XLE", "rating": "neutral", "conf": "low", "prob_up": 50.0, "expires": "2027-02-05", "signals": [], "resolved": false, "raw": true}
+{"date": "2026-11-07", "asset": "XLE", "rating": "neutral", "conf": "low", "prob_up": 55.3, "prior": 50.0, "expires": "2027-02-05", "signals": [], "resolved": false, "raw": false}
+{"date": "2026-11-07", "asset": "GLD", "rating": "very bearish", "conf": "high", "prob_up": 25.5, "prior": null, "expires": "2027-02-05", "signals": [{"sig": "fed_hike", "basis": "hike odds 77% at Dec '26 meeting", "prob_up": 25.5, "invalid": "revises if hike odds fall under 45%"}], "resolved": false, "raw": false}
