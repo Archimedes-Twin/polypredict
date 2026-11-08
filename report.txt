@@ -1,5 +1,5 @@
-=== POLYPREDICT REPORT 2026-11-07 ===
-VIEW CHANGES: SPY: bullish/low (62%) -> very bullish/low (72%) [market prior 50%]; XLE: very bullish/high (70%) -> neutral/low (55%) [market prior 50%]; XLF: bullish/low (59%) -> bullish/low (60%) [market prior 50%]; XLC: very bearish/high (27%) -> very bearish/high (24%) [market prior 26%]; XLP: neutral/low (55%) -> neutral/low (56%) [market prior 50%]; GLD: neutral/low (45%) -> very bearish/high (26%) [market prior 26%]; NVDA: neutral/low (53%) -> neutral/low (58%); MU: neutral/low (45%) -> neutral/low (43%); GOOGL: bullish/low (58%) -> bullish/low (63%); AMZN: neutral/low (53%) -> neutral/low (55%); MSFT: bullish/low (58%) -> bullish/low (67%); IONQ: neutral/low (46%) -> neutral/low (44%)
+=== POLYPREDICT REPORT 2026-11-08 ===
+VIEW CHANGES: SCHD: very bullish/high (80%) -> neutral/low (57%) [market prior 49%]; XLE: neutral/low (55%) -> very bearish/high (27%) [market prior 23%]; XLF: bullish/low (59%) -> bullish/low (60%) [market prior 50%]; XLC: very bearish/high (27%) -> very bearish/high (24%) [market prior 26%]; XLP: neutral/low (55%) -> neutral/low (56%) [market prior 50%]; NVDA: neutral/low (53%) -> neutral/low (58%); MU: neutral/low (45%) -> neutral/low (43%); GOOGL: bullish/low (58%) -> bullish/low (63%); AMZN: neutral/low (53%) -> neutral/low (55%); MSFT: bullish/low (58%) -> bullish/low (67%); IONQ: neutral/low (46%) -> neutral/low (44%)
 CALIBRATION: 0 resolved views yet (views resolve 90 days after issuance)
-MISSING MARKETS: wti_dip90
+MISSING MARKETS: none
 SITE: https://archimedes-twin.github.io/polypredict/
