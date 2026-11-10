@@ -1,11 +1,15 @@
 ## Performance (6 months)
 
-Over the past six months financials built a steady uptrend from a mid-year low and recently reached a fresh high. The path included a meaningful pullback along the way, but the most recent stretch was a strong, accelerating advance. Momentum is clearly positive at the end of the window.
+Financials climbed from a mid-year low in a broadly steady uptrend. There was a meaningful pullback along the way, but the group recovered it and recently pushed to a fresh high. The last month continued upward, and the final stretch was an energetic advance rather than a drift.
 
 ## Drivers
 
-The macro case rests on higher long-term yields and a steeper curve, which lets banks borrow short and lend long, widening net interest margin, and lets insurers reinvest float at better yields. Exchange operators also benefit from elevated energy-futures activity. On top of this, commentary points to rotation into defensive, lower-valuation financials during a recent equity sell-off. These are Khoo's observations and opinions on how rates feed earnings, a well-known mechanism rather than a guaranteed outcome. The raw market prior was neutral, but the evidence overrides it because the rate-and-curve mechanism and rotation flows are consistent and point the same way.
+The rate mechanism favors financials. Higher long-term yields and a steeper curve let banks fund short and lend long, which widens net interest margin. Insurers reinvest float at better yields, and exchange operators gain from busy energy-futures trading. A second input is rotation: during the recent equity sell-off, financials held up as a destination for money leaving more expensive areas.
+
+Against that, the valuation evidence points the other way. A fresh price-to-book check on bank stocks found prices already reflecting the margin tailwind, so the same earnings story caps further upside. That check uses Singapore banks as a proxy and comes from a single commentator, so I weight it as a modest offset rather than a refutation. Market odds show no clear three-month direction. The positive rate and rotation evidence is real but is cancelled by the valuation drag, so the posterior stays neutral with low confidence.
 
 ## Continue or revert
 
-Bullish with low conviction. The steeper curve, margin tailwind and rotation inflows support a modest positive tilt over three months, which is why the evidence overrides the neutral market prior. Conviction stays low because the sources are opinion-based and a sharp rate reversal, credit stress or an abrupt curve flattening would undermine the thesis.
+This is a genuinely balanced call. The earnings mechanism supports financials, and valuations argue against paying up for it. Neither side is strong enough to justify leaning bullish or bearish, and the strong recent run says nothing by itself about what comes next.
+
+A further steepening of the curve with orderly credit would shift the balance toward the upside. A reversal in long yields, a flattening curve, signs of credit stress, or rotation flows fading would shift it toward the downside. Until one of those shows up, expect the next few months to be mixed.
