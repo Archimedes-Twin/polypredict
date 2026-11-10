@@ -1,0 +1,25 @@
+{
+  "asset": "O39.SI",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.O39.SI",
+  "prior": 50,
+  "found_in": "Adam Khoo — Are the 3 Singapore Banks Cheap Enough? Buy DBS, UOB or OCBC? (2026-11-10)",
+  "added": "2026-11-10",
+  "note": "Singapore bank (Khoo dividend portfolio proxy)",
+  "evidence": [
+    {
+      "id": "o39-1",
+      "group": "IDDu8N1FgXI:O39.SI:down",
+      "date": "2026-11-10",
+      "video_id": "IDDu8N1FgXI",
+      "source": "Adam Khoo — Are the 3 Singapore Banks Cheap Enough? Buy DBS, UOB or OCBC? (2026-11-10)",
+      "claim": "OCBC still above fair-value range after ~16% dip (5-yr avg P/B and justified P/B on normalized ROE ~11.9%); ordinary-dividend yield barely above govt bond yield.",
+      "relation": "price above P/B fair value → not cheap enough to buy",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 60
+    }
+  ]
+}

@@ -38,7 +38,19 @@
       "dir": "up",
       "lr": 1.25,
       "half_life": 45.0
+    },
+    {
+      "id": "xlf-4",
+      "group": "IDDu8N1FgXI:XLF:down",
+      "date": "2026-11-10",
+      "video_id": "IDDu8N1FgXI",
+      "source": "Adam Khoo — Are the 3 Singapore Banks Cheap Enough? Buy DBS, UOB or OCBC? (2026-11-10)",
+      "claim": "Khoo values all 3 Singapore banks via 5-yr average P/B and justified P/B (normalized ROE vs cost of equity): DBS fair range still far below market, OCBC above fair — after a 12-20% dip banks are NOT cheap enough to add; he holds but will not buy. Attractive headline yields lean on unfunded special dividends; ordinary-only yields sit close to govt bond yields.",
+      "relation": "bank valuations stretched vs P/B fair value caps upside despite the rising-rate NIM tailwind",
+      "dir": "down",
+      "lr": 1.21,
+      "half_life": 60
     }
   ],
-  "resolution": "Agrees with rotation prior (rate curve steepening + value rotation). Second, independent leg (Sep-14 NIM/float mechanism) now supports the same up-direction as the rotation flow evidence; no conflict."
+  "resolution": "Two legs coexist: rate-tailwind evidence (NIM/float expansion, curve steepening) says banks earn more; the Nov-10 P/B valuation check (Singapore-bank proxy, his own holdings disclosed) says bank prices already price that in. Valuation caps upside that the earnings mechanism supports — net mildly positive but not stretched-add territory."
 }
