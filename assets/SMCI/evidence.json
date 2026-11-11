@@ -1,0 +1,49 @@
+{
+  "asset": "SMCI",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.SMCI",
+  "prior": 50,
+  "found_in": "Adam Khoo video Nov 11 (Z3_2Nd-lSrg)",
+  "added": "2026-11-11",
+  "note": "",
+  "evidence": [
+    {
+      "id": "smci-1",
+      "group": "Z3_2Nd-lSrg:SMCI:down",
+      "date": "2026-11-11",
+      "source": "Adam Khoo — This AI Stock Beat NVIDIA. Why I Skipped it (2026-11-11)",
+      "video_id": "Z3_2Nd-lSrg",
+      "claim": "SMCI's free cash flow was inconsistent even while reported profits grew; Khoo weights cash over accounting profit because one-off items can move profit but cash is harder to fake.",
+      "relation": "Profits not converting to cash make intrinsic-value estimates unreliable -> downside risk on quality screen.",
+      "dir": "down",
+      "lr": 1.25,
+      "half_life": 120.0
+    },
+    {
+      "id": "smci-2",
+      "group": "Z3_2Nd-lSrg:SMCI:down-sec",
+      "date": "2026-11-11",
+      "source": "Adam Khoo — This AI Stock Beat NVIDIA. Why I Skipped it (2026-11-11)",
+      "video_id": "Z3_2Nd-lSrg",
+      "claim": "In 2020 the SEC charged SMCI over widespread accounting violations and it paid a $7.5 million penalty.",
+      "relation": "A verified accounting-misconduct history lowers trust in reported numbers -> structural downside risk.",
+      "dir": "down",
+      "lr": 1.35,
+      "half_life": 180.0
+    },
+    {
+      "id": "smci-3",
+      "group": "Z3_2Nd-lSrg:SMCI:down-moat",
+      "date": "2026-11-11",
+      "source": "Adam Khoo — This AI Stock Beat NVIDIA. Why I Skipped it (2026-11-11)",
+      "video_id": "Z3_2Nd-lSrg",
+      "claim": "SMCI's competitive advantage was weak: many components of its service could be replicated by competitors.",
+      "relation": "Replicable offering -> thin moat -> margins vulnerable as the AI-server boom matures.",
+      "dir": "down",
+      "lr": 1.25,
+      "half_life": 120.0
+    }
+  ]
+}
