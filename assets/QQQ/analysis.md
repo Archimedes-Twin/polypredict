@@ -1,17 +1,17 @@
 ## Performance (6 months)
 
-Over the window QQQ ended modestly lower, but the path was a round trip rather than a steady slide. It climbed to a window high in early autumn, then gave those gains back in a sharp, fast unwind into early November. The most recent month did nearly all of the damage and is still pointing down. The fund now sits close to its window low with very little bounce, so the shape reads as a failed breakout followed by rapid liquidation.
+QQQ ended the window modestly lower, but the path was a round trip, not a steady slide. It climbed to a window high in early autumn, then gave those gains back in a sharp unwind that did most of its damage in the final stretch. The fund now sits near its window low with little bounce. The shape reads as a failed breakout followed by fast liquidation, and momentum is still pointing down.
 
 ## Drivers
 
-Rates are the main macro driver. Futures price a very high likelihood of a Fed hike at the December meeting. That pushes real yields higher and compresses the long-duration growth multiples that dominate the index. This is the force behind the very bearish, high-confidence posterior.
+The main macro driver is the Fed. Futures price a hike at the final meeting of the year as close to certain. A hiking path signals inflation the central bank has not tamed. It lifts real yields and compresses the multiples of the long-duration growth names that dominate the index.
 
-Policy risk around AI is the second layer. The latest violent drop was tied to Democratic rhetoric about an AI and data-center moratorium. The video commentary calls it a sentiment shock rather than a fundamental break. It argues that the Senate math and a likely veto make passage unlikely. Earnings are the counterweight: profit growth is strong, guidance is still rising, and hyperscaler negative free cash flow looks like growth capex rather than weakening operating cash flow.
-
-Flows lean the other way. AI leaders remain far below their highs, money is rotating in stages toward financials, healthcare and staples, and crowded hedge-fund longs are being cut. The dot-com valuation and boom-duration comparisons support long-run upside but say little about the near-term window.
+AI policy risk is the next layer. The latest violent drop followed Democratic talk of a data-center moratorium. Commentary frames it as a sentiment shock, since Senate math and a likely veto make passage improbable. Earnings and hyperscaler cash-flow commentary offer support. Against that, AI leaders sit far below their highs, and crowded positioning is being cut as money rotates toward defensive sectors.
 
 ## Continue or revert
 
-The call is very bearish with high confidence, and the evidence does not change that. The bullish items (intact earnings, a policy-driven dip, cheap valuations versus the dot-com era) are real. But they work through valuation and political outcomes that have not yet appeared in price, and several are long-horizon or dated. The rotation and degrossing evidence is a flow effect that fits the near-term horizon, and it points the same way as the rate path. Where the videos and the market odds conflict, I weight the odds. The Fed path is a concrete, currently priced force on multiples, while the rebound thesis rests on analogies.
+Continue. The market odds of a rise are very low, and the evidence-adjusted posterior lifts them only slightly, nowhere near enough to change the very bearish rating.
 
-The bearish view would be undermined if Fed-hike odds for the December meeting fell decisively, removing the main valuation headwind. It would also weaken if the moratorium threat faded and AI and semiconductor leaders began to recover in price. Further hawkish repricing, or a credible legislative path for the moratorium, would deepen it.
+The video evidence leans bullish: it argues for a quick rebound, intact fundamentals and a young AI cycle. That conflicts with the odds. I trust the odds. They are priced by capital on the discount rate, which is the force compressing valuations now. The videos are one commentator's reading, and their rebound analogies come from different rate regimes.
+
+The call flips if hike odds fall under 45%.
