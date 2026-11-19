@@ -1,11 +1,17 @@
 ## Performance (6 months)
 
-SCHD has climbed in a persistent, orderly uptrend, rising from a mid-window trough to a recent peak. The latest close sits just below that high, in the upper part of its range. The most recent stretch was the strongest of the window, an acceleration after a steadier climb. That late burst leaves the fund somewhat extended, so a brief pause or shallow pullback would not damage the picture. Nothing suggests a broken trend.
+SCHD has recovered from a clear mid-year trough into a net gain over the window. The path was a steady grind higher, not a sharp spike, and it peaked in early November. The deepest drawdown was moderate and sat in the earlier part of the window, and the fund fully recovered from it. Since the peak, the latest month has slipped slightly, so the fund now sits a little below its high instead of at it. That looks like a shallow digestion of gains, not a trend break. Overall the shape is a modest, orderly uptrend with a minor recent pause.
 
 ## Drivers
 
-The central driver is a hawkish Fed. A December hike is treated as nearly certain, which keeps real yields elevated and inflation worries alive. Higher real yields pressure long-duration growth and favor cash-generating dividend payers with sturdy balance sheets and low credit risk. That suits this basket's tilt toward staples, healthcare and energy. Firm energy prices support the energy weight. Cooling enthusiasm for AI-linked tech demand also nudges capital toward profitable value names. Easing expectations remain the open question, since a cut by next summer is priced close to a coin flip.
+The main driver is a hawkish Fed. A December hike is priced as close to certain, which keeps real yields elevated and inflation concerns alive. That backdrop tends to weigh on long-duration growth and favors cash-generating dividend payers with solid balance sheets. It suits SCHD's tilt toward staples, healthcare and energy.
+
+Sector rotation adds to this. Recent commentary points to money moving in stages out of AI-heavy leadership and into profitable, dividend-paying value sectors. Staples, healthcare, energy and utilities all led the most recent monthly tape. Energy strength supports the fund's energy weight, though the oil picture is less settled than the rate picture. Whether the Fed eases by mid-2027 is roughly a coin flip, which leaves some uncertainty about how long the rate pressure lasts.
 
 ## Continue or revert
 
-Continue, in line with the very bullish rating. The hike odds are the strongest input, and the posterior sits somewhat below them. The cut-timing signal is roughly neutral and holds back conviction, which is why confidence stays medium. Khoo's rotation commentary does not conflict with the odds. It agrees with the hawkish, value-friendly regime, so there is nothing to resolve. I still anchor on the market odds because they are priced and tested, while his remarks are dated and directional only. The main tension is the energy leg: if oil failed to hold the WTI ninety-dollar line, or hike odds faded sharply, the call would need revisiting.
+Continue, consistent with the very bullish rating. The market prior was already firmly bullish, driven mostly by the near-certain hike. The decayed video evidence agrees with it and lifts the posterior above the prior. The cut-timing signal is close to neutral, which holds confidence at medium instead of high.
+
+There is no real prior-versus-evidence conflict to resolve. The rotation thesis, in both the fresher November commentary and the older July one, points the same way as the hawkish, value-friendly pricing and the six-month path. The older July remark has faded more with time, so the November sector-rotation call carries most of the evidence weight. I still treat the market odds as the anchor because they are priced and tested, while the video claims are dated and directional only.
+
+The main thing the evidence leaves unaddressed is the oil leg. I would revisit the call if WTI failed to hold the $90 line or if hike odds collapsed well below even. A sharp swing toward early easing expectations would also weaken the case.
