@@ -16,6 +16,18 @@
       "dir": "down",
       "lr": 1.15,
       "half_life": 30.0
+    },
+    {
+      "id": "ibit-2",
+      "group": "nbQ2zfgbXRM:IBIT:down",
+      "date": "2026-11-19",
+      "source": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+      "video_id": "nbQ2zfgbXRM",
+      "claim": "Khoo: frontier-model leadership keeps leapfrogging every few months (Gemini>GPT, then Claude, then GPT again); switching costs low; Anthropic revenue growth already halved (144%->47%) yet priced assuming it overtakes Microsoft in 5y — AI-leader durability is unproven even at the top of the stack.",
+      "relation": "AI concentration in IBIT-era winners rests on unproven durable leads -> fragility of AI-complex exposure",
+      "dir": "down",
+      "lr": 1.2,
+      "half_life": 90
     }
   ],
   "resolution": ""

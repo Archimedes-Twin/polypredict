@@ -95,6 +95,18 @@
       "dir": "up",
       "lr": 1.17,
       "half_life": 60
+    },
+    {
+      "id": "qqq-9",
+      "group": "nbQ2zfgbXRM:QQQ:down",
+      "date": "2026-11-19",
+      "source": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+      "video_id": "nbQ2zfgbXRM",
+      "claim": "Khoo declines to pay premium valuations for AI leaders whose lead may flip within months; growth deceleration visible in newest AI names -> favors caution on growth-heavy exposure rather than chasing.",
+      "relation": "mechanism caution on AI-growth premium -> mild drag on QQQ",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 60
     }
   ],
   "resolution": "Short-term rotation-out evidence (qqq-1) vs fundamental-intact evidence (qqq-3) genuinely conflict; both kept. Resolution: rotation is a flow phenomenon (weeks), fundamentals a valuation phenomenon (quarters). For the 90-day view the flow leg dominates while Fed-hike odds (already in prior) suppress multiples — posterior stays near neutral, slightly above the pre-evidence market wash because earnings breadth data is the strongest verified fact in the set."

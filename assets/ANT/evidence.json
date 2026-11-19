@@ -1,0 +1,61 @@
+{
+  "asset": "ANT",
+  "kind": "watchlist",
+  "derived": true,
+  "generated_by": "bayes.py",
+  "source_of_truth": "../inbox/beliefs.json -> watchlist.ANT",
+  "prior": 50,
+  "found_in": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+  "added": "2026-11-19",
+  "note": "",
+  "evidence": [
+    {
+      "id": "ant-1",
+      "group": "nbQ2zfgbXRM:ANT:down",
+      "date": "2026-11-19",
+      "source": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+      "video_id": "nbQ2zfgbXRM",
+      "claim": "Khoo's 5-moat audit of Anthropic: only barriers-to-entry strong (billions in compute), but 4-5 frontier players leapfrog each other's lead every few months (Claude/GPT/Gemini); switching costs low (exports, no lock-in), pricing power unproven (price-war risk), network effect weak — moat narrow/unproven.",
+      "relation": "durable-moat test failed -> can lose entire moat on one competitor leapfrog; not holdable through -30/50% drawdown",
+      "dir": "down",
+      "lr": 1.25,
+      "half_life": 150
+    },
+    {
+      "id": "ant-2",
+      "group": "nbQ2zfgbXRM:ANT:down",
+      "date": "2026-11-19",
+      "source": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+      "video_id": "nbQ2zfgbXRM",
+      "claim": "Quantitative: revenue growth decelerated ~144% to 47% in most recent quarter; P/S 42x vs Nvidia 10x; reverse-DCF at 12% discount needs >Microsoft-scale revenue ($423B, +50%/yr for 5y) to justify $83; scenario-weighted fair value ~$68 -> IPO 10-22% overpriced, no margin of safety.",
+      "relation": "decelerating growth + premium valuation -> negative expected return at IPO/opening price",
+      "dir": "down",
+      "lr": 1.3,
+      "half_life": 120
+    },
+    {
+      "id": "ant-3",
+      "group": "nbQ2zfgbXRM:ANT:down",
+      "date": "2026-11-19",
+      "source": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+      "video_id": "nbQ2zfgbXRM",
+      "claim": "Historical post-IPO pattern Khoo cites: even great listings fell hard after IPO (Visa -53% from peak, Meta -61%, Uber -71%, Palantir -87%, SpaceX -54% and not recovered); advice: wait for >=50% off peak or ~30% below day-1 close before taking a position.",
+      "relation": "first-day hype premium mean-reverts -> early entry timing risk",
+      "dir": "down",
+      "lr": 1.2,
+      "half_life": 180
+    },
+    {
+      "id": "ant-4",
+      "group": "nbQ2zfgbXRM:ANT:down",
+      "date": "2026-11-19",
+      "source": "Adam Khoo — Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)",
+      "video_id": "nbQ2zfgbXRM",
+      "claim": "Khoo's personal verdict: sitting this IPO out; slightly overvalued, not crazy overvalued.",
+      "relation": "personal opinion, discounted",
+      "dir": "down",
+      "lr": 1.15,
+      "half_life": 30
+    }
+  ]
+}
