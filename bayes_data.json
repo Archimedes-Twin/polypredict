@@ -1,7 +1,7 @@
 {
   "SPY": {
     "prior": 50.0,
-    "post": 76.2,
+    "post": 76.1,
     "items": [
       {
         "id": "spy-1",
@@ -14,7 +14,7 @@
         "lr": 1.22,
         "half_life": 90,
         "lr_eff": 1.19,
-        "age": 17,
+        "age": 18,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -30,7 +30,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.18,
-        "age": 17,
+        "age": 18,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -46,7 +46,7 @@
         "lr": 1.34,
         "half_life": 120,
         "lr_eff": 1.3,
-        "age": 17,
+        "age": 18,
         "applied": true,
         "group_n": 5
       },
@@ -61,7 +61,7 @@
         "lr": 1.17,
         "half_life": 120,
         "lr_eff": 1.15,
-        "age": 17,
+        "age": 18,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -77,7 +77,7 @@
         "lr": 1.1,
         "half_life": 60,
         "lr_eff": 1.08,
-        "age": 17,
+        "age": 18,
         "applied": false,
         "group_n": 5,
         "absorbed_by": "spy-3"
@@ -94,7 +94,7 @@
         "lr": 1.2,
         "half_life": 150,
         "lr_eff": 1.14,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       },
@@ -110,7 +110,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.11,
-        "age": 77,
+        "age": 78,
         "applied": true,
         "group_n": 2
       },
@@ -126,7 +126,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.06,
-        "age": 77,
+        "age": 78,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-7"
@@ -143,7 +143,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 94,
+        "age": 95,
         "applied": true,
         "group_n": 2
       },
@@ -159,7 +159,7 @@
         "lr": 1.2,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 94,
+        "age": 95,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-9"
@@ -176,7 +176,7 @@
         "lr": 1.15,
         "half_life": 30.0,
         "lr_eff": 1.02,
-        "age": 94,
+        "age": 95,
         "applied": true,
         "group_n": 1
       },
@@ -192,7 +192,7 @@
         "lr": 1.25,
         "half_life": 120.0,
         "lr_eff": 1.1,
-        "age": 141,
+        "age": 142,
         "applied": true,
         "group_n": 2
       },
@@ -208,7 +208,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.02,
-        "age": 141,
+        "age": 142,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "spy-12"
@@ -225,7 +225,7 @@
         "lr": 1.2,
         "half_life": 150.0,
         "lr_eff": 1.09,
-        "age": 152,
+        "age": 153,
         "applied": true,
         "group_n": 1
       },
@@ -241,7 +241,7 @@
         "lr": 1.3,
         "half_life": 60,
         "lr_eff": 1.06,
-        "age": 133,
+        "age": 134,
         "applied": true,
         "group_n": 1
       },
@@ -257,7 +257,7 @@
         "lr": 1.17,
         "half_life": 60,
         "lr_eff": 1.14,
-        "age": 13,
+        "age": 14,
         "applied": true,
         "group_n": 1
       },
@@ -273,7 +273,7 @@
         "lr": 1.13,
         "half_life": 30,
         "lr_eff": 1.09,
-        "age": 13,
+        "age": 14,
         "applied": true,
         "group_n": 1
       },
@@ -289,7 +289,7 @@
         "lr": 1.35,
         "half_life": 180.0,
         "lr_eff": 1.34,
-        "age": 7,
+        "age": 8,
         "applied": true,
         "group_n": 1
       }
@@ -298,8 +298,8 @@
     "source": "market prior + video evidence"
   },
   "QQQ": {
-    "prior": 28.5,
-    "post": 33.9,
+    "prior": 6.1,
+    "post": 7.7,
     "items": [
       {
         "id": "qqq-1",
@@ -310,8 +310,8 @@
         "dir": "down",
         "lr": 1.27,
         "half_life": 30,
-        "lr_eff": 1.18,
-        "age": 17
+        "lr_eff": 1.17,
+        "age": 18
       },
       {
         "id": "qqq-2",
@@ -323,7 +323,7 @@
         "lr": 1.15,
         "half_life": 150,
         "lr_eff": 1.14,
-        "age": 17
+        "age": 18
       },
       {
         "id": "qqq-3",
@@ -336,7 +336,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.25,
-        "age": 20
+        "age": 21
       },
       {
         "id": "qqq-4",
@@ -350,7 +350,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.08,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       },
@@ -366,7 +366,7 @@
         "lr": 1.2,
         "half_life": 45.0,
         "lr_eff": 1.04,
-        "age": 94,
+        "age": 95,
         "applied": true,
         "group_n": 1
       },
@@ -382,7 +382,7 @@
         "lr": 1.3,
         "half_life": 60,
         "lr_eff": 1.06,
-        "age": 133,
+        "age": 134,
         "applied": true,
         "group_n": 1
       },
@@ -398,7 +398,7 @@
         "lr": 1.17,
         "half_life": 60,
         "lr_eff": 1.14,
-        "age": 13,
+        "age": 14,
         "applied": true,
         "group_n": 2
       },
@@ -414,7 +414,7 @@
         "lr": 1.17,
         "half_life": 60,
         "lr_eff": 1.14,
-        "age": 13,
+        "age": 14,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "qqq-7"
@@ -431,7 +431,7 @@
         "lr": 1.15,
         "half_life": 60,
         "lr_eff": 1.15,
-        "age": 0,
+        "age": 1,
         "applied": true,
         "group_n": 1
       }
@@ -440,8 +440,8 @@
     "source": "market prior + video evidence"
   },
   "SCHD": {
-    "prior": 71.5,
-    "post": 77.0,
+    "prior": 93.9,
+    "post": 95.3,
     "items": [
       {
         "id": "schd-1",
@@ -454,7 +454,7 @@
         "lr": 1.34,
         "half_life": 60,
         "lr_eff": 1.27,
-        "age": 17,
+        "age": 18,
         "applied": true,
         "group_n": 2
       },
@@ -469,7 +469,7 @@
         "lr": 1.17,
         "half_life": 90,
         "lr_eff": 1.15,
-        "age": 17,
+        "age": 18,
         "applied": false,
         "group_n": 2,
         "absorbed_by": "schd-1"
@@ -486,7 +486,7 @@
         "lr": 1.25,
         "half_life": 60,
         "lr_eff": 1.05,
-        "age": 133,
+        "age": 134,
         "applied": true,
         "group_n": 1
       }
@@ -496,7 +496,7 @@
   },
   "XLV": {
     "prior": 50.0,
-    "post": 54.1,
+    "post": 54.0,
     "items": [
       {
         "id": "xlv-1",
@@ -508,7 +508,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.18,
-        "age": 17
+        "age": 18
       }
     ],
     "resolution": "Consistent with the existing bullish view (tight HY OAS + pricing power); no conflict.",
@@ -516,7 +516,7 @@
   },
   "XLP": {
     "prior": 50.0,
-    "post": 55.3,
+    "post": 55.2,
     "items": [
       {
         "id": "xlp-1",
@@ -528,7 +528,7 @@
         "lr": 1.22,
         "half_life": 60,
         "lr_eff": 1.18,
-        "age": 17
+        "age": 18
       },
       {
         "id": "xlp-2",
@@ -542,7 +542,7 @@
         "lr": 1.25,
         "half_life": 60,
         "lr_eff": 1.05,
-        "age": 133,
+        "age": 134,
         "applied": true,
         "group_n": 1
       }
@@ -564,7 +564,7 @@
         "lr": 1.17,
         "half_life": 30,
         "lr_eff": 1.11,
-        "age": 17
+        "age": 18
       },
       {
         "id": "xlf-2",
@@ -578,7 +578,7 @@
         "lr": 1.3,
         "half_life": 120,
         "lr_eff": 1.2,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       },
@@ -594,7 +594,7 @@
         "lr": 1.25,
         "half_life": 45.0,
         "lr_eff": 1.07,
-        "age": 77,
+        "age": 78,
         "applied": true,
         "group_n": 1
       },
@@ -610,7 +610,7 @@
         "lr": 1.21,
         "half_life": 60,
         "lr_eff": 1.19,
-        "age": 9,
+        "age": 10,
         "applied": true,
         "group_n": 1
       }
@@ -619,8 +619,8 @@
     "source": "market prior + video evidence"
   },
   "XLC": {
-    "prior": 2.5,
-    "post": 2.3,
+    "prior": 6.1,
+    "post": 5.7,
     "items": [
       {
         "id": "xlc-1",
@@ -632,7 +632,7 @@
         "lr": 1.2,
         "half_life": 30,
         "lr_eff": 1.13,
-        "age": 17
+        "age": 18
       },
       {
         "id": "xlc-2",
@@ -644,8 +644,8 @@
         "lr": 1.28,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.24,
-        "age": 20
+        "lr_eff": 1.23,
+        "age": 21
       },
       {
         "id": "xlc-3",
@@ -659,7 +659,7 @@
         "lr": 1.2,
         "half_life": 180,
         "lr_eff": 1.17,
-        "age": 36,
+        "age": 37,
         "applied": true,
         "group_n": 1
       }
@@ -669,7 +669,7 @@
   },
   "XLE": {
     "prior": 50.0,
-    "post": 54.4,
+    "post": 54.3,
     "items": [
       {
         "id": "xle-1",
@@ -680,8 +680,8 @@
         "dir": "up",
         "lr": 1.13,
         "half_life": 30,
-        "lr_eff": 1.09,
-        "age": 17
+        "lr_eff": 1.08,
+        "age": 18
       },
       {
         "id": "xle-2",
@@ -695,7 +695,7 @@
         "lr": 1.17,
         "half_life": 90,
         "lr_eff": 1.1,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       }
@@ -704,8 +704,8 @@
     "source": "market prior + video evidence"
   },
   "ZROZ": {
-    "prior": 54.5,
-    "post": 50.0,
+    "prior": 50.0,
+    "post": 45.6,
     "items": [
       {
         "id": "zroz-1",
@@ -719,7 +719,7 @@
         "lr": 1.3,
         "half_life": 120,
         "lr_eff": 1.2,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       }
@@ -728,8 +728,8 @@
     "source": "market prior + video evidence"
   },
   "IBIT": {
-    "prior": 28.5,
-    "post": 24.9,
+    "prior": 6.1,
+    "post": 5.1,
     "items": [
       {
         "id": "ibit-2",
@@ -743,7 +743,7 @@
         "lr": 1.2,
         "half_life": 90,
         "lr_eff": 1.2,
-        "age": 0,
+        "age": 1,
         "applied": true,
         "group_n": 1
       }
@@ -765,8 +765,8 @@
         "lr": 1.28,
         "half_life": 120,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.25,
-        "age": 20
+        "lr_eff": 1.24,
+        "age": 21
       },
       {
         "id": "nvda-2",
@@ -779,7 +779,7 @@
         "half_life": 180,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.14,
-        "age": 20
+        "age": 21
       },
       {
         "id": "nvda-3",
@@ -793,7 +793,7 @@
         "lr": 1.2,
         "half_life": 30.0,
         "lr_eff": 1.03,
-        "age": 77,
+        "age": 78,
         "applied": true,
         "group_n": 1
       },
@@ -808,8 +808,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 60.0,
-        "lr_eff": 1.08,
-        "age": 111,
+        "lr_eff": 1.07,
+        "age": 112,
         "applied": true,
         "group_n": 1
       },
@@ -825,7 +825,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.08,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       },
@@ -840,8 +840,8 @@
         "dir": "down",
         "lr": 1.3,
         "half_life": 30.0,
-        "lr_eff": 1.25,
-        "age": 7,
+        "lr_eff": 1.24,
+        "age": 8,
         "applied": true,
         "group_n": 1
       },
@@ -856,8 +856,8 @@
         "dir": "down",
         "lr": 1.15,
         "half_life": 30.0,
-        "lr_eff": 1.13,
-        "age": 7,
+        "lr_eff": 1.12,
+        "age": 8,
         "applied": true,
         "group_n": 1
       },
@@ -873,7 +873,7 @@
         "lr": 1.25,
         "half_life": 120.0,
         "lr_eff": 1.24,
-        "age": 7,
+        "age": 8,
         "applied": true,
         "group_n": 1
       },
@@ -888,8 +888,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 120.0,
-        "lr_eff": 1.29,
-        "age": 7,
+        "lr_eff": 1.28,
+        "age": 8,
         "applied": true,
         "group_n": 1
       },
@@ -905,7 +905,7 @@
         "lr": 1.2,
         "half_life": 180.0,
         "lr_eff": 1.19,
-        "age": 7,
+        "age": 8,
         "applied": true,
         "group_n": 1
       }
@@ -913,16 +913,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 152.95,
-    "ret6": -30.7,
-    "ret1": -31.1,
-    "dd": -36.1,
+    "last": 137.79,
+    "ret6": -38.3,
+    "ret1": -35.1,
+    "dd": -42.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2 (oq3B28tS6c4)"
   },
   "MU": {
     "prior": 50,
-    "post": 44.1,
+    "post": 44.2,
     "items": [
       {
         "id": "mu-1",
@@ -935,7 +935,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 20
+        "age": 21
       },
       {
         "id": "mu-2",
@@ -949,7 +949,7 @@
         "lr": 1.15,
         "half_life": 60.0,
         "lr_eff": 1.05,
-        "age": 92,
+        "age": 93,
         "applied": true,
         "group_n": 1
       },
@@ -965,7 +965,7 @@
         "lr": 1.25,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       }
@@ -973,10 +973,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 729.81,
-    "ret6": 4.4,
-    "ret1": -20.1,
-    "dd": -39.9,
+    "last": 622.53,
+    "ret6": -15.0,
+    "ret1": -27.3,
+    "dd": -48.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -995,16 +995,16 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 20
+        "age": 21
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 493.5,
-    "ret6": 19.2,
-    "ret1": -10.7,
-    "dd": -24.0,
+    "last": 445.51,
+    "ret6": -0.5,
+    "ret1": -12.3,
+    "dd": -31.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -1022,17 +1022,17 @@
         "lr": 1.26,
         "half_life": 30,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.16,
-        "age": 20
+        "lr_eff": 1.15,
+        "age": 21
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 57.41,
-    "ret6": -48.2,
-    "ret1": -38.2,
-    "dd": -59.3,
+    "last": 54.33,
+    "ret6": -54.3,
+    "ret1": -36.4,
+    "dd": -61.5,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -1051,16 +1051,16 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 20
+        "age": 21
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 182.19,
-    "ret6": -18.4,
-    "ret1": -19.6,
-    "dd": -58.5,
+    "last": 161.59,
+    "ret6": -37.1,
+    "ret1": -23.1,
+    "dd": -63.2,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -1079,16 +1079,16 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.13,
-        "age": 20
+        "age": 21
       }
     ],
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 803.57,
-    "ret6": 0.8,
-    "ret1": 0.8,
-    "dd": 0.0,
+    "last": 82.77,
+    "ret6": -52.4,
+    "ret1": -47.5,
+    "dd": -71.6,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Nov 2"
   },
@@ -1106,8 +1106,8 @@
         "lr": 1.28,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.24,
-        "age": 20
+        "lr_eff": 1.23,
+        "age": 21
       },
       {
         "id": "googl-2",
@@ -1120,7 +1120,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.09,
-        "age": 20
+        "age": 21
       },
       {
         "id": "googl-3",
@@ -1134,7 +1134,7 @@
         "lr": 1.2,
         "half_life": 120,
         "lr_eff": 1.13,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       },
@@ -1150,7 +1150,7 @@
         "lr": 1.15,
         "half_life": 90.0,
         "lr_eff": 1.07,
-        "age": 92,
+        "age": 93,
         "applied": true,
         "group_n": 1
       },
@@ -1166,7 +1166,7 @@
         "lr": 1.3,
         "half_life": 90,
         "lr_eff": 1.07,
-        "age": 170,
+        "age": 171,
         "applied": true,
         "group_n": 1
       },
@@ -1182,7 +1182,7 @@
         "lr": 1.13,
         "half_life": 90,
         "lr_eff": 1.12,
-        "age": 13,
+        "age": 14,
         "applied": true,
         "group_n": 1
       },
@@ -1198,7 +1198,7 @@
         "lr": 1.13,
         "half_life": 60,
         "lr_eff": 1.01,
-        "age": 223,
+        "age": 224,
         "applied": true,
         "group_n": 1
       }
@@ -1206,16 +1206,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 288.36,
-    "ret6": -25.6,
-    "ret1": -13.9,
-    "dd": -26.1,
+    "last": 278.47,
+    "ret6": -28.4,
+    "ret1": -14.1,
+    "dd": -28.6,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30 (tKygzktysRk)"
   },
   "META": {
     "prior": 50,
-    "post": 69.1,
+    "post": 68.9,
     "items": [
       {
         "id": "meta-1",
@@ -1228,7 +1228,7 @@
         "half_life": 90,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.22,
-        "age": 20
+        "age": 21
       },
       {
         "id": "meta-2",
@@ -1241,7 +1241,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.09,
-        "age": 20
+        "age": 21
       },
       {
         "id": "meta-3",
@@ -1255,7 +1255,7 @@
         "lr": 1.3,
         "half_life": 60,
         "lr_eff": 1.19,
-        "age": 36,
+        "age": 37,
         "applied": true,
         "group_n": 1
       },
@@ -1271,7 +1271,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       },
@@ -1287,7 +1287,7 @@
         "lr": 1.25,
         "half_life": 60.0,
         "lr_eff": 1.06,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       },
@@ -1303,7 +1303,7 @@
         "lr": 1.25,
         "half_life": 90.0,
         "lr_eff": 1.11,
-        "age": 94,
+        "age": 95,
         "applied": true,
         "group_n": 1
       },
@@ -1319,7 +1319,7 @@
         "lr": 1.35,
         "half_life": 90.0,
         "lr_eff": 1.14,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       },
@@ -1335,7 +1335,7 @@
         "lr": 1.13,
         "half_life": 90,
         "lr_eff": 1.12,
-        "age": 13,
+        "age": 14,
         "applied": true,
         "group_n": 1
       },
@@ -1351,7 +1351,7 @@
         "lr": 1.13,
         "half_life": 90,
         "lr_eff": 1.03,
-        "age": 199,
+        "age": 200,
         "applied": true,
         "group_n": 1
       }
@@ -1359,10 +1359,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 619.49,
-    "ret6": 2.8,
-    "ret1": -11.2,
-    "dd": -20.3,
+    "last": 577.04,
+    "ret6": -4.6,
+    "ret1": -11.1,
+    "dd": -25.8,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
@@ -1380,8 +1380,8 @@
         "lr": 1.28,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.24,
-        "age": 20
+        "lr_eff": 1.23,
+        "age": 21
       },
       {
         "id": "amzn-2",
@@ -1394,7 +1394,7 @@
         "half_life": 30,
         "video_id": "tKygzktysRk",
         "lr_eff": 1.09,
-        "age": 20
+        "age": 21
       },
       {
         "id": "amzn-3",
@@ -1408,7 +1408,7 @@
         "lr": 1.25,
         "half_life": 90,
         "lr_eff": 1.06,
-        "age": 171,
+        "age": 172,
         "applied": true,
         "group_n": 1
       },
@@ -1424,7 +1424,7 @@
         "lr": 1.13,
         "half_life": 90,
         "lr_eff": 1.02,
-        "age": 223,
+        "age": 224,
         "applied": true,
         "group_n": 1
       }
@@ -1432,16 +1432,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 269.39,
-    "ret6": 3.9,
-    "ret1": 2.7,
-    "dd": -5.2,
+    "last": 254.48,
+    "ret6": -4.0,
+    "ret1": 1.6,
+    "dd": -10.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
   "MSFT": {
     "prior": 50,
-    "post": 65.4,
+    "post": 65.3,
     "items": [
       {
         "id": "msft-1",
@@ -1453,8 +1453,8 @@
         "lr": 1.22,
         "half_life": 90,
         "video_id": "tKygzktysRk",
-        "lr_eff": 1.19,
-        "age": 20
+        "lr_eff": 1.18,
+        "age": 21
       },
       {
         "id": "msft-2",
@@ -1468,7 +1468,7 @@
         "lr": 1.2,
         "half_life": 120,
         "lr_eff": 1.13,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       },
@@ -1484,7 +1484,7 @@
         "lr": 1.3,
         "half_life": 60.0,
         "lr_eff": 1.09,
-        "age": 97,
+        "age": 98,
         "applied": true,
         "group_n": 1
       },
@@ -1499,8 +1499,8 @@
         "dir": "up",
         "lr": 1.3,
         "half_life": 60.0,
-        "lr_eff": 1.08,
-        "age": 111,
+        "lr_eff": 1.07,
+        "age": 112,
         "applied": true,
         "group_n": 1
       },
@@ -1516,7 +1516,7 @@
         "lr": 1.2,
         "half_life": 90.0,
         "lr_eff": 1.09,
-        "age": 94,
+        "age": 95,
         "applied": true,
         "group_n": 1
       },
@@ -1532,7 +1532,7 @@
         "lr": 1.25,
         "half_life": 90.0,
         "lr_eff": 1.1,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       }
@@ -1540,10 +1540,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 514.9,
-    "ret6": 23.4,
-    "ret1": -3.4,
-    "dd": -7.4,
+    "last": 493.99,
+    "ret6": 17.3,
+    "ret1": -5.2,
+    "dd": -11.1,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 30"
   },
@@ -1563,7 +1563,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.21,
-        "age": 36,
+        "age": 37,
         "applied": true,
         "group_n": 1
       }
@@ -1571,10 +1571,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 137.35,
-    "ret6": 7.6,
-    "ret1": -21.1,
-    "dd": -29.5,
+    "last": 128.9,
+    "ret6": -0.8,
+    "ret1": -25.5,
+    "dd": -33.8,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1594,7 +1594,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.21,
-        "age": 36,
+        "age": 37,
         "applied": true,
         "group_n": 1
       }
@@ -1602,10 +1602,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 251.79,
-    "ret6": 63.3,
-    "ret1": 5.2,
-    "dd": -9.7,
+    "last": 234.55,
+    "ret6": 44.3,
+    "ret1": -1.4,
+    "dd": -15.9,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1625,7 +1625,7 @@
         "lr": 1.25,
         "half_life": 180,
         "lr_eff": 1.21,
-        "age": 36,
+        "age": 37,
         "applied": true,
         "group_n": 1
       }
@@ -1633,10 +1633,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 358.16,
-    "ret6": 49.2,
-    "ret1": 3.1,
-    "dd": -14.7,
+    "last": 355.11,
+    "ret6": 44.0,
+    "ret1": 0.1,
+    "dd": -15.4,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Oct 14 (g-yguWtahHw)"
   },
@@ -1656,7 +1656,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.17,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       }
@@ -1664,10 +1664,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 287.38,
-    "ret6": 69.5,
-    "ret1": -11.0,
-    "dd": -22.1,
+    "last": 262.88,
+    "ret6": 57.4,
+    "ret1": -16.3,
+    "dd": -28.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
@@ -1687,7 +1687,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.17,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       }
@@ -1695,10 +1695,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 319.17,
-    "ret6": 54.4,
-    "ret1": 3.9,
-    "dd": -11.6,
+    "last": 283.2,
+    "ret6": 34.8,
+    "ret1": -6.7,
+    "dd": -21.5,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
@@ -1718,7 +1718,7 @@
         "lr": 1.26,
         "half_life": 120,
         "lr_eff": 1.17,
-        "age": 66,
+        "age": 67,
         "applied": true,
         "group_n": 1
       },
@@ -1734,7 +1734,7 @@
         "lr": 1.2,
         "half_life": 60.0,
         "lr_eff": 1.05,
-        "age": 111,
+        "age": 112,
         "applied": true,
         "group_n": 1
       }
@@ -1742,10 +1742,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 24.07,
-    "ret6": -50.3,
-    "ret1": -25.4,
-    "dd": -66.6,
+    "last": 21.86,
+    "ret6": -58.3,
+    "ret1": -29.8,
+    "dd": -69.7,
     "added": "2026-11-02",
     "found_in": "Adam Khoo video Sep 14 (t9P3BKPndnI)"
   },
@@ -1765,7 +1765,7 @@
         "lr": 1.25,
         "half_life": 90,
         "lr_eff": 1.08,
-        "age": 133,
+        "age": 134,
         "applied": true,
         "group_n": 1
       }
@@ -1773,10 +1773,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 107.23,
-    "ret6": 11.2,
-    "ret1": 6.9,
-    "dd": -3.3,
+    "last": 110.39,
+    "ret6": 14.0,
+    "ret1": 7.5,
+    "dd": -0.5,
     "added": "2026-11-05",
     "found_in": "Adam Khoo highlight Bs25DN_1ZUs (2026-07-09)"
   },
@@ -1796,7 +1796,7 @@
         "lr": 1.13,
         "half_life": 90,
         "lr_eff": 1.03,
-        "age": 199,
+        "age": 200,
         "applied": true,
         "group_n": 1
       }
@@ -1804,10 +1804,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 91.24,
-    "ret6": -10.4,
-    "ret1": -40.4,
-    "dd": -42.6,
+    "last": 91.47,
+    "ret6": -11.5,
+    "ret1": -41.7,
+    "dd": -42.5,
     "added": "2026-11-06",
     "found_in": "Adam Khoo \u2014 Stock Market too Expensive? (2026-05-04)"
   },
@@ -1827,7 +1827,7 @@
         "lr": 1.15,
         "half_life": 60,
         "lr_eff": 1.13,
-        "age": 9,
+        "age": 10,
         "applied": true,
         "group_n": 1
       }
@@ -1835,10 +1835,10 @@
     "resolution": "Singapore bank (Khoo dividend portfolio proxy)",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 27.4,
-    "ret6": 16.9,
-    "ret1": -5.3,
-    "dd": -15.1,
+    "last": 27.42,
+    "ret6": 18.0,
+    "ret1": -4.8,
+    "dd": -15.0,
     "added": "2026-11-10",
     "found_in": "Adam Khoo \u2014 Are the 3 Singapore Banks Cheap Enough? Buy DBS, UOB or OCBC? (2026-11-10)"
   },
@@ -1858,7 +1858,7 @@
         "lr": 1.15,
         "half_life": 60,
         "lr_eff": 1.13,
-        "age": 9,
+        "age": 10,
         "applied": true,
         "group_n": 1
       }
@@ -1866,16 +1866,16 @@
     "resolution": "Singapore bank (Khoo dividend portfolio proxy)",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 36.13,
-    "ret6": -4.3,
-    "ret1": -13.2,
+    "last": 36.14,
+    "ret6": -3.9,
+    "ret1": -12.7,
     "dd": -19.6,
     "added": "2026-11-10",
     "found_in": "Adam Khoo \u2014 Are the 3 Singapore Banks Cheap Enough? Buy DBS, UOB or OCBC? (2026-11-10)"
   },
   "SMCI": {
     "prior": 50,
-    "post": 32.8,
+    "post": 32.9,
     "items": [
       {
         "id": "smci-1",
@@ -1889,7 +1889,7 @@
         "lr": 1.25,
         "half_life": 120.0,
         "lr_eff": 1.24,
-        "age": 8,
+        "age": 9,
         "applied": true,
         "group_n": 1
       },
@@ -1905,7 +1905,7 @@
         "lr": 1.35,
         "half_life": 180.0,
         "lr_eff": 1.34,
-        "age": 8,
+        "age": 9,
         "applied": true,
         "group_n": 1
       },
@@ -1921,7 +1921,7 @@
         "lr": 1.25,
         "half_life": 120.0,
         "lr_eff": 1.24,
-        "age": 8,
+        "age": 9,
         "applied": true,
         "group_n": 1
       }
@@ -1929,10 +1929,10 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 24.76,
-    "ret6": -19.0,
-    "ret1": -30.4,
-    "dd": -50.6,
+    "last": 22.67,
+    "ret6": -32.2,
+    "ret1": -32.8,
+    "dd": -54.8,
     "added": "2026-11-11",
     "found_in": "Adam Khoo video Nov 11 (Z3_2Nd-lSrg)"
   },
@@ -1952,7 +1952,7 @@
         "lr": 1.25,
         "half_life": 150,
         "lr_eff": 1.25,
-        "age": 0,
+        "age": 1,
         "applied": false,
         "group_n": 4,
         "absorbed_by": "ant-2"
@@ -1969,7 +1969,7 @@
         "lr": 1.3,
         "half_life": 120,
         "lr_eff": 1.3,
-        "age": 0,
+        "age": 1,
         "applied": true,
         "group_n": 4
       },
@@ -1985,7 +1985,7 @@
         "lr": 1.2,
         "half_life": 180,
         "lr_eff": 1.2,
-        "age": 0,
+        "age": 1,
         "applied": false,
         "group_n": 4,
         "absorbed_by": "ant-2"
@@ -2002,7 +2002,7 @@
         "lr": 1.15,
         "half_life": 30,
         "lr_eff": 1.15,
-        "age": 0,
+        "age": 1,
         "applied": false,
         "group_n": 4,
         "absorbed_by": "ant-2"
@@ -2011,16 +2011,16 @@
     "resolution": "",
     "source": "neutral prior + video evidence",
     "watch": true,
-    "last": 83.0,
-    "ret6": 0.0,
-    "ret1": 0.0,
-    "dd": 0.0,
+    "last": 88.32,
+    "ret6": -9.1,
+    "ret1": -9.1,
+    "dd": -9.1,
     "added": "2026-11-19",
     "found_in": "Adam Khoo \u2014 Anthropic (ANT) $1.5 Trillion IPO! Am I Buying? (2026-11-19)"
   },
   "_meta": {
-    "generated_at": 1795105164.1885812,
-    "started_at": 1795105161.2887888,
-    "run_date": "2026-11-19"
+    "generated_at": 1795191338.7508621,
+    "started_at": 1795191335.8259752,
+    "run_date": "2026-11-20"
   }
 }
