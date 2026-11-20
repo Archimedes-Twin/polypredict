@@ -1,17 +1,31 @@
 ## Performance (6 months)
 
-QQQ has trended lower over the window, and the damage came late. Earlier strength, when short- and medium-term trends were still aligned, peaked in early autumn and then rolled over. The slide has been steep and fast, taking the fund from its high into a deep drawdown within weeks. A sharp one-day policy-driven break compounded a slower grind lower in the AI leaders. Bounces since the low have been shallow and have not rebuilt a base. The fund sits well below its high. The shape is a failed advance that gave way to orderly selling and then forced de-grossing of crowded positions.
+QQQ's six-month path is a rise followed by a sharp reversal. The fund advanced into early autumn and set its high, then rolled over. Most of the damage came in the most recent stretch. The latest month is worse than the six-month picture as a whole, so the earlier gains were erased and then some. The drop was fast and deep, taking the fund from its peak into a large drawdown within weeks. The latest close is also the low of the window, so there has been no real recovery. Any bounces were shallow and did not build a base. The overall shape is a failed advance, an abrupt policy-driven break, and then persistent selling as crowded positions were pared back.
 
 ## Drivers
 
-The Fed is the dominant driver. A hike at the final meeting of the year is priced as close to certain, so the market is treating inflation as unresolved. Higher real yields reduce the present value of distant earnings, which hurts a long-duration, growth-heavy index more than most. Easing is priced only as a distant, near coin-flip prospect, so there is little relief on the horizon.
+The Fed is the dominant driver. The market prices a hike at the final meeting of the year as close to certain, so inflation is being treated as unresolved. A rising-rate path pushes real yields higher, which cuts the present value of distant earnings. That hurts a long-duration, growth-heavy index like the Nasdaq-100 more than most.
 
-Tech fundamentals are the offset. Hyperscaler revenue growth remains solid, and the negative free cash flow reflects growth capex and one-offs rather than weakening operating cash flow. But heavy spending leaves the AI buildout more exposed to tighter financing conditions. Data-center moratorium rhetoric added a policy shock, though the Senate math makes passage unlikely. Rotation out of crowded AI longs into financials, healthcare and staples continues. Skepticism about premium valuations for newer AI names adds a mild drag.
+AI sector dynamics add to the pressure:
+
+- **Rotation out of AI leaders.** Many AI names are far below their highs, and money is moving in stages toward financials, healthcare, and staples.
+- **Crowding and de-grossing.** Hedge-fund longs in these names were crowded, and unwinding them feeds short-term underperformance.
+- **Policy shock.** Democratic rhetoric about an AI and data-center moratorium triggered a one-day break centered on AI capex and semiconductors.
+- **Valuation caution.** The newest commentary questions paying premium multiples for AI leaders whose edge may flip within months, and notes growth deceleration in the newest AI names.
+
+Some evidence cuts the other way:
+
+- Hyperscaler cash burn looks like growth capex and one-offs, not weakening operating cash flow.
+- Revenue growth at the large platforms remains healthy.
+- The Senate math makes a real moratorium unlikely.
+- The AI cycle is argued to be structurally early compared with the dotcom era.
+
+Most of these points are long-horizon or rest on a sentiment-shock framing, so they carry little weight for the near term.
 
 ## Continue or revert
 
-Continue lower. The market prior leans bearish, and the video evidence lifts the posterior only modestly without flipping it, so the read stays very bearish at medium confidence.
+The market prior and the posterior agree: both are very bearish with high confidence, and the video evidence only nudges the posterior slightly away from the crowd. The crowd expects the downtrend to continue, and I agree.
 
-The prior and the evidence genuinely conflict. The videos lean constructive: a policy-shock rebound pattern, intact earnings, a young AI cycle and valuations well below the dot-com peak. I side with the market prior. Those arguments are mostly long-horizon or sentiment-based, and several are decaying with age. The flow evidence on rotation and degrossing acts over weeks, which is the relevant window, while the hike pricing bears directly on multiples now. The earnings-intact case is real but operates over quarters, so it is unlikely to override the rate and flow pressure in the near term.
+The bullish evidence is the strongest case for a reversion. It argues that this was a sentiment and policy shock with intact earnings, that history shows V-shaped recoveries from such breaks, and that the moratorium is unlikely to pass. That evidence is older and has decayed. It also assumes the selloff was only about AI policy headlines. The price action since then, and the rate backdrop, point to a second, more durable cause: a Fed that is still tightening. Historical V-shaped rebounds came without a priced hike pushing real yields higher, so the analogy is weaker here. The newest evidence also leans cautious on AI premiums, which fits the crowding unwind.
 
-Invalidation: a sharp retreat in December hike odds below the threshold named in the signals, together with cut-by-July-2027 odds firming well above the line that signal tracks, would undercut the bearish call and favor a rebound.
+Continuation is therefore the more likely path, with dip-buying rallies likely to fade while the rate pressure persists. The main invalidation is the hike pricing. If the market retreats decisively from treating a final-meeting hike as near-certain, the rate headwind on long-duration growth would ease and the bearish read would need revising. A durable recovery in the AI leaders, with rotation and de-grossing visibly ending, would be a second sign that the V-shaped thesis is working.
